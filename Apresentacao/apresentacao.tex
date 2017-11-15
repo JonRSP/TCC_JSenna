@@ -1,0 +1,100 @@
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\inputencoding{latin1}
+\usetheme{metropolis}           % Use metropolis theme
+\title{Sistema de Acesso \`a Cole\c{c}\~ao de Bact\'erias Aer\'{o}bias Formadoras de End\'{o}sporos}
+\date{\today}
+\author{J\^{o}natas Ribeiro Senna Pires}
+\institute{Univesidade de Bras\'{i}lia}
+\begin{document}
+  \maketitle
+  \section{Objetivos}
+  \begin{frame}{Objetivos}
+    \begin{itemize}
+        \item Criar um banco de dados para armazenar os dados coletados pelo LaBafes;
+        \item Criar uma plataforma de acesso \`as informa\c{c}\~oes contidas no banco de dados;
+        \item Permitir que os membros do LaBafes possam ter controle do banco de dados:\\
+        \begin{enumerate}
+                \item Adi\c{c}\~ao de linhagens;
+                \item Edi\c{c}\~ao de linhagens;
+                \item Remo\c{c}\~ao de linhagens;
+                \item Controle sobre as altera\c{c}\~oes realizadas.
+        \end{enumerate}
+    \end{itemize}
+  \end{frame}
+  
+  \section{Banco de Dados}
+  \begin{frame}{Diagrama Entidade Relacionamento}
+    \includegraphics[height=200pt, width=325pt]{CBafesDER1}
+    \\ * Entidades com o mesmo nome representam a mesma entidade
+  \end{frame}
+  \begin{frame}{Diagrama Entidade Relacionamento}
+    \includegraphics[height=200pt, width=325pt]{CBafesDER2}
+    \\ * Entidades com o mesmo nome representam a mesma entidade
+  \end{frame}
+  \begin{frame}{Sistema Gerenciador de Banco de Dados}
+    \begin{itemize}
+        \item SGBD escolhido PostgreSQL
+        \begin{itemize}
+            \item OpenSource;
+            \item Bem documentado.
+        \end{itemize}
+    \end{itemize}
+  \end{frame}
+  \begin{frame}{Caracter\'isticas do banco de dados}
+        \begin{itemize}
+            \item Possui 22 tabelas;
+            \item Imagens s\~ao armazenadas no pr\'oprio banco de dados;
+        \end{itemize}
+  \end{frame}
+  
+  \section{Ferramentas Utilizadas}
+  \begin{frame}{Linguagens de Programa\c{c}\~ao}
+        \begin{itemize}
+            \item Python;
+            \item PHP, HTML e CSS.
+        \end{itemize}
+  \end{frame}
+  
+  \section{Resultados Obtidos}
+  \begin{frame}{ Resultados }
+        \begin{itemize}
+            \item Foi criado o novo banco de dados;
+            \item Foi criada a plataforma de acesso;
+            \begin{itemize}
+                \item Usu\'arios cadastrados podem fazer logIn no sistema;
+                \item Usu\'arios e administradores, ap\'os realizar logIn, podem:
+                \begin{itemize}
+                    \item Cadastrar linhagens
+                    \item Remover linhagens.
+                \end{itemize}
+                \item Administradores podem:
+                \begin{itemize}
+                    \item Cadastrar ou remover usu\'arios;
+                    \item Visualizar as altera\c{c}\~oes realizadas por outros usu\'arios.
+                \end{itemize}
+            \end{itemize}
+            \item Qualquer usu\'ario pode fazer buscas por n\'umero SDF.
+        \end{itemize}
+  \end{frame}
+  
+  \section{Problemas Encontrados}
+  \begin{frame}{Problemas}
+        \begin{itemize}
+            \item O site n\~ao est\'a no ar.
+            \item Dificuldades na inser\c{c}\~ao de imagens na p\'agina.
+        \end{itemize}
+  \end{frame}
+  
+  \section{Continua\c{c}\~ao do Trabalho}
+  \begin{frame}{Continua\c{c}\~ao do Trabalho}
+        \begin{itemize}
+            \item Implementar busca por caracter\'isticas;
+            \item Implementar a edi\c{c}\~ao de linhagens;
+            \item Implementar ferramenta para desfazer altera\c{c}\~oes.
+        \end{itemize}
+  \end{frame}
+\end{document}
