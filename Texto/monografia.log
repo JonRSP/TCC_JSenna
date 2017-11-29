@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  29 NOV 2017 09:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  29 NOV 2017 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,45 +1266,39 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 14.
+(babel)             in language  on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 22.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 14.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 22.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 28.
  [1
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 56.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 62.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
  [2]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-
-[3]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 
@@ -1324,17 +1318,20 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15748 strings out of 494925
- 253746 string characters out of 6180252
+ 15747 strings out of 494925
+ 253740 string characters out of 6180252
  411798 words of memory out of 5000000
  18665 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,6n,69p,1940b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,6n,69p,1940b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
 ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
@@ -1343,10 +1340,10 @@ ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (10 pages, 137010 bytes).
+Output written on monografia.pdf (9 pages, 136706 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
