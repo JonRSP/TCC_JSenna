@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {ITU}
+\btxnamefont {\btxlastnamefont {13}, ITU\btxfnamespacelong T\btxfnamespacelong
+  Study\btxfnamespacelong Group}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Recommendation itu-t y.2060. overview of the internet of
+  things.}{Recommendation ITU-T Y.2060. Overview of the Internet of Things.}},
+  2012.
+\newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
+
+\end{thebibliography}

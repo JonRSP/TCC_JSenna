@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  29 NOV 2017 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  29 NOV 2017 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**monografia.tex
+**monografia
 (./monografia.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 4 language(s) loaded.
@@ -1159,7 +1159,12 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 38.
                                                   \ define um padrão de for...
 l.16 explicativo.}
                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ) [5
 
 
@@ -1179,7 +1184,12 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
                                                   \^^Mclass defines a standa...
 l.10 ...and improvements on the explanatory text.}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 )
 babelbib: Set language for keywords in the bibliography fixed to brazil
 Package babel Info: Redefining portuges shorthand "|
@@ -1210,11 +1220,6 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  34.38887pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 34.38887pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  34.38887pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
@@ -1235,6 +1240,11 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  34.38887pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  17.62474pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 13.5pt
+number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write7
 \openout7 = `monografia.toc'.
@@ -1243,15 +1253,23 @@ number indent calculated (toc, 2): 34.38887pt
 \@gls@deffile=\write8
 \openout8 = `monografia.glsdefs'.
 
-)
-No file monografia.acr.
+) (./monografia.acr
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
-[7
+(babel)             in language  on input line 1.
+ [7
 
-] (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+ [8
+
+
+]
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -1265,51 +1283,85 @@ Package babel Info: Redefining portuges shorthand "|
 (./tex/1_Introducao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--19
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 14.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 22.
+(babel)             in language  on input line 19.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+[1
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 27.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 22.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 27.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
- [1
-
-
-]
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 66.
+ [2]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 67.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [2]
+ [3]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
+ (./monografia.bbl
+(./monografia.brf)
+\tf@brf=\write9
+\openout9 = `monografia.brf'.
 
-No file monografia.bbl.
+
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+ [4
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
-(./monografia.aux)
+ (./monografia.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 3B3EF972A6BE1EE090BC305400B4D49C;763.
+(rerunfilecheck)             Checksum: AF62D57F0B46AC2AFD54CC85509EEF59;730.
+Package rerunfilecheck Info: File `monografia.brf' has not changed.
+(rerunfilecheck)             Checksum: 404D7F1923ED13F808BCC2736758ED30;46.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1318,20 +1370,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15747 strings out of 494925
- 253740 string characters out of 6180252
- 411798 words of memory out of 5000000
- 18665 multiletter control sequences out of 15000+600000
+ 15708 strings out of 494925
+ 252983 string characters out of 6180252
+ 409984 words of memory out of 5000000
+ 18610 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,6n,69p,1940b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,6n,69p,1936b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
 ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
@@ -1340,10 +1389,10 @@ ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (9 pages, 136706 bytes).
+Output written on monografia.pdf (12 pages, 142389 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

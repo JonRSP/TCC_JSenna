@@ -28,36 +28,6 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{BCE}{}%
-{%
-\gls@defglossaryentry{BCE}%
-{%
-name={BCE},%
-sort={BCE},%
-type={acronym},%
-first={Biblioteca Central\glsspace (BCE)},%
-firstplural={Biblioteca Centrals\glsspace (BCEs)},%
-text={BCE},%
-plural={BCEs},%
-description={Biblioteca Central},%
-descriptionplural={Biblioteca Central\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Biblioteca Central},%
-longplural={Biblioteca Centrals},%
-short={BCE},%
-shortplural={BCEs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
 \ifglsentryexists{CIC}{}%
 {%
 \gls@defglossaryentry{CIC}%
@@ -88,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{CTAN}{}%
+\ifglsentryexists{IoT}{}%
 {%
-\gls@defglossaryentry{CTAN}%
+\gls@defglossaryentry{IoT}%
 {%
-name={CTAN},%
-sort={CTAN},%
+name={IoT},%
+sort={IoT},%
 type={acronym},%
-first={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Network\glsspace (CTAN)},%
-firstplural={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Networks\glsspace (CTANs)},%
-text={CTAN},%
-plural={CTANs},%
-description={Comprehensive \TeX \ Archive Network},%
-descriptionplural={Comprehensive \TeX \ Archive Network\acrpluralsuffix },%
+first={Internet das Coisas\glsspace (IoT)},%
+firstplural={Internet das Coisass\glsspace (IoTs)},%
+text={IoT},%
+plural={IoTs},%
+description={Internet das Coisas},%
+descriptionplural={Internet das Coisas\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -109,28 +79,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Network},%
-longplural={Comprehensive T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}\ Archive Networks},%
-short={CTAN},%
-shortplural={CTANs},%
+long={Internet das Coisas},%
+longplural={Internet das Coisass},%
+short={IoT},%
+shortplural={IoTs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{CEP}{}%
+\ifglsentryexists{ITU}{}%
 {%
-\gls@defglossaryentry{CEP}%
+\gls@defglossaryentry{ITU}%
 {%
-name={CEP},%
-sort={CEP},%
+name={ITU},%
+sort={ITU},%
 type={acronym},%
-first={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blica\glsspace (CEP)},%
-firstplural={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blicas\glsspace (CEPs)},%
-text={CEP},%
-plural={CEPs},%
-description={Comissão de Ética Pública},%
-descriptionplural={Comissão de Ética Pública\acrpluralsuffix },%
+first={International Telecomunication Union\glsspace (ITU)},%
+firstplural={International Telecomunication Unions\glsspace (ITUs)},%
+text={ITU},%
+plural={ITUs},%
+description={International Telecomunication Union},%
+descriptionplural={International Telecomunication Union\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -139,40 +109,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blica},%
-longplural={Comiss\IeC {\~a}o de \IeC {\'E}tica P\IeC {\'u}blicas},%
-short={CEP},%
-shortplural={CEPs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{CAPES}{}%
-{%
-\gls@defglossaryentry{CAPES}%
-{%
-name={CAPES},%
-sort={CAPES},%
-type={acronym},%
-first={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superior\glsspace (CAPES)},%
-firstplural={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superiors\glsspace (CAPESs)},%
-text={CAPES},%
-plural={CAPESs},%
-description={Coordenação de Aperfeiçoamento de Pessoal de Nível Superior},%
-descriptionplural={Coordenação de Aperfeiçoamento de Pessoal de Nível Superior\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superior},%
-longplural={Coordena\IeC {\c c}\IeC {\~a}o de Aperfei\IeC {\c c}oamento de Pessoal de N\IeC {\'\i }vel Superiors},%
-short={CAPES},%
-shortplural={CAPESs},%
+long={International Telecomunication Union},%
+longplural={International Telecomunication Unions},%
+short={ITU},%
+shortplural={ITUs},%
 counter={page},%
 parent={},%
 %
