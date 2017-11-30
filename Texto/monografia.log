@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  29 NOV 2017 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  30 NOV 2017 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1120,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=56, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=60, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 
 <use img/positivo_cor.pdf>
@@ -1220,6 +1220,11 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  34.38887pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
@@ -1249,23 +1254,44 @@ number indent calculated (toc, 0): 0.0pt
 \tf@toc=\write7
 \openout7 = `monografia.toc'.
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+ [7
+
+] (./monografia.lof
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+number indent by \l@... (lof, 1):  17.62474pt
+text indent by \l@... (lof, 1):  27.02464pt
+number indent by parent (lof, 1):  17.62474pt
+text indent calculated (lof, 1): 20.88887pt
+number indent calculated (lof, 1): 17.62474pt
+)
+\tf@lof=\write8
+\openout8 = `monografia.lof'.
+
  (./tex/siglas.tex
-\@gls@deffile=\write8
-\openout8 = `monografia.glsdefs'.
+\@gls@deffile=\write9
+\openout9 = `monografia.glsdefs'.
 
 ) (./monografia.acr
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [7
+ [8
 
 ])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
- [8
+ [9
 
 
 ]
@@ -1284,12 +1310,32 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--19
+<img/visionsiot.png, id=146, 480.79625pt x 376.40625pt>
+File: img/visionsiot.png Graphic file (type png)
+
+<use img/visionsiot.png>
+Package pdftex.def Info: img/visionsiot.png used on input line 19.
+(pdftex.def)             Requested size: 480.79506pt x 376.40532pt.
+
+Overfull \hbox (25.55095pt too wide) in paragraph at lines 19--19
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--20
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--20
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
@@ -1298,39 +1344,84 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 27.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 28.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 27.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 34.
+ [2 <./img/visionsiot.png (PNG copy)>] <img/iottec.png, id=171, 513.92pt x 245.
+91875pt>
+File: img/iottec.png Graphic file (type png)
+ <use img/iottec.png>
+Package pdftex.def Info: img/iottec.png used on input line 39.
+(pdftex.def)             Requested size: 513.91873pt x 245.91814pt.
+
+Overfull \hbox (58.67462pt too wide) in paragraph at lines 39--39
+ [] 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 55.
+[3 <./img/iottec.png (PNG copy)>]
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.76 \end{itemize}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
- [2]
+(babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 67.
-)
+(babel)             in language  on input line 87.
+[4]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 100.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 103.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 115.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+ [5])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [3]
+ [6]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- (./monografia.bbl
-(./monografia.brf)
-\tf@brf=\write9
-\openout9 = `monografia.brf'.
+ (./monografia.bbl (./monografia.brf)
+\tf@brf=\write10
+\openout10 = `monografia.brf'.
 
 
 babelbib: Using the BibTeX style's default font for `name'.
@@ -1350,7 +1441,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [4
+ [7
 
 
 ]
@@ -1359,9 +1450,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: AF62D57F0B46AC2AFD54CC85509EEF59;730.
+(rerunfilecheck)             Checksum: 0B54876976CCC42341F606054A1A6E59;807.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 404D7F1923ED13F808BCC2736758ED30;46.
+(rerunfilecheck)             Checksum: 7DB55A877DAF2E6155FB39412E5D67FF;312.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1374,13 +1465,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15708 strings out of 494925
- 252983 string characters out of 6180252
- 409984 words of memory out of 5000000
- 18610 multiletter control sequences out of 15000+600000
+ 15855 strings out of 494925
+ 255429 string characters out of 6180252
+ 410885 words of memory out of 5000000
+ 18728 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,6n,69p,1936b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,7n,69p,1936b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
 ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
@@ -1389,10 +1480,10 @@ ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (12 pages, 142389 bytes).
+Output written on monografia.pdf (16 pages, 278683 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

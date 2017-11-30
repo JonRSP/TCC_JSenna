@@ -118,3 +118,63 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{RFID}{}%
+{%
+\gls@defglossaryentry{RFID}%
+{%
+name={RFID},%
+sort={RFID},%
+type={acronym},%
+first={Identifica\IeC {\c c}\IeC {\~a}o por Radio Frequ\IeC {\^e}ncia\glsspace (RFID)},%
+firstplural={Identifica\IeC {\c c}\IeC {\~a}o por Radio Frequ\IeC {\^e}ncias\glsspace (RFIDs)},%
+text={RFID},%
+plural={RFIDs},%
+description={Identificação por Radio Frequência},%
+descriptionplural={Identificação por Radio Frequência\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Identifica\IeC {\c c}\IeC {\~a}o por Radio Frequ\IeC {\^e}ncia},%
+longplural={Identifica\IeC {\c c}\IeC {\~a}o por Radio Frequ\IeC {\^e}ncias},%
+short={RFID},%
+shortplural={RFIDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RSSF}{}%
+{%
+\gls@defglossaryentry{RSSF}%
+{%
+name={RSSF},%
+sort={RSSF},%
+type={acronym},%
+first={Redes de Sensores Sem Fio\glsspace (RSSF)},%
+firstplural={Redes de Sensores Sem Fios\glsspace (RSSFs)},%
+text={RSSF},%
+plural={RSSFs},%
+description={Redes de Sensores Sem Fio},%
+descriptionplural={Redes de Sensores Sem Fio\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Redes de Sensores Sem Fio},%
+longplural={Redes de Sensores Sem Fios},%
+short={RSSF},%
+shortplural={RSSFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

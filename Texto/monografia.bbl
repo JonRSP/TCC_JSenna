@@ -17,8 +17,31 @@
 \btxnamefont {\btxlastnamefont {13}, ITU\btxfnamespacelong T\btxfnamespacelong
   Study\btxfnamespacelong Group}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Recommendation itu-t y.2060. overview of the internet of
-  things.}{Recommendation ITU-T Y.2060. Overview of the Internet of Things.}},
+  things}{Recommendation ITU-T Y.2060. Overview of the Internet of Things}},
   2012.
 \newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
+
+\bibitem {refrfid}
+\btxnamefont {\btxlastnamefont {Want}, Roy}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An introduction to rfid technology}{An introduction to
+  RFID technology}}.
+\newblock \btxjournalfont {IEEE pervasive computing}, 5(1):25--33, 2006.
+
+\bibitem {IOTS}
+\btxnamefont {\btxlastnamefont {Luigi~Atzori},~Antonio~Iera,
+  Giacomo\btxfnamespacelong Morabito}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The internet of things: A survey}{The internet of things:
+  A survey}}.
+\newblock \btxjournalfont {Computer networks}, 54(15):2787--2805, 2010.
+
+\bibitem {IOTV}
+\btxnamefont {\btxlastnamefont {Jayavardhana~Gubbi},~Rajkumar~Buyya,
+  Slaven\btxfnamespacelong Marusic\btxfnamespacelong
+  Marimuthu\btxfnamespacelong Palaniswami}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Internet of things (iot): A vision, architectural
+  elements, and future directions}{Internet of Things (IoT): A vision,
+  architectural elements, and future directions}}.
+\newblock \btxjournalfont {Future generation computer systems},
+  29(7):1645--1660, 2013.
 
 \end{thebibliography}

@@ -3,19 +3,20 @@ dispositivos categorizados em \acrfull{IoT}. %expandiiiiiiiiir
 
 
 \section{Internet das Coisas}%
-No cenário contemporâneo, um assunto que tem sido bastante abordado é a
-\acrlong{IoT}, que, como o nome sugere, seria uma “internet em todas as
-coisas”. A proposta de \acrshort{IoT} consiste em vários objetos do cotidiano trocando informações
+A \acrlong{IoT} é um novo paradigma tecnológico idealizado como uma conexão global
+de máquinas e dispositivos capazes de interagir entre si. A proposta de \acrshort{IoT} consiste em vários objetos do cotidiano trocando informações
 mutuamente, através da internet, para serem mais eficientes e realizarem diversas tarefas.
 Os objetos passam a agir de forma mais inteligente e sensorial, de modo a favorecer diversos setores como:
 indústria, hospitais, agropecuária, transporte público e muitos outros. A partir desta
-disponibilidade astronômica de recursos, a \acrlong{IoT} está a se tornar uma ferramenta
-de grande importância para a humanidade.\\\\
-Um dos objetivos principais da \acrlong{IoT} é permitir
-que humanos e máquinas a ter maior consciência de seus arredores.
+disponibilidade astronômica de recursos, a \acrshort{IoT} é reconhecida com uma das áreas mais importantes
+em termos de tecnologia do futuro e está recebendo cada vez mais atenção de desenvolvedores, usuários e indústrias.
+\\\\Um dos objetivos principais da \acrlong{IoT} é permitir
+que humanos e máquinas possuam maior consciência de seus arredores.
  Esse maior entendimento do seu ambiente é possível através da utilização
  de diversos tipos dispositivos sensitivos (sensores) e após a percepção
- de seu ambiente é possível realizar ações (atuadores) ou análises.
+ de seu ambiente é possível realizar ações (atuadores) ou análises.\\\\
+ A \acrlong{IoT} surgiu a partir do cojunto de diferentes visões como podemos observar na \refFig{refiotvision}, cada qual com seus objetivos específicos.
+ \figura[!h]{visionsiot}{O paradigma \acrlong{IoT} como um resultado de diferentes visões}{refiotvision}{}%
 \subsection{Definição}
 	Em 2012, a \acrfull{ITU} realizou estudos sobre infraestrutura
 	de informação global, aspectos de procolos de internet e redes da próxima geração.
@@ -26,32 +27,79 @@ que humanos e máquinas a ter maior consciência de seus arredores.
 	\begin{itemize}
 		\item \acrlong{IoT}, "uma infraestrutura global para a Sociedade de Informações, permitindo serviços avançados ao
 		interconectar (fisicamente e virtualmente) coisas devido à existência e evolução da interoperabilidade
-	de tecnologias de comunicação e informação";
+	de tecnologias de comunicação e informação" \cite{ITU};
 		\item Dispositivo, no contexto de \acrshort{IoT}, é um equipamento que, obrigatoriamente, possui a capacidade
 		de comunicação e, opcionalmente, possui capacidade de sensitividade, atuação, captura de dados,
-		armazenamento de dados e/ou processamento de dados;
+		armazenamento de dados e/ou processamento de dados \cite{ITU};
 		\item Coisas, no contexto de \acrshort{IoT}, são "objetos
 	no mundo físico (objetos físicos) ou no mundo das informações (objetos virtuais), os quais são capazes de
-	de serem identificados e integrados a uma rede de comunicações".
+	de serem identificados e integrados a uma rede de comunicações". Objetos físicos podem sentir, atuar e conectar.
+	Obejtos virtuais podem ser armazenados, processados e acessados.\cite{ITU}
 	\end{itemize}
-% [1] ITU
+	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT}}{refiottec}{}%
+% [1] ITU\\
+\subsection{Tecnologias excenciais}
+	\subsubsection{\acrfull{RFID}}
+		\begin{itemize}
+			\item Esta tecnologia permite identificação automática e captura de informação por meio de rádio frequência.
+			Divide-se dispositivos \acrshort{RFID} em duas grandes categorias, ativos e passivos. Dispositivos ativos dependem
+			de uma fonte de energia constante para manter ativa e transmitir a informação. Dispositivos passivos não necessitam de energia constante,
+			um campo eletromagnético energiza o dispositivo, o qual se torna apto a transferir a informação contida nele.
+			\cite{refrfid}
+		\end{itemize}
+	\subsubsection{\acrfull{RSSF}}
+		\begin{itemize}
+			\item Esta tecnologia consiste na distribuição de dispositivos sensitivos autônomos para monitorar condições físicas ou
+			ambientais e podem cooperar com sistemas \acrshort{RFID} para medir de forma mais eficáz localização, temperatura e movimentação, por exemplo.
+			\cite{IOTS}
+		\end{itemize}
+	\subsubsection{Middleware}
+		\begin{itemize}
+			\item O middleware é a camada de abstração entre aplicações de software para tornar mais fácil para os desenvolvedores
+			 realizar a comunicação entre softwares e operações de recebimento e envio de dados. O objetivo do middleware no contexto
+			  de \acrshort{IoT} é simplificar a integração entre dispositivos heterogêneos.
+		\end{itemize}
+	\subsubsection{Computação em núvem}
+		\begin{itemize}
+			\item Computação em núvem é um modelo para acesso de recursos compartilhados conforme a necessidade de um serviço. Um dos resultados mais notáveis
+			da \acrshort{IoT} é a enorme quantidade de dados gerados por dispositivos conectados à internet \cite{IOTV}. A computação em núvem é importante para o contexto de \acrlong{IoT}
+			ao permitir um ambiente com alta escalabilidade.
+		\end{itemize}
+	\subsubsection{Aplicações de software}
+		\begin{itemize}
+			\item Aplicações \acrshort{IoT} permitem interações dispositivo-dispositivo e humano-dispositivo de uma forma confiável e robusta.
+			AS aplicações nos dispositivos devem garantir que as informações são recebidas e processadas de maneira adequada, no momento
+			adequado.
+
+		\end{itemize}
+
+\end{itemize}
 
 \subsection{Desafios}
-	A \acrlong{IoT} possui diversos desafios devido à sua própria concepção. Limitantes
-	como infraesturura de rede, segurança, espaço de armazenamento e consumo de energia são apenas
-	alguns exemplos de dificuldades a serem ultrapassadas para que a \acrshort{IoT} possa ser amplamente
-	e devidamente implantada.
+	A \acrlong{IoT} possui diversos desafios devido à sua própria concepção, essas dificuldades devem ser ultrapassadas para que a
+	\acrshort{IoT} possa ser amplamente e devidamente implantada. Alguns fatores críticos podem ser elencados:
+	\subsubsection{Infraesturura de rede}
+		O custo para interconectar os dispositivos é alto. Para uma grande rede de sensores é necessário a distribuição de toda infraestrutua,
+		de cabeamento ou infraestrutura sem fio.
+	\subsubsection{Segurança}
+		Uma das principais dificuldades num ambiente de \acrlong{IoT} é a segurança dos dados que são coletados pela grande quantidade de
+		dispositivos sensitivos da rede. Uma invasão de um sistema crítico pode significar consequências graves em um ambiente automatizado.
+  \subsubsection{Espaço de armazenamento}
+	  Um ambiente \acrshort{IoT} gera uma grande quantidade de dados, suponhamos um sistema de uma cidade inteligente que possui 10000 sensores
+ 	  de diversas categorias, cada sensor gerando uma mensagem de 10 kB a cada 5 minutos, por dia, temos um total de aproximadamente 29 GB de dados
+	  após um ano teríamos 10,5 TB de dados apenas para esta cidade.
+  \subsubsection{Consumo de energia}
+		É imperativo que o consumo de energia dos dispositivos sensitivos seja o menor possível, em muitos cenários é improvável a presença de uma
+		rede de energia elétrica e até mesmo de manutenção constante, então os equipamentos devem conseguir se manter funcionais por meio de baterias por
+		uma quantidade de tempo considerável.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{dados}%
-	\begin{itemize}
-		\item definição
-		\item valores e estatísticas
-		\item desafios
-	\end{itemize}
+	Considerando o ambiente de \acrshort{IoT}, a quantidade de dados gerados por unidade de tempo é gigantesca,
+
 	\subsection{metadados}
 		\begin{itemize}
 			\item definição
