@@ -18,7 +18,7 @@
   Study\btxfnamespacelong Group}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Recommendation itu-t y.2060. overview of the internet of
   things}{Recommendation ITU-T Y.2060. Overview of the Internet of Things}},
-  2012.
+  2007.
 \newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
 
 \bibitem {refrfid}
@@ -43,5 +43,44 @@
   architectural elements, and future directions}}.
 \newblock \btxjournalfont {Future generation computer systems},
   29(7):1645--1660, 2013.
+
+\bibitem {SemIOT}
+\btxnamefont {\btxlastnamefont {Payam~Barnaghi},~Wei~Wang,
+  Cory\btxfnamespacelong Henson\btxfnamespacelong Kerry\btxfnamespacelong
+  Taylor}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Semantics for the
+  internet of things: early progress and back to the future}{Semantics for the
+  Internet of Things: early progress and back to the future}}.
+\newblock \btxjournalfont {International Journal on Semantic Web and
+  Information Systems}, 8(1):1--21, 2012.
+
+\bibitem {IOTdata}
+\btxnamefont {\btxlastnamefont {Charu C.~Aggarwal},~Naveen~Ashish,
+  Amit\btxfnamespacelong Sheth}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {The internet of things: a survey from the data-centric perspective}{The
+  Internet of Things: a survey from the data-centric perspective}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Managing and mining sensor data},
+  \btxchapterlong {}~12, \btxpageslong {}\ 383--428. \btxpublisherfont
+  {Springer}, Boston, MA, 2013.
+
+\bibitem {collaborative}
+\btxnamefont {\btxlastnamefont {Hassan}, Umairul~et~al.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A collaborative approach for metadata
+  management for internet of things}{A collaborative approach for metadata
+  management for Internet of Things}}.
+\newblock \btxjournalfont {Collaborative Computing: Networking, Applications
+  and Worksharing}, \btxpageslong {}\ 593--598, 2013.
+
+\bibitem {metadata}
+\btxnamefont {\btxlastnamefont {Duval}, Erick~et~al.}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Metadata principles and
+  practicalities}{Metadata principles and practicalities}}, 2002.
+\newblock {\latintext
+  \btxurlfont{http://www.dlib.org/dlib/april02/weibel/04weibel.html?}}
+
+\bibitem {SML}
+\btxnamefont {\btxlastnamefont {Mike~Botts}, Alexandre\btxfnamespacelong
+  Robin}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Opengis sensor model
+  language (sensorml) implementation specification}{OpenGIS sensor model
+  language (SensorML) implementation specification}}, 2007.
 
 \end{thebibliography}

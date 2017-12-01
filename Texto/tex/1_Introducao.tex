@@ -98,14 +98,53 @@ que humanos e máquinas possuam maior consciência de seus arredores.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{dados}%
-	Considerando o ambiente de \acrshort{IoT}, a quantidade de dados gerados por unidade de tempo é gigantesca,
+	Um ambiente de \acrlong{IoT} tem como objetivo a compreensão do ambiente em que está situado utilizando as informações geradas por diversos
+  dispositivos sensitivos.
+   Este entendimento é baseado em três tipos de dados \cite{SemIOT}:
+  \begin{itemize}
+    \item Dados gerados pelos dispositivos;
+    \item Dados que descrevem os dispositivos;
+    \item Dados que descrevem o ambiente.
+  \end{itemize}
+  Normalmente, dispositivos \acrshort{IoT} tem sua semântica descrita em termos de suas capacidades sensitivas. A semântica do ambiente
+  é determinada pela de acordo com o domínio da aplicação \cite{IOTdata}. Consequentemente, modelos de suporte à decisão são construídos
+  baseados nos metadados que descrevem os dispositivos e seu ambiente.
+  \\\\
+  Os esforços de pesquisa em \acrlong{IoT} estão principalmente focados nos desafios de interoperabilidade, escalabilidade e integração entre dispositivos heterogêneos \cite{IOTdata},
+  entretanto o desafio do dinamismo dos metadados em \acrshort{IoT} tem sido inexplorado \cite{collaborative}.
 
 	\subsection{metadados}
+  Metadados são as principais ferramentas para descrever e gerenciar recursos de informações extremamente dinâmicos, como os dados
+  contidos na rede mundial de internet.
+		\subsubsection{Princípios}
+    Os seguintes princípios são considerados as linhas de base para o desenvolvimento de soluções práticas em desafios de semântica
+    e interoperabilidade de dispositivos em qualquer domínio e utilizando qualquer conjunto de matadados \cite{metadata}.
 		\begin{itemize}
-			\item definição
-			\item usabilidade
-			\item desafios
+		  \item \textbf{Modularidade} de metadados é um pricípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
+      de conteúdo e abordagens à descrição de recursos. Permite que projetistas de esquemas de metadados criem novos esquemas baseados em projetos
+      já existentes e se beneficiar de boas práticas já observadas. Em um ambiente com metadados modulares, elementos de informação de diferenes esquemas
+      podem ser combinados de forma interoperável tanto sintaticamente quanto semanticamente.
+      \item \textbf{Flexibilidade}. Sistemas de metadados precisam ser flexíveis para acomodar particularidade de uma determinada aplicação.
+      Arquiteturas de metadados devem se adequar facilmente a noção de um esquema base e elementos adicionais necessários para uma aplicação local ou um
+      domínio específico sem comprometer a interoperabilidade proporcionada pelo esquema base.
+      \item \textbf{Refinamento}. O nível de detalhes necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar gastos
+      desnecessários com armazenamento e processamento, o processo de desenvolvimento dos padrões de metadados devem permitir que os projetistas
+      escolham o nível de detalhes apropriado para uma dada aplicação.
+      \item \textbf{Multilinguismo}. O multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
+      Por ter a possibilidade de conectar sistemas de diversas partes do planeta, é importante que a comunicação dos metadados não tenham a linguagem e formatação
+      como desafios a serem ultrapassados.
 		\end{itemize}
+  \subsection{Metadados de sensores}
+    Metadados de sensor é o modelo que descreve o sensor e suas capacidades como por exemplo:
+    \begin{itemize}
+      \item Modelo do sensor;
+      \item Localização do sensor;
+      \item Unidade de medida utilizada;
+      \item Grau de confiabilidade.
+    \end{itemize}
+
+     A Linguagem de Modelagem de Sensores \cite{SML} é uma coleção de padrões
+    desenvolvida para representar informações de sensores em formato XML.
 	\subsection{Taxonomia}
 		\begin{itemize}
 			\item definição

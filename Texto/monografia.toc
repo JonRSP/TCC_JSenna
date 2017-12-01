@@ -16,10 +16,12 @@
 \contentsline {subsubsection}{Espa\IeC {\c c}o de armazenamento}{5}{section*.16}
 \contentsline {subsubsection}{Consumo de energia}{5}{section*.17}
 \contentsline {section}{\numberline {1.2}dados}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}metadados}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Taxonomia}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Ontologia}{6}{subsection.1.2.3}
-\contentsline {chapter}{Refer\^encias}{7}{section*.18}
+\contentsline {subsection}{\numberline {1.2.1}metadados}{6}{subsection.1.2.1}
+\contentsline {subsubsection}{Princ\IeC {\'\i }pios}{6}{section*.18}
+\contentsline {subsection}{\numberline {1.2.2}Metadados de sensores}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Taxonomia}{7}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Ontologia}{7}{subsection.1.2.4}
+\contentsline {chapter}{Refer\^encias}{8}{section*.19}
 \select@language {american}
 \select@language {american}
 \select@language {american}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  30 NOV 2017 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  1 DEC 2017 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1120,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=60, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=64, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 
 <use img/positivo_cor.pdf>
@@ -1245,6 +1245,11 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  34.38887pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 34.38887pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
@@ -1310,7 +1315,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 
-<img/visionsiot.png, id=146, 480.79625pt x 376.40625pt>
+<img/visionsiot.png, id=151, 480.79625pt x 376.40625pt>
 File: img/visionsiot.png Graphic file (type png)
 
 <use img/visionsiot.png>
@@ -1354,7 +1359,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
- [2 <./img/visionsiot.png (PNG copy)>] <img/iottec.png, id=171, 513.92pt x 245.
+ [2 <./img/visionsiot.png (PNG copy)>] <img/iottec.png, id=176, 513.92pt x 245.
 91875pt>
 File: img/iottec.png Graphic file (type png)
  <use img/iottec.png>
@@ -1401,22 +1406,35 @@ Package babel Info: Redefining portuges shorthand "|
 [4]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 119.
+[5]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
- [5])
+(babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 141.
  [6]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 154.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+ [7]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
  (./monografia.bbl (./monografia.brf)
@@ -1441,7 +1459,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [7
+ [8
 
 
 ]
@@ -1450,9 +1468,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 0B54876976CCC42341F606054A1A6E59;807.
+(rerunfilecheck)             Checksum: BBB0F1DFEE8BE51D8BF3490897DC026B;882.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 7DB55A877DAF2E6155FB39412E5D67FF;312.
+(rerunfilecheck)             Checksum: C8B715DE54477AC0760ABCFBDA9E7B53;581.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1465,10 +1483,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15855 strings out of 494925
- 255429 string characters out of 6180252
- 410885 words of memory out of 5000000
- 18728 multiletter control sequences out of 15000+600000
+ 15884 strings out of 494925
+ 255760 string characters out of 6180252
+ 411032 words of memory out of 5000000
+ 18749 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  52i,7n,69p,1936b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1480,10 +1498,10 @@ ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (16 pages, 278663 bytes).
+Output written on monografia.pdf (17 pages, 284397 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
