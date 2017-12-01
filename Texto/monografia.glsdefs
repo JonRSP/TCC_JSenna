@@ -178,3 +178,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{SensorML}{}%
+{%
+\gls@defglossaryentry{SensorML}%
+{%
+name={SensorML},%
+sort={SensorML},%
+type={acronym},%
+first={Linguagem de Modelagem de Sensores\glsspace (SensorML)},%
+firstplural={Linguagem de Modelagem de Sensoress\glsspace (SensorMLs)},%
+text={SensorML},%
+plural={SensorMLs},%
+description={Linguagem de Modelagem de Sensores},%
+descriptionplural={Linguagem de Modelagem de Sensores\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Linguagem de Modelagem de Sensores},%
+longplural={Linguagem de Modelagem de Sensoress},%
+short={SensorML},%
+shortplural={SensorMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
