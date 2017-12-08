@@ -1,0 +1,7 @@
+\select@language {brazilian}
+\beamer@sectionintoc {1}{Objetivos}{2}{0}{1}
+\beamer@sectionintoc {2}{Banco de Dados}{4}{0}{2}
+\beamer@sectionintoc {3}{Ferramentas Utilizadas}{9}{0}{3}
+\beamer@sectionintoc {4}{Resultados Obtidos}{11}{0}{4}
+\beamer@sectionintoc {5}{Problemas Encontrados}{13}{0}{5}
+\beamer@sectionintoc {6}{Continua\c {c}\~ao do Trabalho}{15}{0}{6}
