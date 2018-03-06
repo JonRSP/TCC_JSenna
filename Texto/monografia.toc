@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Internet das Coisas}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Defini\IeC {\c c}\IeC {\~a}o}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Tecnologias excenciais}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Tecnologias essenciais}{3}{subsection.1.1.2}
 \contentsline {subsubsection}{\acrfull {RFID}}{3}{section*.9}
 \contentsline {subsubsection}{\acrfull {RSSF}}{4}{section*.10}
 \contentsline {subsubsection}{Middleware}{4}{section*.11}

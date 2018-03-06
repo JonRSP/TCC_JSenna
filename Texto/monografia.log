@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.4)  8 DEC 2017 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  6 MAR 2018 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **monografia
 (./monografia.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 4 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.12> and hyphenation patterns for 4 language(s) loaded.
 (./UnB-CIC.cls
 Document Class: UnB-CIC 2014/07/10 Classe para trabalhos CIC UnB
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -39,27 +39,37 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/04/23 3.9r The Babel package
+Package: babel 2017/06/29 3.12 The Babel package
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/04/23 3.9r Babel common definitions
+File: babel.def 2017/06/29 3.12 Babel common definitions
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/06/29 3.12 Babel switching mechanism
+)
 \babel@savecnt=\count89
 \U@D=\dimen103
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 )
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/american.ldf
+Language: american 2017/06/06 v3.3r English support from the babel system
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
+Language: english 2017/06/06 v3.3r English support from the babel system
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/babelbib/babelbib.sty
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 \c@btxromaniannumeral=\count90
@@ -383,10 +393,10 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/02/22 v2.0g Standard LaTeX package
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/02/22 v2.0g Standard LaTeX file
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
@@ -491,15 +501,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count103
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
@@ -513,8 +515,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/totalcount.sty
 Package: totalcount 2013/05/12 v1.0-92 Total values of counters (AR)
-\c@totalcount@figure=\count104
-\c@totalcount@table=\count105
+\c@totalcount@figure=\count103
+\c@totalcount@table=\count104
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
@@ -530,10 +532,10 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 Package: relsize 2013/03/29 ver 4.1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -552,13 +554,13 @@ Package: boites 2013/11/21 v1.1 Colored, framed and breakable across pages boxe
 s
 \bk@bxb=\box28
 \bk@bxa=\box29
-\bk@lcnt=\count106
+\bk@lcnt=\count105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -567,9 +569,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count107
-\Gm@cntv=\count108
-\c@Gm@tempcnt=\count109
+\Gm@cnth=\count106
+\Gm@cntv=\count107
+\c@Gm@tempcnt=\count108
 \Gm@bindingoffset=\dimen115
 \Gm@wd@mp=\dimen116
 \Gm@odd@mp=\dimen117
@@ -584,7 +586,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -593,8 +595,8 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
@@ -607,7 +609,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -636,29 +638,29 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen123
-\Hy@linkcounter=\count110
-\Hy@pagecounter=\count111
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count112
+\Hy@SavedSpaceFactor=\count111
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 436
-2.
-Package hyperref Info: Option `linktocpage' set `true' on input line 4362.
-Package hyperref Info: Hyper figures OFF on input line 4486.
-Package hyperref Info: Link nesting OFF on input line 4491.
-Package hyperref Info: Hyper index ON on input line 4494.
-Package hyperref Info: Plain pages OFF on input line 4501.
-Package hyperref Info: Backreferencing ON on input line 4504.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 437
+4.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing ON on input line 4516.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4735.
+Package hyperref Info: Bookmarks ON on input line 4751.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2016/05/21 v1.39 Bibliographical back referencing
@@ -668,41 +670,41 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count113
+\c@Hy@tempcnt=\count112
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5088.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen124
-\Fld@menulength=\count114
+\Fld@menulength=\count113
 \Field@Width=\dimen125
 \Fld@charsize=\dimen126
-Package hyperref Info: Hyper figures OFF on input line 6342.
-Package hyperref Info: Link nesting OFF on input line 6347.
-Package hyperref Info: Hyper index ON on input line 6350.
-Package hyperref Info: backreferencing ON on input line 6355.
-Package hyperref Info: Link coloring OFF on input line 6362.
-Package hyperref Info: Link coloring with OCG OFF on input line 6367.
-Package hyperref Info: PDF/A mode OFF on input line 6372.
-LaTeX Info: Redefining \ref on input line 6412.
-LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count115
-\c@Item=\count116
-\c@Hfootnote=\count117
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing ON on input line 6371.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count118
-\c@bookmark@seq@number=\count119
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count117
+\c@bookmark@seq@number=\count118
 \Hy@SectionHShift=\skip46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2017/01/19 v4.29 (NLCT)
+Package: glossaries 2017/08/10 v4.31 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -712,7 +714,7 @@ Package: mfirstuc 2016/07/31 v2.04 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count120
+\etb@tempcnta=\count119
 )
 \@glsmfirst=\toks24
 \@glsmrest=\toks25
@@ -728,7 +730,7 @@ Package: datatool-base 2016/07/28 v2.27 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count121
+\c@su@anzahl=\count120
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2016/07/28 v2.27 (NLCT)
@@ -739,19 +741,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count122
+\actioncount=\count121
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count123
-\FP@xia=\count124
-\FP@xib=\count125
-\FP@xfa=\count126
-\FP@xfb=\count127
-\FP@rega=\count128
-\FP@regb=\count129
-\FP@regs=\count130
-\FP@times=\count131
+\FP@xs=\count122
+\FP@xia=\count123
+\FP@xib=\count124
+\FP@xfa=\count125
+\FP@xfb=\count126
+\FP@rega=\count127
+\FP@regb=\count128
+\FP@regs=\count129
+\FP@times=\count130
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -770,7 +772,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count132
+\FPseed=\count131
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -782,20 +784,20 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks26
-\@dtl@tmpcount=\count133
+\@dtl@tmpcount=\count132
 \dtl@tmplength=\skip47
-\dtl@sortresult=\count134
-\@dtl@numgrpsepcount=\count135
-\@dtl@datatype=\count136
-\dtl@codeA=\count137
-\dtl@codeB=\count138
-\@dtl@foreach@level=\count139
+\dtl@sortresult=\count133
+\@dtl@numgrpsepcount=\count134
+\@dtl@datatype=\count135
+\dtl@codeA=\count136
+\dtl@codeB=\count137
+\@dtl@foreach@level=\count138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
 307.sty
-Package: glossaries-compatible-307 2017/01/19 v4.29 (NLCT)
+Package: glossaries-compatible-307 2017/08/10 v4.31 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
-Package: tracklang 2016/11/03 v1.3.3 (NLCT) Track Languages
+Package: tracklang 2017/03/25 v1.3.4 (NLCT) Track Languages
 
 (/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
@@ -813,7 +815,7 @@ File: glossaries-pt-BR.ldf 2014/11/23 v1.0
 
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuge
 s-utf8.ldf))
-\gls@level=\count140
+\gls@level=\count139
 \@gls@tmpb=\toks27
 \gls@tmplen=\skip48
 \glskeylisttok=\toks28
@@ -823,12 +825,12 @@ s-utf8.ldf))
 
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
 y
-Package: glossary-hypernav 2017/01/19 v4.29 (NLCT)
+Package: glossary-hypernav 2017/08/10 v4.31 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
-Package: glossary-list 2017/01/19 v4.29 (NLCT)
+Package: glossary-list 2017/08/10 v4.31 (NLCT)
 \glslistdottedwidth=\skip49
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
-Package: glossary-long 2017/01/19 v4.29 (NLCT)
+Package: glossary-long 2017/08/10 v4.31 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
@@ -836,27 +838,27 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip51
 \LTpre=\skip52
 \LTpost=\skip53
-\LTchunksize=\count141
+\LTchunksize=\count140
 \LTcapwidth=\dimen127
 \LT@head=\box30
 \LT@firsthead=\box31
 \LT@foot=\box32
 \LT@lastfoot=\box33
-\LT@cols=\count142
-\LT@rows=\count143
-\c@LT@tables=\count144
-\c@LT@chunks=\count145
+\LT@cols=\count141
+\LT@rows=\count142
+\c@LT@tables=\count143
+\c@LT@chunks=\count144
 \LT@p@ftn=\toks32
 )
 \glsdescwidth=\skip54
 \glspagelistwidth=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
-Package: glossary-super 2017/01/19 v4.29 (NLCT)
+Package: glossary-super 2017/08/10 v4.31 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count146
+\c@tracingst=\count145
 \ST@wd=\dimen128
 \ST@rightskip=\skip56
 \ST@leftskip=\skip57
@@ -874,7 +876,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@pbox=\box34
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
-Package: glossary-tree 2017/01/19 v4.29 (NLCT)
+Package: glossary-tree 2017/08/10 v4.31 (NLCT)
 \glstreeindent=\skip59
 ))
 \glswrite=\write3
@@ -890,7 +892,7 @@ Package glossaries Info: Writing glossary file monografia.acn on input line 179
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocstyle.sty
-Package: tocstyle 2016/04/12 v0.2h-alpha KOMA-Script package (versatile toc sty
+Package: tocstyle 2017/02/23 v0.2i-alpha KOMA-Script package (versatile toc sty
 les)
 
 
@@ -901,8 +903,8 @@ Package tocstyle Warning: THIS IS AN ALPHA VERSION!
 (tocstyle)                THERE IS NO SUPPORT, IF YOU USE THIS PACKAGE!
 (tocstyle)                Maybe it would be better, not to load this package.
 
-\tocstyle@indentstyle=\count147
-Package tocstyle Info: no tocstyle.cfg found on input line 956.
+\tocstyle@indentstyle=\count146
+Package tocstyle Info: no tocstyle.cfg found on input line 942.
 )
 exclude: 
 exclude: 
@@ -911,24 +913,24 @@ exclude:
 exclude: 
 exclude: 
 exclude: 
-\c@TotPaginas=\count148
-\c@definition=\count149
-\c@apendice=\count150
-\c@anexo=\count151
+\c@TotPaginas=\count147
+\c@definition=\count148
+\c@apendice=\count149
+\c@anexo=\count150
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+Package: pdfpages 2017/08/14 v0.5k Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count152
-\calc@Bcount=\count153
+\calc@Acount=\count151
+\calc@Bcount=\count152
 \calc@Adimen=\dimen139
 \calc@Bdimen=\dimen140
 \calc@Askip=\skip60
 \calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count154
+\calc@Ccount=\count153
 \calc@Cskip=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -938,12 +940,12 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 \AM@pageheight=\dimen142
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box35
 \AM@global@opts=\toks33
 \AM@toc@title=\toks34
-\c@AM@survey=\count155
+\c@AM@survey=\count154
 \AM@templatesizebox=\box36
 )
 (./monografia.aux)
@@ -982,16 +984,16 @@ babelbib: Load BibTeX extensions \bibsamerican for american
 babelbib: Set language for keywords in the bibliography fixed to american
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
+\scratchcounter=\count155
 \scratchdimen=\dimen143
 \scratchbox=\box37
-\nofMPsegments=\count157
-\nofMParguments=\count158
+\nofMPsegments=\count156
+\nofMParguments=\count157
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count159
+\MPscratchCnt=\count158
 \MPscratchDim=\dimen144
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1002,7 +1004,7 @@ Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
@@ -1052,7 +1054,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count161
 )
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
@@ -1120,15 +1122,16 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=64, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=64, pagebox=cropbox, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
-
 <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 38.
-(pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
+Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38. on input 
+line 38.
+Package pdftex.def Info: Requested size: 61.76747pt x 31.14256pt on input line 
+38.
 \len@lskipoffset=\skip66
 \len@lskipoffset=\skip67
- [1
+[1
 
 \openout3 = `monografia.ist'.
 
@@ -1139,21 +1142,23 @@ Package pdftex.def Info: img/positivo_cor.pdf used on input line 38.
 \len@uadesch=\skip69
 \len@uacaph=\skip70
 File: img/positivo_cor.pdf Graphic file (type pdf)
- <use img/positivo_cor.pdf>
-Package pdftex.def Info: img/positivo_cor.pdf used on input line 38.
-(pdftex.def)             Requested size: 61.76747pt x 31.14256pt.
+<use img/positivo_cor.pdf>
+Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38. on input 
+line 38.
+Package pdftex.def Info: Requested size: 61.76747pt x 31.14256pt on input line 
+38.
 \len@lskipoffset=\skip71
 \len@lskipoffset=\skip72
- [2
+[2
 
-]
-(./tex/dedicatoria.tex) [3
+] (./tex/dedicatoria.tex) [3
 
 
 ] (./tex/agradecimentos.tex) [4
 
 
-] (./tex/resumo.tex
+]
+(./tex/resumo.tex
 ! Undefined control sequence.
 <argument> ... gerar documentos. A classe \unbcic 
                                                   \ define um padrão de for...
@@ -1170,8 +1175,11 @@ and I'll forget about whatever was undefined.
 
 ]
 
-Package babel Warning: You haven't loaded the language english yet
-(babel)                I'll proceed, but expect unexpected results.
+Package babel Warning: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+(babel)                I'll proceed, but expect wrong results.
 (babel)                Reported on input line 38.
 
 (./tex/abstract.tex
@@ -1314,13 +1322,13 @@ Package babel Info: Redefining portuges shorthand "|
 (./tex/1_Introducao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-
 <img/visionsiot.png, id=152, 480.79625pt x 376.40625pt>
 File: img/visionsiot.png Graphic file (type png)
-
 <use img/visionsiot.png>
-Package pdftex.def Info: img/visionsiot.png used on input line 19.
-(pdftex.def)             Requested size: 480.79506pt x 376.40532pt.
+Package pdftex.def Info: img/visionsiot.png  used on input line 19. on input li
+ne 19.
+Package pdftex.def Info: Requested size: 480.79506pt x 376.40532pt on input lin
+e 19.
 
 Overfull \hbox (25.55095pt too wide) in paragraph at lines 19--19
  [] 
@@ -1359,12 +1367,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
- [2 <./img/visionsiot.png (PNG copy)>] <img/iottec.png, id=177, 513.92pt x 245.
-91875pt>
+ [2 <./img/visionsiot.png (PNG copy)>]
+<img/iottec.png, id=177, 513.92pt x 245.91875pt>
 File: img/iottec.png Graphic file (type png)
- <use img/iottec.png>
-Package pdftex.def Info: img/iottec.png used on input line 39.
-(pdftex.def)             Requested size: 513.91873pt x 245.91814pt.
+<use img/iottec.png>
+Package pdftex.def Info: img/iottec.png  used on input line 39. on input line 3
+9.
+Package pdftex.def Info: Requested size: 513.91873pt x 245.91814pt on input lin
+e 39.
 
 Overfull \hbox (58.67462pt too wide) in paragraph at lines 39--39
  [] 
@@ -1468,7 +1478,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: BBB0F1DFEE8BE51D8BF3490897DC026B;882.
+(rerunfilecheck)             Checksum: 025B40C6A99C07A5982FAB7D7BB69BAA;882.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
 (rerunfilecheck)             Checksum: C8B715DE54477AC0760ABCFBDA9E7B53;581.
 
@@ -1483,22 +1493,22 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15915 strings out of 494925
- 256350 string characters out of 6180252
- 412714 words of memory out of 5000000
- 18779 multiletter control sequences out of 15000+600000
+ 15943 strings out of 494911
+ 256750 string characters out of 6180070
+ 410119 words of memory out of 5000000
+ 18820 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,7n,69p,1936b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,7n,69p,1936b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
-ome/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
-/home/jsenna/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>
+ome/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
+/home/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (17 pages, 285092 bytes).
+Output written on monografia.pdf (17 pages, 285078 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  282 compressed objects within 3 object streams
