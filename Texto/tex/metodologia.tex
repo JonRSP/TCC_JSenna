@@ -12,32 +12,88 @@
 \\\vspace{\baselineskip}}%
 
 
-Este capítulo descreve a classe \unbcic, e demonstra os comandos disponíveis. A
-última versão foi atualizada pelo Prof. Ralha, em 2008 (vide \refAnexo{Anexo1}).
-A melhor forma de entender o funcionamento é observar o arquivo principal deste
-documento (\texttt{monografia.tex}).
+Este capítulo descreve os métodos utilizados para a realização deste trabalho.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Gerando o PDF}
+\section{Revisão Sistemática}
 
-Para gerar corretamente as referências cruzadas, é necessário processar os arquivos
-mais de uma vez com a seguinte sequência de comandos (supondo que o arquivo
-principal seja \texttt{monografia.tex}).
+Foi definido um processo de revisão que consiste em três fases:
+\begin{itemize}
+  \item Planejar;
+  \item Executar;
+  \item Documentar.
+\end{itemize}
 
-\begin{verbatim}
-pdflatex monografia
-bibtex monografia
-makeglossaries monografia
-pdflatex monografia
-\end{verbatim}
+A fase de planejamento constitui-se na especificação do protocolo.
+A fase de execução representa a coleta dos dados de forma a atender as especificações
+exigidas na fase de planejamento.
+A fase de documentação implica na consolidação dos dados obtidos.
 
-O primeiro comando processa os arquivos, indicando quais referências foram citadas
-no texto (bibliográficas ou cruzadas), o segundo comando processa o arquivo
-\texttt{.bib} que contém as informações bibliográficas, o terceiro gera o índice
-de siglas/abreviaturas, e o último comando junta todas estas informações,
-produzindo um texto com referências cruzadas funcionais.
+\subsection{Planejamento}
+O objetivo desta revisão sistemática é a identificação de trabalhos acadêmicos
+que expõem resultados, projeções, explicações ou elucidações sobre o tema de armazenamento de metadados para \acrlong{IoT}.
+
+\subsubsection{Questões de Estudo}
+Esta revisão tem como objetivo responder às seuints questões:
+\begin{itemize}
+  \item Há estudos sobre o armazenamento de metadados para \acrlong{IoT}?
+  \item Quais são os métodos mais utilizados para o armazenamento de metadados para \acrshort{IoT}?
+  \item Quais são as características dos middlewares utilizados para estes estudos?
+  \item Qual a eficácia dos métodos expostos em termos de disponibilidade, confiabilidade?
+\end{itemize}
+
+\subsubsection{Estratégia de Busca}
+É necessário determinar uma estratégia para a realização das buscas nas bases de dados escolhidas.
+
+\paragraph{Definição da String de Busca}
+\begin{itemize}
+  \item \textbf{População}: A população é o gerenciamento de metadados para \acrshort{IoT}. Para procurar, foram utilizadas as palavas-chave 'Internet of things metadata management'
+  \item \textbf{Intervenção}: A intervenção é verificar middlewares e esquemas. Os termos utilizados para pesquisa foram 'middleware' e 'schema'.
+  \item \textbf{Comparação}: O foco deste trabalho não se limitou a estudos comparativos.
+  \item \textbf{Resultado}: Tem-se como objetivo a procura de avaliações, validações e implementações de middlewares e/ou esquemas utilizados em pesquisas científicas. Desta forma, obtemos as seguintes palavras-chave
+  'validation', 'evaluation' e 'implementation'.
+\end{itemize}
+
+A string de busca gerada é a seguinte:
+('Internet of things metadata management') \textbf{AND} (('middleware') \textbf{OR} ('schema')) \textbf{AND} (('validation') \textbf{OR} ('evaluation') \textbf{OR} ('implementation'))
+
+\paragraph{Fontes de Busca}
+
+Foram escolhidas as seguintes bases digitais para que as buscas sejam realizadas:
+\begin{itemize}
+  \item Google Acadêmico (https://scholar.google.com.br/)
+  \item JSTOR (https://www.jstor.org/)
+  \item Periódicos CAPES (https://www.periodicos.capes.gov.br/) %se eu conseguir conectar no eduroam%
+\end{itemize}
+Bases escolhidas devido a sua relevância e sua grande abrangência sobre diversos temas.
+
+\paragraph{Idioma}
+Para este trabalho, o idioma de preferência para seleção de artigos será a língua inglesa, entretanto, trabalhos científicos escritos em
+língua portuguesa não serão descartados, desde que atinjam os requisitos para inclusão.
+
+\subsubsection{Seleção dos Estudos}
+\paragraph{Critérios de Inclusão e Exclusão}
+\subparagraph{Critérios de Inclusão}
+\begin{itemize}
+  \item Os trabalhos devem estar disponíveis nas bases de dados escolhidas previamente, de forma gratuita;
+  \item Serão considerados apenas publicações posteriores à 2006, salvo em casos de fontes relevantes que contenham definições necessárias para a realização deste trabalho;
+  \item O trabalho deve possuir menção ao gerenciamento de metadados em ambientes \acrlong{IoT}.
+\end{itemize}
+
+\subparagraph{Critérios de Exclusão}
+\begin{itemize}
+  \item Trabalhos publicados anteriormente à 2006, exceto fontes relevantes que contenham definições pertinentes para este estudo;
+  \item Trabalhos não disponíveis de forma gratuita;
+  \item Trabalhos não disponíveis nas bases de dados digitais escolhidas;
+  \item O trabalho não possuir menção ao gerenciamento de metadados em ambientes \acrlong{IoT};
+  \item Publicações que forem interpretadas como fora do escopo, ou seja, fogem do tema gerenciamento de metadados;
+  \item Trabalhos que não propõe, comparam ou avaliam métodos para o gerênciamento de metadados;
+  \item Trabalhos duplicados, ou seja, publicados em mútiplas bases de dados;
+  \item Trabalhos incompletos, publicados como short paper.
+\end{itemize}
+
 
 
 
@@ -260,101 +316,7 @@ Onde os argumentos são:
 \item[referência final] nome da referência da figura final da sequência de figuras.
 \end{description}
 
-A \refFig{unbPB} é referenciada com o comando:
-\begin{verbatim}
-\refFig{unbPB}%
-\end{verbatim}
 
-\figura{positivo_cor}{Marca colorida}{unb}{width=0.25\textwidth}%
-
-Considerando a \refFig{unb} e também a \refFig{unb2}, é possível referenciar
-a \emph{sequência} de \refFigs{unbPB}{unb2} com o comando:
-\begin{verbatim}
-\refFigs{unbPB}{unb2}%
-\end{verbatim}
-
-Algumas vezes deseja-se usar a figura de uma das referências bibliográficas. Neste caso, utilize o comando:
-
-\begin{verbatim}
-\figuraBib[posição]{arquivo}{legenda}{bib}{referência}{tamanho}%
-\end{verbatim}
-
-Os argumentos são os mesmos do comando \texCommand{figura}, acrescidos de:
-\begin{description}
-\item[bib] nome da referência bibliográfica que originou a figura.
-\end{description}
-
-Por exemplo, a \refFig{latexvsword} foi gerada com o comando:
-\begin{verbatim}
-\figuraBib{miktex}{\LaTeX\ vs MS Word}
-{pinteric_latex_2004}{latexvsword}{width=.45\textwidth}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de figuras, eles
-certamente facilitam a referência a elas com um padrão uniforme, e nada impede o
-uso dos comandos padrões.
-
-\figura{positivo_cor}{Outra marca colorida}{unb2}{width=0.25\textwidth}%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Equações}
-As funções de inclusão de equações permanecem as mesmas, mas a classe \unbcic\
-oferece uma forma mais simples de inserir uma equação (e de referenciá-la). Basta
-executar o comando:
-
-\begin{verbatim}
-\equacao{referência}{fórmula}%
-\end{verbatim}
-
-Os 2 argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação para referências cruzadas.
-\item[fórmula] a equação em si.
-\end{description}
-
-Por exemplo, a \refEq{pitagoras}, inserida com o seguinte comando:
-\begin{verbatim}
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
-\end{verbatim}
-
-\equacao{pitagoras}{a^2 + b^2 = c^2}%
-
-Além disso, é possível quebrar em linhas, como na \refEq{pit2}, com o mesmo comando:
-\begin{verbatim}
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
-\end{verbatim}
-
-\equacao{pit2}{a = (x+y)^2\\b= (x*y)^2}%
-
-Os comandos para referenciar equações são:
-
-\begin{verbatim}
-\refEq{referência}%
-\refEqs{referência inicial}{referência final}%
-\end{verbatim}
-
-Onde os argumentos são:
-\begin{description}
-\item[referência] nome da referência da equação.
-\item[referência inicial] nome da referência da equação inicial da sequência de equações.
-\item[referência final] nome da referência da equação final da sequência de equações.
-\end{description}
-
-Considerando a \refEq{pitagoras} e também a \refEq{eq}, é possível referenciar
-a \emph{sequência} de \refEqs{pitagoras}{eq} com o comando:
-\begin{verbatim}
-\refEqs{pitagoras}{eq}%
-\end{verbatim}
-
-Embora estes comandos não ``simplifiquem'' a inclusão de equações, eles
-certamente facilitam a referência a elas com um padrão uniforme e nada impede o
-uso dos comandos padrões.
-
-\equacao{eq}{d=c^3 - \frac{a}{b}}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
