@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  5 APR 2018 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  5 APR 2018 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,7 +1122,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=112, pagebox=cropbox, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=80, pagebox=cropbox, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 <use img/positivo_cor.pdf>
 Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38. on input 
@@ -1278,46 +1278,6 @@ text indent by \l@... (toc, 2):  37.59943pt
 number indent by parent (toc, 2):  34.38887pt
 text indent calculated (toc, 2): 30.02785pt
 number indent calculated (toc, 2): 34.38887pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  13.5pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 13.5pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  13.5pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 13.5pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  13.5pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 13.5pt
-number indent by \l@... (toc, 1):  17.62474pt
-text indent by \l@... (toc, 1):  27.02464pt
-number indent by parent (toc, 1):  13.5pt
-text indent calculated (toc, 1): 20.88887pt
-number indent calculated (toc, 1): 13.5pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  34.38887pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 34.38887pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  34.38887pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 34.38887pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  34.38887pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 34.38887pt
-number indent by \l@... (toc, 2):  44.64938pt
-text indent by \l@... (toc, 2):  37.59943pt
-number indent by parent (toc, 2):  34.38887pt
-text indent calculated (toc, 2): 30.02785pt
-number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  17.62474pt
 number indent by parent (toc, 0):  0.0pt
@@ -1344,58 +1304,27 @@ text indent by \l@... (lof, 1):  27.02464pt
 number indent by parent (lof, 1):  17.62474pt
 text indent calculated (lof, 1): 20.88887pt
 number indent calculated (lof, 1): 17.62474pt
-number indent by \l@... (lof, 1):  17.62474pt
-text indent by \l@... (lof, 1):  27.02464pt
-number indent by parent (lof, 1):  17.62474pt
-text indent calculated (lof, 1): 20.88887pt
-number indent calculated (lof, 1): 17.62474pt
 )
 \tf@lof=\write8
 \openout8 = `monografia.lof'.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 38.
- [8
-
-] (./monografia.lot
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-number indent by \l@... (lot, 1):  17.62474pt
-text indent by \l@... (lot, 1):  27.02464pt
-number indent by parent (lot, 1):  17.62474pt
-text indent calculated (lot, 1): 20.88887pt
-number indent calculated (lot, 1): 17.62474pt
-)
-\tf@lot=\write9
-\openout9 = `monografia.lot'.
-
  (./tex/siglas.tex
-\@gls@deffile=\write10
-\openout10 = `monografia.glsdefs'.
+\@gls@deffile=\write9
+\openout9 = `monografia.glsdefs'.
 
 ) (./monografia.acr
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [9
+ [8
 
 ])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
- [10
+ [9
 
 
 ]
@@ -1419,7 +1348,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
-<img/visionsiot.png, id=227, 480.79625pt x 376.40625pt>
+<img/visionsiot.png, id=173, 480.79625pt x 376.40625pt>
 File: img/visionsiot.png Graphic file (type png)
 <use img/visionsiot.png>
 Package pdftex.def Info: img/visionsiot.png  used on input line 26. on input li
@@ -1463,7 +1392,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 35.
-<img/iottec.png, id=250, 513.92pt x 245.91875pt>
+<img/iottec.png, id=196, 513.92pt x 245.91875pt>
 File: img/iottec.png Graphic file (type png)
 <use img/iottec.png>
 Package pdftex.def Info: img/iottec.png  used on input line 46. on input line 4
@@ -1544,9 +1473,9 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
  [8
 
 ]
@@ -1556,163 +1485,21 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 80.
  [9]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 103.
+(babel)             in language  on input line 105.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
- [10]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
-
-Overfull \hbox (51.10614pt too wide) in paragraph at lines 139--139
-[]\T1/lmtt/m/n/12 \coordenador[a]{\prof[a] \dr[a] Ada Lovelace}{Bibliothèque un
-iverselle de Genève}%[] 
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 159.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
-[11]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 165.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 165.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 165.
-
-
-! Package glossaries Error: Glossary entry `BCE' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 ...us documentos, gerada pela \acrfull{BCE}.
-                                                   Neste caso, o aluno deve ...
-
-You need to define a glossary entry before you can use it.
-
-
-! Package glossaries Error: Glossary entry `BCE' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 ...us documentos, gerada pela \acrfull{BCE}.
-                                                   Neste caso, o aluno deve ...
-
-You need to define a glossary entry before you can use it.
-
-
-! Package glossaries Error: Glossary entry `BCE' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 ....pdf} pelo fornecido pela \acrshort{BCE}.
-                                                   \emph{AtenÃ§Ã£o}, para qu...
-
-You need to define a glossary entry before you can use it.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 180.
-! Undefined control sequence.
-l.182 ...mplificada. Basicamente, a classe \unbcic
-                                                  \
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 206.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 206.
-[12]
-
-LaTeX Warning: Reference `2_UnB-CIC' on page 13 undefined on input line 243.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 256.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 256.
-[13]
-
-LaTeX Warning: Reference `2_UnB-CIC' on page 14 undefined on input line 263.
-
-
-LaTeX Warning: Reference `2_UnB-CIC' on page 14 undefined on input line 264.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 276.
-! Undefined control sequence.
-l.279 as mesmas, mas a classe \unbcic
-                                     \ oferece uma forma mais simples de ins...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/contorno_preto.pdf, id=381, pagebox=cropbox, 51.392pt x 25.696pt>
-File: img/contorno_preto.pdf Graphic file (type pdf)
-<use img/contorno_preto.pdf>
-Package pdftex.def Info: img/contorno_preto.pdf  used on input line 303. on inp
-ut line 303.
-Package pdftex.def Info: Requested size: 227.62206pt x 113.81354pt on input lin
-e 303.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 314.
-[14]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 325.
-
-! Undefined control sequence.
-l.326 ...ermanecem as mesmas, mas a classe \unbcic
-                                                  \
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
-[15 <./img/contorno_preto.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 406.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 406.
- [16]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 422.
-)
+(babel)             in language  on input line 105.
+ [10])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [17]
+ [11]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
  (./monografia.bbl (./monografia.brf)
-\tf@brf=\write11
-\openout11 = `monografia.brf'.
+\tf@brf=\write10
+\openout10 = `monografia.brf'.
+
 
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
@@ -1731,7 +1518,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
- [18
+ [12
 
 
 ]
@@ -1740,9 +1527,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: C1A06D215309DEF817DB18149F63567D;1660.
+(rerunfilecheck)             Checksum: 6FFB0CE3EA1FE38A7C81EE3784B825B8;1151.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: D8272959C7731A1F29CEE6659EF91772;676.
+(rerunfilecheck)             Checksum: 49B6DCA8F8A18251EA234C1A30A438BF;581.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1751,37 +1538,29 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 16087 strings out of 494911
- 259025 string characters out of 6180070
- 411497 words of memory out of 5000000
- 18898 multiletter control sequences out of 15000+600000
- 74468 words of font info for 53 fonts, out of 8000000 for 9000
+ 15978 strings out of 494911
+ 257131 string characters out of 6180070
+ 410165 words of memory out of 5000000
+ 18828 multiletter control sequences out of 15000+600000
+ 50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,9n,69p,1936b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,7n,69p,1936b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
-/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/us
-r/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-mathsy.enc} </home/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1000.600pk> </home/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm2074.600pk></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (28 pages, 428577 bytes).
+/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
+ome/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
+/home/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>
+</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on monografia.pdf (21 pages, 292627 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
