@@ -1,0 +1,37 @@
+(('Internet of things metadata') \textbf{OR} ('IoT metadata')) \textbf{AND} (('middleware') \textbf{OR} ('schema') \textbf{OR} ('management') \textbf{OR} ('model'))
+ \textbf{AND} (('validation') \textbf{OR} ('evaluation') \textbf{OR} ('implementation') \textbf{OR} ('definition'))
+
+
+Internet of things metadata middleware validation
+Internet of things metadata middleware evaluation
+Internet of things metadata middleware implementation
+Internet of things metadata middleware definition
+Internet of things metadata schema validation
+Internet of things metadata schema evaluation
+Internet of things metadata schema implementation
+Internet of things metadata schema definition
+Internet of things metadata management validation
+Internet of things metadata management evaluation
+Internet of things metadata management implementation--
+Internet of things metadata management definition
+Internet of things metadata model validation
+Internet of things metadata model evaluation
+Internet of things metadata model implementation
+Internet of things metadata model definition
+
+IoT metadata middleware validation
+IoT metadata middleware evaluation
+IoT metadata middleware implementation
+IoT metadata middleware definition
+IoT metadata schema validation
+IoT metadata schema evaluation
+IoT metadata schema implementation
+IoT metadata schema definition
+IoT metadata management validation
+IoT metadata management evaluation
+IoT metadata management implementation
+IoT metadata management definition
+IoT metadata model validation
+IoT metadata model evaluation
+IoT metadata model implementation
+IoT metadata model definition
