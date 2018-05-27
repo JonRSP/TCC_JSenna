@@ -1,0 +1,165 @@
+O presente trabalho visa a obtenção e gerenciamento de metadados em informações provenientes de
+dispositivos categorizados em \acrfull{IoT}. %expandiiiiiiiiir
+
+\section{Sistemas Colaborativos}
+
+
+\section{Internet das Coisas}%
+A \acrlong{IoT} é um novo paradigma tecnológico idealizado como uma conexão global
+de máquinas e dispositivos capazes de interagir entre si. A proposta de \acrshort{IoT} consiste em vários objetos do cotidiano trocando informações
+mutuamente, através da internet, para serem mais eficientes e realizarem diversas tarefas.
+Os objetos passam a agir de forma mais inteligente e sensorial, de modo a favorecer diversos setores como:
+indústria, hospitais, agropecuária, transporte público e muitos outros. A partir desta
+disponibilidade astronômica de recursos, a \acrshort{IoT} é reconhecida com uma das áreas mais importantes
+em termos de tecnologia do futuro e está recebendo cada vez mais atenção de desenvolvedores, usuários e indústrias.
+\\\\Um dos objetivos principais da \acrlong{IoT} é permitir
+que humanos e máquinas possuam maior consciência de seus arredores.
+ Esse maior entendimento do seu ambiente se torna viável através da utilização
+ de diversos tipos de dispositivos sensitivos (sensores) e, após a percepção
+ de seu ambiente, é possível realizar ações por meio de dispositivos atuadores ou fazer análises.\\\\
+ A \acrlong{IoT} surgiu a partir do cojunto de diferentes visões como podemos observar na \refFig{refiotvision}, cada qual com seus objetivos específicos.
+ \figura[!h]{visionsiot}{O paradigma \acrlong{IoT} como um resultado de diferentes visões}{refiotvision}{}%
+\subsection{Definição}
+	Em 2012, a \acrfull{ITU} realizou estudos sobre infraestrutura
+	de informação global, aspectos de procolos de internet e redes da próxima geração.
+	A partir desse estudo foi construída a recomendação ITU-T Y.2060 \cite{ITU} que trata sobre a \acrlong{IoT}
+	e possui o intuito de esclarecer o conceito e o escopo de \acrshort{IoT}, identificar
+	as características fundamentais e os requerimentos de alto-nivel.
+\\	No documento produzido pela \acrshort{ITU}, foram consolidadadas as definições de:
+	\begin{itemize}
+		\item \acrlong{IoT}, "uma infraestrutura global para a Sociedade de Informações, permitindo serviços avançados ao
+		interconectar (fisicamente e virtualmente) coisas devido à existência e evolução da interoperabilidade
+	de tecnologias de comunicação e informação" \cite{ITU};
+		\item Dispositivo, no contexto de \acrshort{IoT}, é um equipamento que, obrigatoriamente, possui a capacidade
+		de comunicação e, opcionalmente, psubsection nameossui capacidade de sensitividade, atuação, captura de dados,
+		armazenamento de dados e/ou processamento de dados \cite{ITU};
+		\item Coisas, no contexto de \acrshort{IoT}, são "objetos
+	no mundo físico (objetos físicos) ou no mundo das informações (objetos virtuais), os quais são capazes
+	de serem identificados e integrados a uma rede de comunicações". Objetos físicos podem sentir, atuar e conectar.
+	Objetos virtuais podem ser armazenados, processados e acessados.\cite{ITU}
+	\end{itemize}
+	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT}}{refiottec}{}%
+% [1] ITU\\
+\subsection{Tecnologias essenciais}
+	\subsubsection{\acrfull{RFID}}
+		\begin{itemize}
+			\item Esta tecnologia permite identificação automática e captura de informação por meio de rádio frequência.
+			Dividem-se os dispositivos \acrshort{RFID} em duas grandes categorias: ativos e passivos. Dispositivos ativos dependem
+			de uma fonte de energia constante para manter ativa e transmitir a informação. Dispositivos passivos não necessitam de energia constante,
+			um campo eletromagnético energiza o dispositivo, o qual se torna apto a transferir a informação contida nele.
+			\cite{refrfid}
+		\end{itemize}
+	\subsubsection{\acrfull{RSSF}}
+		\begin{itemize}
+			\item Esta tecnologia consiste na distribuição de dispositivos sensitivos autônomos para monitorar condições físicas ou
+			ambientais e podem cooperar com sistemas \acrshort{RFID} para medir de forma mais eficaz localização, temperatura e movimentação, por exemplo.
+			\cite{IOTS}
+		\end{itemize}
+	\subsubsection{Middleware}
+		\begin{itemize}
+			\item O middleware é a camada de abstração entre aplicações de software para facilitar para os desenvolvedores
+			 realizar a comunicação entre softwares e operações de recebimento e envio de dados. O objetivo do middleware no contexto
+			  de \acrshort{IoT} é simplificar a integração entre dispositivos heterogêneos.
+		\end{itemize}
+	\subsubsection{Computação em núvem}
+		\begin{itemize}
+			\item Computação em núvem é um modelo para acesso de recursos compartilhados conforme a necessidade de um serviço. Um dos resultados mais notáveis
+			da \acrshort{IoT} é a enorme quantidade de dados gerados por dispositivos conectados à internet \cite{IOTV}. A computação em núvem é importante para o contexto de \acrlong{IoT}
+			ao permitir um ambiente com alta escalabilidade.
+		\end{itemize}
+	\subsubsection{Aplicações de software}
+		\begin{itemize}
+			\item Aplicações \acrshort{IoT} permitem interações dispositivo-dispositivo e humano-dispositivo de uma forma confiável e robusta.
+			As aplicações nos dispositivos devem garantir que as informações são recebidas e processadas de maneira adequada, no momento
+			adequado.
+
+		\end{itemize}
+
+\end{itemize}
+
+\subsection{Desafios}
+	A \acrlong{IoT} possui diversos desafios devido à sua própria concepção, essas dificuldades devem ser ultrapassadas para que a
+	\acrshort{IoT} possa ser amplamente e devidamente implantada. Alguns fatores críticos podem ser elencados:
+	\subsubsection{Infraesturura de rede}
+		O custo para interconectar os dispositivos é alto. Para uma grande rede de sensores é necessário a distribuição de toda infraestrutua,
+		de cabeamento ou infraestrutura sem fio.
+	\subsubsection{Segurança}
+		Uma das principais dificuldades num ambiente de \acrlong{IoT} é a segurança dos dados que são coletados pela grande quantidade de
+		dispositivos sensitivos da rede. Uma invasão de um sistema crítico pode significar consequências graves em um ambiente automatizado.
+  \subsubsection{Espaço de armazenamento}
+	  Um ambiente \acrshort{IoT} gera uma grande quantidade de dados, suponhamos um sistema de uma cidade inteligente que possui 10000 sensores
+ 	  de diversas categorias, cada sensor gerando uma mensagem de 10 kB a cada 5 minutos, por dia, temos um total de aproximadamente 29 GB de dados;
+	  após um ano teríamos 10,5 TB de dados apenas para esta cidade.
+  \subsubsection{Consumo de energia}
+		É imperativo que o consumo de energia dos dispositivos sensitivos seja o menor possível. Em muitos cenários é improvável a presença de uma
+		rede de energia elétrica e até mesmo de manutenção constante, então os equipamentos devem conseguir se manter funcionais por meio de baterias por
+		uma quantidade de tempo considerável.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{dados}%
+	Um ambiente de \acrlong{IoT} tem como objetivo a compreensão do ambiente em que está situado utilizando as informações geradas por diversos
+  dispositivos sensitivos.
+   Este entendimento é baseado em três tipos de dados \cite{SemIOT}:
+  \begin{itemize}
+    \item Dados gerados pelos dispositivos;
+    \item Dados que descrevem os dispositivos;
+    \item Dados que descrevem o ambiente.
+  \end{itemize}
+  Normalmente, dispositivos \acrshort{IoT} tem sua semântica descrita em termos de suas capacidades sensitivas. A semântica do ambiente
+  é determinada de acordo com o domínio da aplicação \cite{IOTdata}. Consequentemente, modelos de suporte à decisão são construídos
+  baseados nos metadados que descrevem os dispositivos e seu ambiente.
+  \\\\
+  Os esforços de pesquisa em \acrlong{IoT} estão principalmente focados nos desafios de interoperabilidade, escalabilidade e integração entre dispositivos heterogêneos \cite{IOTdata},
+  entretanto o desafio do dinamismo dos metadados em \acrshort{IoT} tem sido inexplorado \cite{collaborative}.
+
+	\subsection{Metadados}
+  Metadados são as principais ferramentas para descrever e gerenciar recursos de informações extremamente dinâmicos, como os dados
+  contidos na rede mundial de internet.
+		\subsubsection{Princípios}
+    Os seguintes princípios são considerados as linhas de base para o desenvolvimento de soluções práticas em desafios de semântica
+    e interoperabilidade de dispositivos em qualquer domínio e utilizando qualquer conjunto de matadados \cite{metadata}.
+		\begin{itemize}
+		  \item \textbf{Modularidade} de metadados é um pricípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
+      de conteúdo e abordagens à descrição de recursos. Permite que projetistas de esquemas de metadados criem novos esquemas baseados em projetos
+      já existentes e se beneficiar de boas práticas já observadas. Em um ambiente com metadados modulares, elementos de informação de diferenes esquemas
+      podem ser combinados de forma interoperável tanto sintaticamente quanto semanticamente.
+      \item \textbf{Flexibilidade}. Sistemas de metadados precisam ser flexíveis para acomodar particularidade de uma determinada aplicação.
+      Arquiteturas de metadados devem se adequar facilmente a noção de um esquema base e elementos adicionais necessários para uma aplicação local ou um
+      domínio específico sem comprometer a interoperabilidade proporcionada pelo esquema base.
+      \item \textbf{Refinamento}. O nível de detalhes necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar gastos
+      desnecessários com armazenamento e processamento, o processo de desenvolvimento dos padrões de metadados devem permitir que os projetistas
+      escolham o nível de detalhes apropriado para uma dada aplicação.
+      \item \textbf{Multilinguismo}. O multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
+      Por ter a possibilidade de conectar sistemas de diversas partes do planeta, é importante que a comunicação dos metadados não tenham a linguagem e formatação
+      como desafios a serem ultrapassados.
+		\end{itemize}
+  \subsection{Metadados de sensores}
+    Metadados de sensor é o modelo que descreve o sensor e suas capacidades como por exemplo:
+    \begin{itemize}
+      \item Modelo do sensor;
+      \item Localização do sensor;
+      \item Unidade de medida utilizada;
+      \item Grau de confiabilidade.
+    \end{itemize}
+
+     A \acrfull{SensorML} \cite{SML} é uma coleção de padrões
+    desenvolvida para representar informações de sensores em formato XML. O propósito da \acrshort{SensorML} é:
+    \begin{itemize}
+      \item Prover descrições de sensores e sistemas de sensores para genrenciamento de inventário;
+      \item Providenciar informação sobre o sensor e sobre processamento;
+      \item Auxiliar o processamento e análise de dados coletados por sensores;
+      \item Suportar informações de geolocalização de valores coletados;
+      \item Fornecer informações de desempenho;
+      \item Providenciar uma descrição explícita sobre o processo em que os dados foram obtidos;
+      \item Prover uma cadeia de processos executável para derivar novos produtos de informação;
+      \item Arquivar propriedades fundamentais e suposições sobre os sistemas de sensores.
+    \end{itemize}
+	%\subsection{Taxonomia}
+		%\begin{itemize}
+			%\item definição
+			%\item usabilidade
+			%\item desafios
+		%\end{itemize}
