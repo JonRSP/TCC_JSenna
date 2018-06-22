@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,6 +13,16 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {ubiquitous}
+\btxnamefont {\btxlastnamefont {Li}, Yuan\btxfnamespacelong Fang}, \btxnamefont
+  {Jeff\btxfnamespacelong Z \btxlastnamefont {Pan}}, \btxnamefont {Shonali
+  \btxlastnamefont {Krishnaswamy}}, \btxnamefont {Manfred \btxlastnamefont
+  {Hauswirth}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Hai\btxfnamespacelong H \btxlastnamefont {Nguyen}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {The ubiquitous semantic web: Promises,
+  progress and challenges}{The ubiquitous semantic web: Promises, progress and
+  challenges}}, 2016.
+
 \bibitem {ITU}
 \btxnamefont {\btxlastnamefont {13}, ITU\btxfnamespacelong T\btxfnamespacelong
   Study\btxfnamespacelong Group}\btxauthorcolon\ \btxtitlefont
@@ -20,6 +30,13 @@
   things}{Recommendation ITU-T Y.2060. Overview of the Internet of Things}},
   2007.
 \newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
+
+\bibitem {cbarbara}
+\btxnamefont {\btxlastnamefont {Grosz}, Barbara\btxfnamespacelong
+  J}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Collaborative systems
+  (aaai-94 presidential address)}{Collaborative Systems (AAAI-94 Presidential
+  Address)}}.
+\newblock \btxjournalfont {AI magazine}, 17(2):67, 1996.
 
 \bibitem {refrfid}
 \btxnamefont {\btxlastnamefont {Want}, Roy}\btxauthorcolon\ \btxjtitlefont
@@ -35,9 +52,10 @@
 \newblock \btxjournalfont {Computer networks}, 54(15):2787--2805, 2010.
 
 \bibitem {IOTV}
-\btxnamefont {\btxlastnamefont {Jayavardhana~Gubbi},~Rajkumar~Buyya,
-  Slaven\btxfnamespacelong Marusic\btxfnamespacelong
-  Marimuthu\btxfnamespacelong Palaniswami}\btxauthorcolon\ \btxjtitlefont
+\btxnamefont {\btxlastnamefont {Gubbi}, Jayavardhana}, \btxnamefont {Rajkumar
+  \btxlastnamefont {Buyya}}, \btxnamefont {Slaven \btxlastnamefont
+  {Marusic}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Marimuthu
+  \btxlastnamefont {Palaniswami}}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Internet of things (iot): A vision, architectural
   elements, and future directions}{Internet of Things (IoT): A vision,
   architectural elements, and future directions}}.
@@ -45,9 +63,10 @@
   29(7):1645--1660, 2013.
 
 \bibitem {SemIOT}
-\btxnamefont {\btxlastnamefont {Payam~Barnaghi},~Wei~Wang,
-  Cory\btxfnamespacelong Henson\btxfnamespacelong Kerry\btxfnamespacelong
-  Taylor}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Semantics for the
+\btxnamefont {\btxlastnamefont {Barnaghi}, Payam}, \btxnamefont {Wei
+  \btxlastnamefont {Wang}}, \btxnamefont {Cory \btxlastnamefont
+  {Henson}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Kerry \btxlastnamefont
+  {Taylor}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Semantics for the
   internet of things: early progress and back to the future}{Semantics for the
   Internet of Things: early progress and back to the future}}.
 \newblock \btxjournalfont {International Journal on Semantic Web and

@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2017] (kpathsea + Thai support).
 Scanning style file ./monografia.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file monografia.acn....done (54 entries accepted, 0 rejected).
-Sorting entries....done (314 comparisons).
+Scanning input file monografia.acn....done (53 entries accepted, 0 rejected).
+Sorting entries....done (306 comparisons).
 Generating output file monografia.acr....done (18 lines written, 0 warnings).
 Output written in monografia.acr.
 Transcript written in monografia.alg.

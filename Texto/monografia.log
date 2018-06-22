@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  28 MAY 2018 15:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  22 JUN 2018 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,7 +1122,7 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/ua1/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 38.
 
-<img/positivo_cor.pdf, id=92, pagebox=cropbox, 119.44624pt x 60.225pt>
+<img/positivo_cor.pdf, id=96, pagebox=cropbox, 119.44624pt x 60.225pt>
 File: img/positivo_cor.pdf Graphic file (type pdf)
 <use img/positivo_cor.pdf>
 Package pdftex.def Info: img/positivo_cor.pdf  used on input line 38. on input 
@@ -1243,6 +1243,11 @@ text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
 text indent calculated (toc, 1): 20.88887pt
 number indent calculated (toc, 1): 13.5pt
+number indent by \l@... (toc, 2):  44.64938pt
+text indent by \l@... (toc, 2):  37.59943pt
+number indent by parent (toc, 2):  34.38887pt
+text indent calculated (toc, 2): 30.02785pt
+number indent calculated (toc, 2): 34.38887pt
 number indent by \l@... (toc, 1):  17.62474pt
 text indent by \l@... (toc, 1):  27.02464pt
 number indent by parent (toc, 1):  13.5pt
@@ -1390,64 +1395,63 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
-<img/visionsiot.png, id=204, 480.79625pt x 376.40625pt>
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 9.
+<img/visionsiot.png, id=213, 480.79625pt x 376.40625pt>
 File: img/visionsiot.png Graphic file (type png)
 <use img/visionsiot.png>
-Package pdftex.def Info: img/visionsiot.png  used on input line 25. on input li
-ne 25.
+Package pdftex.def Info: img/visionsiot.png  used on input line 27. on input li
+ne 27.
 Package pdftex.def Info: Requested size: 480.79506pt x 376.40532pt on input lin
-e 25.
+e 27.
 
-Overfull \hbox (25.55095pt too wide) in paragraph at lines 25--25
+Overfull \hbox (25.55095pt too wide) in paragraph at lines 27--27
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--26
+Underfull \hbox (badness 10000) in paragraph at lines 10--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--26
+Underfull \hbox (badness 10000) in paragraph at lines 10--28
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 28.
 [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 40.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
  [4 <./img/visionsiot.png (PNG copy)>]
-<img/iottec.png, id=228, 513.92pt x 245.91875pt>
+<img/iottec.png, id=238, 513.92pt x 245.91875pt>
 File: img/iottec.png Graphic file (type png)
 <use img/iottec.png>
-Package pdftex.def Info: img/iottec.png  used on input line 46. on input line 4
-6.
+Package pdftex.def Info: img/iottec.png  used on input line 48. on input line 4
+8.
 Package pdftex.def Info: Requested size: 513.91873pt x 245.91814pt on input lin
-e 46.
+e 48.
 
-Overfull \hbox (58.67462pt too wide) in paragraph at lines 46--46
+Overfull \hbox (58.67462pt too wide) in paragraph at lines 48--48
  [] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 58.
 [5 <./img/iottec.png (PNG copy)>]
 
 ! LaTeX Error: \begin{document} ended by \end{itemize}.
@@ -1456,7 +1460,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 \end{itemize}
+l.85 \end{itemize}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1465,38 +1469,39 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.83 \end{itemize}
+l.85 \end{itemize}
                   
 Things are pretty mixed up, but I think the worst is over.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 93.
 [6]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 109.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--122
+Underfull \hbox (badness 10000) in paragraph at lines 117--124
 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 124.
 [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
- [8])
+(babel)             in language  on input line 145.
+ [8]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 146.
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining portuges shorthand "|
@@ -1565,9 +1570,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 9AF255F1FCC76AF628D9CA405650B592;1338.
+(rerunfilecheck)             Checksum: DBC4FEDF4891C7D45A67206F3E424DC9;1432.
 Package rerunfilecheck Info: File `monografia.brf' has not changed.
-(rerunfilecheck)             Checksum: 736A6AA29C7728147F170624231524C7;581.
+(rerunfilecheck)             Checksum: 842468AD97BF11C924870019A13764E1;809.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1580,13 +1585,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 15990 strings out of 494911
- 257303 string characters out of 6180070
- 409628 words of memory out of 5000000
- 18832 multiletter control sequences out of 15000+600000
+ 16002 strings out of 494911
+ 257465 string characters out of 6180070
+ 410715 words of memory out of 5000000
+ 18841 multiletter control sequences out of 15000+600000
  50126 words of font info for 39 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 52i,7n,69p,1936b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,7n,69p,1936b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
 /enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </h
 ome/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
@@ -1595,10 +1600,10 @@ ome/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (23 pages, 297638 bytes).
+Output written on monografia.pdf (23 pages, 299260 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
