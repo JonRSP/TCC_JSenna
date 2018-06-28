@@ -13,15 +13,12 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {ubiquitous}
-\btxnamefont {\btxlastnamefont {Li}, Yuan\btxfnamespacelong Fang}, \btxnamefont
-  {Jeff\btxfnamespacelong Z \btxlastnamefont {Pan}}, \btxnamefont {Shonali
-  \btxlastnamefont {Krishnaswamy}}, \btxnamefont {Manfred \btxlastnamefont
-  {Hauswirth}}\btxandcomma {} \btxandlong {}\ \btxnamefont
-  {Hai\btxfnamespacelong H \btxlastnamefont {Nguyen}}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {The ubiquitous semantic web: Promises,
-  progress and challenges}{The ubiquitous semantic web: Promises, progress and
-  challenges}}, 2016.
+\bibitem {IOTS}
+\btxnamefont {\btxlastnamefont {Luigi~Atzori},~Antonio~Iera,
+  Giacomo\btxfnamespacelong Morabito}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The internet of things: A survey}{The internet of things:
+  A survey}}.
+\newblock \btxjournalfont {Computer networks}, 54(15):2787--2805, 2010.
 
 \bibitem {ITU}
 \btxnamefont {\btxlastnamefont {13}, ITU\btxfnamespacelong T\btxfnamespacelong
@@ -43,13 +40,6 @@
   {\btxifchangecase {An introduction to rfid technology}{An introduction to
   RFID technology}}.
 \newblock \btxjournalfont {IEEE pervasive computing}, 5(1):25--33, 2006.
-
-\bibitem {IOTS}
-\btxnamefont {\btxlastnamefont {Luigi~Atzori},~Antonio~Iera,
-  Giacomo\btxfnamespacelong Morabito}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {The internet of things: A survey}{The internet of things:
-  A survey}}.
-\newblock \btxjournalfont {Computer networks}, 54(15):2787--2805, 2010.
 
 \bibitem {IOTV}
 \btxnamefont {\btxlastnamefont {Gubbi}, Jayavardhana}, \btxnamefont {Rajkumar
