@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  28 JUN 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  28 JUN 2018 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1427,16 +1427,6 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
-
-! Undefined control sequence.
-l.55  \quadA
-             \acrshort{IoT}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 <img/axisiot.png, id=234, 1084.05pt x 550.055pt>
 File: img/axisiot.png Graphic file (type png)
 <use img/axisiot.png>
@@ -1459,11 +1449,6 @@ e 62.
 
 Overfull \hbox (25.55095pt too wide) in paragraph at lines 62--62
  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--63
-
  []
 
 
@@ -1670,7 +1655,7 @@ ome/jsenna/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <
 1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (26 pages, 357055 bytes).
+Output written on monografia.pdf (26 pages, 357065 bytes).
 PDF statistics:
  512 PDF objects out of 1000 (max. 8388607)
  435 compressed objects within 5 object streams
