@@ -28,6 +28,13 @@
   2007.
 \newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
 
+\bibitem {intelsix}
+\btxnamefont {\btxlastnamefont {Intelligence}, SCB}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Six technologies with potential impacts on
+  us interests out to 2025}{Six Technologies with Potential Impacts on US
+  Interests out to 2025}}.
+\newblock \btxjournalfont {National Intelligent Concil, Tech. Rep}, 2008.
+
 \bibitem {cbarbara}
 \btxnamefont {\btxlastnamefont {Grosz}, Barbara\btxfnamespacelong
   J}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Collaborative systems
