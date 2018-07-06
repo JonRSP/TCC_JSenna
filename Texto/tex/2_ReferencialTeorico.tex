@@ -114,10 +114,9 @@ que humanos e máquinas possuam maior consciência de seus arredores.
 			\item Aplicações \acrshort{IoT} permitem interações dispositivo-dispositivo e humano-dispositivo de uma forma confiável e robusta.
 			As aplicações nos dispositivos devem garantir que as informações são recebidas e processadas de maneira adequada, no momento
 			adequado.
-
 		\end{itemize}
 
-\end{itemize}
+%\end{itemize}
 
 \subsection{Desafios}
 	\quad A \acrlong{IoT} possui diversos desafios devido à sua própria concepção, essas dificuldades devem ser ultrapassadas para que a
@@ -203,5 +202,38 @@ que humanos e máquinas possuam maior consciência de seus arredores.
 \quad A plataforma escolhida para a implementação do ambiente \acrlong{IoT} é a placa Raspberry Pi 0 W. Para a implementação do servidor do sistema
 será utilizada a placa Raspberry Pi modelo B+.
 \subsection{Histórico}
+\quad "A Fundação Raspberry Pi é uma instituição de caridade sediada no Reino Unido que trabalha para permitir que pessoas de todo o mundo tenham acesso
+a computadores para que essas pessoas sejam capases de entender e dar forma ao mundo digital, sendo capazes de desvendar as soluções para os
+problemas que as afligem e estando equipadas para os empregos do futuro" \cite{rasp}.\\\null
+\quad Fundada em 2009 por David Braben, Jack Lang, Pete Lomas, Alan Mycroft, Robert Mullins e Eben Upton, com o apoio do Laboratório de computadores da Universidade de Cambridge e a empresa Broadcom
+, a Fundação Raspberry Pi tem como objetivo promover e estudar a ciência da computação e assuntos correlatos, especialmente em nível escolar.
+\\\null \quad Em 2011 a Fundação desenvolveu seu primeiro computador em placa única, nomeado Raspberry Pi. A meta seria vender estas placas
+de desenvolvimento em duas versões, custando 25 dólares a versão mais simples e 35 dólares a versão mais elaborada. A versão mais complexa começou a ser vendida
+em 29 de Fevereiro de 2012. O Raspberry Pi foi criado para estimular o estudo da ciência da computação em escolas.
 \subsection{Características de Hardware}
+\quad As placas escolhidas para a realização do trabalho possuem semelhanças e diferenças em suas montagens, como descrito nos tópicos a seguir:
+\begin{itemize}
+  \item Raspberry Pi modelo B+ \ref{figRaspB}:
+  \begin{itemize}
+    \item Tamanho: 85mm x 56mm;
+    \item Processador ARM em clock de 700MHz;
+    \item 512MB de memória RAM;
+    \item 40 pinos GPIO;
+    \item 4 portas USB 2.0.
+    \figura[!h]{RaspB.png}{Placa de desenvolvimento Raspberry Pi modelo B+ \cite{RaspB}}{figRaspB}{scale=0.35}%
+  \end{itemize}
+  \item Raspberry Pi 0 W \ref{figrasp0}:
+  \begin{itemize}
+    \item Tamanho: 66mm x 30,5mm;
+    \item Processador ARM em clock de 1GHz;
+    \item 512MB de memória RAM;
+    \item 40 pinos GPIO;
+    \item 1 porta micro USB 2.0;
+    \item 2.4GHz 802.11n wireless LAN;
+    \item Bluetooth Classic 4.1 e Bluetooth LE.
+    \figura[!h]{rasp0.png}{Placa de desenvolvimento Raspberry Pi 0 W \cite{rasp0}}{figrasp0}{scale=0.5}%
+  \end{itemize}
+\end{itemize}
 \subsection{Características de Software}
+\quad Em todas as placas será utilizado o sistema Raspbian Stretch Lite na última versão disponível (lançada em 27 de Junho de 2018).
+Este sistema operacional baseado na distribuição linux Debian é a versão recomendada para todas as placas Raspberry Pi presentes no mercado.

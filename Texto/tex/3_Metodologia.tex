@@ -41,7 +41,7 @@ construção das referêcias do presente trabalho.
 \begin{itemize}
   \item Há estudos sobre o armazenamento de metadados para \acrlong{IoT}?
   \item Quais são os métodos mais utilizados para o armazenamento de metadados para \acrshort{IoT}?
-  \item Quais são as características dos middlewares utilizados para estes estudos?
+  %\item Quais são as características dos middlewares utilizados para estes estudos?
   \item Em quais aplicações os metadados estão sendo utilizados nos trabalhos?
 \end{itemize}
 
@@ -146,10 +146,10 @@ informações pertinentes serão incluídas nas seções adequadas.
     \begin{itemize}
     \item \textit{Foi descoberto que não há um consenso para o armazenamento de metadados nesta área, cada estudo utiliza um método diferente.}
   \end{itemize}
-  \item Quais são as características dos middlewares utilizados para estes estudos?
-  \begin{itemize}
-    \item \textit{xx.}
-    \end{itemize}
+  %\item Quais são as características dos middlewares utilizados para estes estudos?
+  %\begin{itemize}
+%    \item \textit{xx.}
+%    \end{itemize}
   \item Em quais aplicações os metadados estão sendo utilizados nos trabalhos?
   \begin{itemize}
     \item \textit{As smart buildings (construções inteligentes) são as principais aplicações em que os metadados estão sendo utilizados em \acrshort{IoT}.}
@@ -160,6 +160,38 @@ informações pertinentes serão incluídas nas seções adequadas.
 \quad Após a filtragem dos trabalhos arrecadados a partir da string de busca, foi obtido um total de 26 estudos significativos,
 ou seja, 38\% do total de estudos coletados. Estes dados demonstram uma possível ineficiência do método quando se trata de assuntos
 novos ou pouco trabalhados.
+
+\section{Construção do Ambiente IoT}
+\quad O ambiente \acrshort{IoT} em escala que será montado nesta seção é essencial para o teste de conceito
+do sistema proposto. A alimentação de dados pelos componentes da rede é necessária para que haja
+tenha material suficiente para a ação do programa a ser desenvolvido. As informações geradas por esses dispositivos, após serem conectados ao sistema, em colaboração
+com os usuários, permitirão para o pleno funcionamento da proposta.
+\subsection{Dispositivos Sensitivos}
+\quad Serão construídos 5 dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da figura \ref{raspsensor}. Esta placa
+foi escolhida por seu baixo valor de custo, seu bom desempenho computacional e sua capacidade de conexão wireless disponível diretamente na placa, sem necessidade de equipamentos extras.
+\\\null \quad Esses equipamentos serão capazes de medir temperatura ($^\circ$C) e umidade do ar (\%), utilizando o sensor DHT11. Este sensor foi escolhido
+por sua praticidade de uso e baixo valor de custo.
+\figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.7}
+\subsection{Localização}
+\quad O ambiente escolhido para a aplicação em escala é um apartamento de 230 $m²$ localizado na região central de Brasília. A disposição dos equipamentos será feita conforme a imagem \ref{planta}.
+  Este local foi escolhido pela presença constante de pessoas para a colaboração com o sistema, WiFi disponível em toda a área da residência e pelo conhecimento prévio de valores aceitáveis de temperatura
+  e umidade ao longo do ano.
+\subsection{Comportamento Esperado}
+\quad A montagem detes equipamentos foi realizada algumas semanas após o solstício de inverno, dado este fato, o comportamento esperado para estes sensores segue a seguinte lista:
+\begin{itemize}
+  \item Período de seca (do processo de montagem a meados de outubro):
+  \begin{itemize}
+    \item Valores de temperatura elevados durante o dia;
+    \item Valores de temperatura baixos durante a noite;
+    \item Valores de umidade decrescendo com o passar dos dias.
+  \end{itemize}
+  \item Período de chuvas (meados de outubro à meados de maio):
+  \begin{itemize}
+    \item Valores elevados de temperatura durante o dia;
+    \item Valores de temperatura amenos durante a noite;
+    \item Valores de umidade mais elevados.
+  \end{itemize}
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

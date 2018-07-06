@@ -1,6 +1,8 @@
 \backcite {IOTS}{{ix}{(document)}{Doc-Start}}
 \backcite {IOTS}{{ix}{(document)}{Doc-Start}}
 \backcite {ITU}{{ix}{(document)}{Doc-Start}}
+\backcite {RaspB}{{ix}{(document)}{Doc-Start}}
+\backcite {rasp0}{{ix}{(document)}{Doc-Start}}
 \backcite {intelsix}{{1}{1.1}{section.1.1}}
 \backcite {cbarbara}{{3}{2.1}{section.2.1}}
 \backcite {cbarbara}{{4}{2.1.1}{Item.4}}
@@ -20,3 +22,6 @@
 \backcite {collaborative}{{9}{2.3}{section.2.3}}
 \backcite {metadata}{{9}{2.3.1}{section*.18}}
 \backcite {SML}{{10}{2.3.2}{subsection.2.3.2}}
+\backcite {rasp}{{11}{2.4.1}{subsection.2.4.1}}
+\backcite {RaspB}{{12}{2.4}{figure.2.4}}
+\backcite {rasp0}{{13}{2.5}{figure.2.5}}

@@ -28,6 +28,19 @@
   2007.
 \newblock {\latintext \btxurlfont{http://handle.itu.int/11.1002/1000/11559}}.
 
+\bibitem {RaspB}
+\btxtitlefont {\btxifchangecase {{Raspberry Pi}, {Modelo B+}}{{Raspberry Pi},
+  {Modelo B+}}}.
+\newblock
+  <\url{https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/}>.
+\newblock Acessado em: 2018-07-6.
+
+\bibitem {rasp0}
+\btxtitlefont {\btxifchangecase {{Raspberry Pi}, {0 W}}{{Raspberry Pi}, {0
+  W}}}.
+\newblock <\url{https://www.raspberrypi.org/products/raspberry-pi-zero-w/}>.
+\newblock Acessado em: 2018-07-6.
+
 \bibitem {intelsix}
 \btxnamefont {\btxlastnamefont {Intelligence}, SCB}\btxauthorcolon\
   \btxjtitlefont {\btxifchangecase {Six technologies with potential impacts on
@@ -98,5 +111,11 @@
   Robin}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Opengis sensor model
   language (sensorml) implementation specification}{OpenGIS sensor model
   language (SensorML) implementation specification}}, 2007.
+
+\bibitem {rasp}
+\btxtitlefont {\btxifchangecase {{Raspberry Pi}, {About us}}{{Raspberry Pi},
+  {About us}}}.
+\newblock <\url{https://www.raspberrypi.org/about/}>.
+\newblock Acessado em: 2018-07-6.
 
 \end{thebibliography}
