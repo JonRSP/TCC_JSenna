@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  8 JUL 2018 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  8 JUL 2018 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,19 +1158,7 @@ Package pdftex.def Info: Requested size: 61.76747pt x 31.14256pt on input line
 
 
 ]
-(./tex/resumo.tex
-! Undefined control sequence.
-<argument> ... gerar documentos. A classe \unbcic 
-                                                  \ define um padrão de for...
-l.16 explicativo.}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [5
+(./tex/resumo.tex) [5
 
 
 ]
@@ -1182,23 +1170,7 @@ Package babel Warning: Unknown language `english'. Either you have
 (babel)                I'll proceed, but expect wrong results.
 (babel)                Reported on input line 38.
 
-(./tex/abstract.tex
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 5.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-! Undefined control sequence.
-<argument> ...tment's \LaTeX \ class. The \unbcic 
-                                                  \^^Mclass defines a standa...
-l.10 ...and improvements on the explanatory text.}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
+(./tex/abstract.tex)
 babelbib: Set language for keywords in the bibliography fixed to brazil
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 38.
@@ -1524,7 +1496,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
-<img/axisiot.png, id=321, 1084.05pt x 550.055pt>
+<img/axisiot.png, id=317, 1084.05pt x 550.055pt>
 File: img/axisiot.png Graphic file (type png)
 <use img/axisiot.png>
 Package pdftex.def Info: img/axisiot.png  used on input line 58. on input line 
@@ -1536,7 +1508,7 @@ Overfull \hbox (86.77957pt too wide) in paragraph at lines 58--58
  [] 
  []
 
-<img/visionsiot.png, id=326, 480.79625pt x 376.40625pt>
+<img/visionsiot.png, id=322, 480.79625pt x 376.40625pt>
 File: img/visionsiot.png Graphic file (type png)
 <use img/visionsiot.png>
 Package pdftex.def Info: img/visionsiot.png  used on input line 63. on input li
@@ -1580,7 +1552,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 79.
  [7 <./img/visionsiot.png (PNG copy)>]
-<img/iottec.png, id=353, 513.92pt x 245.91875pt>
+<img/iottec.png, id=349, 513.92pt x 245.91875pt>
 File: img/iottec.png Graphic file (type png)
 <use img/iottec.png>
 Package pdftex.def Info: img/iottec.png  used on input line 84. on input line 8
@@ -1643,7 +1615,7 @@ Package babel Info: Redefining portuges shorthand "|
  [12]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 213.
-<img/RaspB.png, id=429, 915.42pt x 645.16031pt>
+<img/RaspB.png, id=425, 915.42pt x 645.16031pt>
 File: img/RaspB.png Graphic file (type png)
 <use img/RaspB.png>
 Package pdftex.def Info: img/RaspB.png  used on input line 223. on input line 2
@@ -1655,7 +1627,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 228.
  [13 <./img/RaspB.png>]
-<img/rasp0.png, id=438, 677.53125pt x 325.215pt>
+<img/rasp0.png, id=434, 677.53125pt x 325.215pt>
 File: img/rasp0.png Graphic file (type png)
 <use img/rasp0.png>
 Package pdftex.def Info: img/rasp0.png  used on input line 235. on input line 2
@@ -1706,7 +1678,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 166.
-<img/sensor.png, id=500, 469.755pt x 273.823pt>
+<img/sensor.png, id=496, 469.755pt x 273.823pt>
 File: img/sensor.png Graphic file (type png)
 <use img/sensor.png>
 Package pdftex.def Info: img/sensor.png  used on input line 171. on input line 
@@ -1736,7 +1708,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<img/planta.jpg, id=510, 845.3181pt x 597.432pt>
+<img/planta.jpg, id=506, 845.3181pt x 597.432pt>
 File: img/planta.jpg Graphic file (type jpg)
 <use img/planta.jpg>
 Package pdftex.def Info: img/planta.jpg  used on input line 177. on input line 
@@ -1795,7 +1767,10 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 30.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []\T1/lmr/m/it/12 Raspberry Pi, Mod-elo B+\T1/lmr/m/n/12 .  <[]$\T1/lmtt/m/n/12
  https : / / www . raspberrypi . org / products /
@@ -1837,27 +1812,27 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  )
 (\end occurred when \iffalse on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 16119 strings out of 494911
- 258909 string characters out of 6180070
- 412618 words of memory out of 5000000
- 18896 multiletter control sequences out of 15000+600000
- 50126 words of font info for 39 fonts, out of 8000000 for 9000
+ 16116 strings out of 494911
+ 258882 string characters out of 6180070
+ 412488 words of memory out of 5000000
+ 18894 multiletter control sequences out of 15000+600000
+ 45862 words of font info for 38 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  52i,8n,69p,1936b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts
-/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </home/jsenna/.texlive2017/texm
+/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/us
+r/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} </home/jsenna/.texlive2017/texm
 f-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/jsenna/.texlive2017/te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texmf/fonts/type
 1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on monografia.pdf (34 pages, 3730050 bytes).
+ic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmtt12.pfb>
+Output written on monografia.pdf (34 pages, 3719301 bytes).
 PDF statistics:
- 672 PDF objects out of 1000 (max. 8388607)
- 577 compressed objects within 6 object streams
+ 666 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
  148 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
