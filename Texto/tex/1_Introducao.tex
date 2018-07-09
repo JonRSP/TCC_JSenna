@@ -1,34 +1,33 @@
 \section{Contextualização}
 \qquad
-Com o avanço de inúmeras tecnologias incluindo sensores, atuadores, computação em nuvem e o despontamento de
-incontáveis dispositivos pequenos com capacidade de conexão com a Internet, muitos dos objetos presentes
-na vida cotidiana tem obtido a capacidade de interoperabilidade com outros dispositivos.
+O avanço de inúmeras tecnologias incluindo sensores, atuadores, computação em nuvem e o despontamento de
+incontáveis equipamentos com capacidade de conexão com a Internet tem colaborado com a necessidade humana pela interoperabilidade entre diversas classes de dispositivos.
 \\ \null
 \qquad
-A \acrfull{IoT}, também chamada de Internet de Tudo ou até mesmo Internet Industrial, tem como objetivo primário
+A \acrfull{IoT}, também chamada de Internet de Tudo ou até mesmo Internet Industrial, tem como objetivo primário % fazer citação
 permitir que humanos e máquinas compreendam melhor o ambiente que os envolve, usando as informações geradas por
-diversos dispositivos sensitivos. \acrshort{IoT} é um novo paradigma tecnológico planejado para ser uma rede
+diversos dispositivos sensitivos. \acrshort{IoT} é um novo paradigma tecnológico planejado para ser uma rede %segundo fulano, (data,p.pagina)
 global de máquinas e dispositivos capazes de interagir entre si e com o ambiente ao seu redor.
-A \acrshort{IoT} é reconhecida como uma das áreas mais importantes da tecnologia do futuro pelo fato de
-poder ser implementada em diversos casos de uso.
+A \acrshort{IoT} é reconhecida como uma das áreas mais importantes da tecnologia do futuro pelo fato de %por 1, 2 ênfase na interoperabilidade e 3 implementação...
+poder ser implementada em diversos casos de uso e enfatizar a interoperabilidade entre objetos e pessoas.
 \\ \null
-\qquad A estimativa do Conselho Nacional de Inteligência americano é de que até 2025, nós de Internet poderão estar presentes
-em objetos do cotidiano como embalagens de alimentos, mobília e documentos \cite{intelsix}. Com esta grande variedade de tipos de equipamentos,
-é possível afirmar que uma enorme quantidade de equipamentos estarão interconectados, a partir desta quantidade
-colossal de dispositivos, é esperado que a quantidade de dados seja superior a este número, em uma ordem de grandeza ainda maior.
-Estes dados, se utilizados de forma correta, considerando contextos específicos e o nível de qualidade dessas informações, poderão
-contribuir muito com avanços em pesquisas e serviços.
-\section{Objetivo}
-\qquad O objetivo geral do presente trabalho é o desenvolvimento de um sistema colaborativo de forma a gerenciar e avaliar a confiabilidade de dados
-gerados em um ambiente de \acrlong{IoT}. O sistema colaborará com a avaliação dos dados obtidos, bem como a avaliação
-dos sensores presentes na rede em que o sistema estiver implementado.
+\qquad A estimativa do Conselho Nacional de Inteligência norte americano é de que, até 2025, objetos do cotidiano como embalagens de alimentos, mobília e documentos
+poderão estar conectados à Internet \cite{intelsix}. Considerando-se que haverá uma grande variedade de tipos de equipamentos com a necessidade de interoperabilidade mencionada anteriormente, %qualificar a conexão?
+é possível afirmar que uma enorme quantidade destes estarão interconectados. Neste contexto, %trocar equipamentos
+é esperado que a quantidade de dados seja superior ao número de dispositivos, em uma ordem de grandeza ainda maior.
+Estes dados, se utilizados de forma correta, considerando os contextos específicos e o nível de qualidade dessas informações, poderão
+contribuir muito para avanços em pesquisas e na melhoria da qualidade de serviços.
+\section{Objetivos}
+\subsection{Objetivo Geral}
+\qquad O objetivo geral do presente trabalho é desenvolver de um sistema colaborativo que gerencie e avalie a confiabilidade de dados
+gerados em um ambiente de \acrlong{IoT}.
 \subsection{Objetivos Específicos}
 Para a realização do objetivo geral, os seguintes objetivos específicos devem ser atingidos:
 \begin{itemize}
-  \item Produzir uma plataforma para criação de tarefas associadas à um tipo de sensor ou tipo de dado;
-  \item Desenvolver um módulo de distribuição de tarefas, que as atribuirá aos colaboradores;
-  \item Criar um módulo que realiza a pontuação para confiabilidade de um determinado sensor;
-  \item Desenvolver um ambiente \acrshort{IoT} em escala para teste de conceito.
+  \item Desenvolver uma plataforma para criação de tarefas relacionadas a cada tipo de sensor ou de dado;
+  \item Desenvolver um módulo de distribuição de tarefas para os colaboradores;
+  \item Desenvolver um módulo que realize a avaliação de confiabilidade de sensores e dados, a partir dos dados fornecidos pelos colaboradores;
+  \item Desenvolver um ambiente \acrshort{IoT} em escala reduzida para teste de conceito.
 \end{itemize}
 \section{Estrutura do trabalho}
 O presente trabalho é composto pelos seguintes capítulos:
@@ -41,11 +40,14 @@ O presente trabalho é composto pelos seguintes capítulos:
     \item Dados;
     \item Plataforma.
   \end{itemize}
-  \item \textbf{Capítulo 3 - Metodologia:} detalhamento dos métodos utilizados para a realização do trabalho,
-  apresentação de um sistema similar que serviu como inspiração para o presente trabalho.
-  Explanação do processo de levantamento de requisitos, definição do sistema proposto e de sua arquitetura
-  bem como a descrição do processo de desenvolvimento.
-  \item \textbf{Capítulo 4 - Prova de Conceito:} exposição dos testes planejados e realizados no sistema e seus resultados, bem como a indicação de possíveis problemas e melhorias a serem realizadas.
-  \item \textbf{Capítulo 5 - Conclusão:} apresentação das conclusões tomadas a partir dos resultados obtidos e
+  \item \textbf{Capítulo 3 - Metodologia:}
+\begin{itemize}
+  \item Detalhamento dos métodos utilizados para a realização do trabalho;
+  \item Apresentação de um sistema similar que serviu como inspiração para o presente trabalho;
+  \item Explanação do processo de levantamento de requisitos;
+  \item Definição do sistema proposto e de sua arquitetura, bem como a descrição do processo de desenvolvimento.
+\end{itemize}
+  \item \textbf{Capítulo 4 - Prova de Conceito:} exposição dos testes planejados e realizados no sistema e seus resultados, bem como a indicação de possíveis problemas e melhorias a serem implementadas.
+  \item \textbf{Capítulo 5 - Conclusão:} apresentação das conclusões advindas dos resultados obtidos, limitações e
   sugestões para trabalhos futuros.
 \end{itemize}
