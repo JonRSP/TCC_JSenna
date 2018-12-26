@@ -1,7 +1,9 @@
-\select@language {brazilian}
-\beamer@sectionintoc {1}{Objetivos}{2}{0}{1}
-\beamer@sectionintoc {2}{Banco de Dados}{4}{0}{2}
-\beamer@sectionintoc {3}{Ferramentas Utilizadas}{9}{0}{3}
-\beamer@sectionintoc {4}{Resultados Obtidos}{11}{0}{4}
-\beamer@sectionintoc {5}{Problemas Encontrados}{13}{0}{5}
-\beamer@sectionintoc {6}{Continua\c {c}\~ao do Trabalho}{15}{0}{6}
+\beamer@endinputifotherversion {3.36pt}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Sobre o Trabalho}{3}{0}{1}
+\beamer@sectionintoc {2}{Objetivos}{5}{0}{2}
+\beamer@sectionintoc {3}{Sensores}{7}{0}{3}
+\beamer@sectionintoc {4}{Ferramentas Utilizadas}{11}{0}{4}
+\beamer@sectionintoc {5}{Resultados Parciais}{13}{0}{5}
+\beamer@sectionintoc {6}{Problemas Encontrados}{15}{0}{6}
+\beamer@sectionintoc {7}{Continua\c {c}\~ao do Trabalho}{17}{0}{7}
