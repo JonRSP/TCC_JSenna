@@ -64,9 +64,10 @@
 \contentsline {subsection}{\numberline {3.2.2}Localiza\IeC {\c c}\IeC {\~a}o}{20}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Comportamento Esperado}{21}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Cronograma}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Cronograma Estudos Em (2/2018)}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Cronograma Projeto Final em Engenharia de Computa\IeC {\c c}\IeC {\~a}o 2 (1/2019)}{22}{section.4.2}
-\contentsline {chapter}{Refer\^encias}{23}{section*.42}
+\contentsline {section}{\numberline {4.1}Cronograma Projeto Final em Engenharia de Computa\IeC {\c c}\IeC {\~a}o 2 (1/2019)}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Defini\IeC {\c c}\IeC {\~a}o do Problema}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Solu\IeC {\c c}\IeC {\~a}o Proposta}{25}{section.4.3}
+\contentsline {chapter}{Refer\^encias}{26}{section*.42}
 \select@language {american}
 \select@language {american}
 \select@language {american}
