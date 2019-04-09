@@ -12,23 +12,44 @@
  \section{Cronograma Projeto Final em Engenharia de Computação 2 (1/2019)}
 
 \begin{itemize}
-  \item Escrever sobre o sistema construído; (1/3 - 1/4)
-  \item Escrever a conclusão sobre o trabalho; (1/4 - 20/4)
-  \item Escrever resumo e abstract; (20/4 - 30/4)
-  \item Produzir a apresentação de slides; (30/4 - 10/5)
-  \item Correções; (10/5 - ?)
-  \item Apresentar. (?)
+  \item Escrever sobre o sistema construído; (1/3 - 31/5)
+  \item Escrever a conclusão sobre o trabalho; (1/6 - 15/6)
+  %\item Escrever resumo e abstract; (1/6 - 15/6)
+  \item Produzir a apresentação de slides; (15/6 - 21/6)
 \end{itemize}
 
 \newpage
  \section{Definição do Problema}
- Em ambientes de \acrlong{IoT} é necessário que a qualidade dos dados fornecidos pelos sensores seja a mais alta possível para que, a partir desses dados,
- decisões sejam tomadas e ações sejam realizadas.  Não há, entretanto, no ambiente acadêmico, estudos sobre como enfrentar o problema de forma colaborativa (usuário-sistema).
- A falta de estudos sobre o tema impedem a suposição de que uma abordagem colaborativa para a resolução do problema seja funcional ou não.
-
+ Em uma rede \acrshort{IoT} há um enorme volume de dados gerados por uma grande quantidade de sensores. Para que sistemas automatizados ou usuários não se equivoquem
+  na tomada de decisões por causa de falhas em leituras ou erros na transmissão de dados,
+  é necessário que as informações coletadas por estes sensores passem por uma avaliação de forma a
+ classificar os sensores pela sua qualidade e consistência.
+ A falta da noção de qualificação de um sensor em termos de sua precisão e regularidade prejudica as decisões tomadas pelo sistema,
+  não garantindo que estas sejam as mais acertivas possíveis.
+Este projeto visa o desenvolvimento de um sistema que possibilite a avaliação e classificação da qualidade de sensores de forma colaborativa.
 
 
  \newpage
   \section{Solução Proposta}
-  O problema sobre a qualidade dos dados fornecidos pelos sensores será resolvido de forma colaborativa; o usuário contribuirá com informações sobre o ambiente e sensações. Estas informações, por sua vez, servirão para validar os dados e fornecer ao sistema metadados sobre as medições que estão sendo feitas pelo ambiente \acrshort{IoT}.
- Ao resolver este problema de forma colaborativa, o usuário final atua no sistema, o que leva a uma participação do personagem mais interessado no funcionamento da rede \acrlong{IoT}, possivelmente gerando resultados positivos.
+  Desenvolver um ambiente \acrshort{IoT} em escala reduzida para teste de conceito;
+  Desenvolver um sistema web para aquisição, armazenamento e acesso das informações geradas pelos sensores;
+  Desenvolver um módulo que realize a avaliação de qualidade de sensores e dados, a partir dos dados fornecidos pelos colaboradores.
+  As figuras \ref{funcionamento1} e \ref{funcionamento2} servem para ilustrar a solução.
+  \figura[!h]{solucao1.jpg}{Esquema de funcionamento do sistema}{funcionamento1}{scale=0.9}
+  \\
+  \\\\
+  Na figura \ref{funcionamento1} a interação I consiste no envio dos dados coletados pelos sensores para o servidor.
+  A interação II resulta do acesso dos usuários às informações contidas no sistema e o envio de suas percepções
+  e sensações sobre o ambiente para o servidor.
+\newpage
+  \figura[!h]{solucao2.jpg}{Esquema de participação dos usuários no sistema}{funcionamento2}{scale=0.7}
+
+
+
+  A figura \ref{funcionamento2} indica a forma em que o usuário pode auxiliar com informações importantes
+  sobre o suas percepções e sobre o ambiente, fornecendo uma contextualização para o sistema, como por exemplo:
+  \begin{itemize}
+    \item Quantidade de aberturas;
+    \item Fontes de calor;
+    \item Percepções de frio e calor.
+  \end{itemize}
