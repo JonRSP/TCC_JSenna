@@ -1,0 +1,204 @@
+\newcommand{\texCommand}[1]{\texttt{\textbackslash{#1}}}%
+
+\newcommand{\exemplo}[1]{%
+\vspace{\baselineskip}%
+\noindent\fbox{\begin{minipage}{\textwidth}#1\end{minipage}}%
+\\\vspace{\baselineskip}}%
+
+\newcommand{\exemploVerbatim}[1]{%
+\vspace{\baselineskip}%
+\noindent\fbox{\begin{minipage}{\textwidth}%
+#1\end{minipage}}%
+\\\vspace{\baselineskip}}%
+
+
+\quad Este capítulo trata sobre a implementação do sistema proposto e dos componentes necessários para seu funcionamento.
+\section{Construção do Sistema}
+\\\null \quad O propósito deste sistema é o armazenamento das informações produzidas pelos sensores conectados à ele, agir como intermediário entre os usuários e os dados, possibilitando a colaboração dos usuários com informações sobre fatos e sensações do ambiente e, a partir dos dados coletados pelos sensores e fornecidos pelos usuários, produzir uma noção de qualidade dos sensores.
+
+\subsection{Requisitos}
+Os requisitos que guiaram a construção do sistema estão elencados na lista a seguir:
+\begin{itemize}
+  \item Funcionar em ambientes de baixa capacidade computacional;
+  \item Armazenar informações coletadas por sensores;
+  \item Apresentar as informações dos sensores de forma simplificada ao usuário;
+  \item Escalabilidade e facilidade para adição de sensores;
+  \item Permitir o envio de informações sobre fatos e sensações do ambiente pelo usuário;
+  \item Baseado nos dados coletados pelos sensores e informações enviadas pelos usuários, calcular uma nota para os dispositivos sensitivos, gerando uma noção de qualidade.
+\end{itemize}
+
+\subsection{Funcionamento}
+\\\null \quad As Figuras \ref{funcionamento1} e \ref{funcionamento2} mostram, de forma simplificada, o funcionamento do sistema. Na Figura \ref{funcionamento1} a interação I consiste nas seguintes fases:
+
+\begin{itemize}
+  \item O sensor envia mensagens em formato JSON dos dados coletados para o servidor para que sejam armazenados;
+  \item O servidor envia o código identificador referente ao sensor ao dispositivo sensitivo.
+\end{itemize}
+
+Já a interação II possui as seguintes componentes:
+\begin{itemize}
+  \item Acesso dos usuários às informações armazenadas e/ou processadas no sistema;
+  \item Disponibilização por parte do servidor das perguntas a serem respondidas pelos usuários;
+  \item Envio das percepções e sensações do usuário sobre o ambiente para o servidor.
+\end{itemize}
+
+\figura[!h]{solucao1.jpg}{Esquema de funcionamento do sistema}{funcionamento1}{scale=0.9}
+
+\\\null \quad A figura \ref{funcionamento2} indica a forma em que o usuário pode auxiliar com informações importantes sobre suas percepções e sobre o ambiente, fornecendo uma contextualização para o sistema, como por exemplo:
+\begin{itemize}
+  \item Quantidade de aberturas;
+  \item Fontes de calor;
+  \item Percepções de frio e calor;
+  \item Noções sobre conforto.
+\end{itemize}
+
+\figura[!h]{solucao2.jpg}{Esquema de participação dos usuários no sistema}{funcionamento2}{scale=0.7}
+
+\subsection{Servidor}
+Foi contratado um serviço online de baixo custo para o funcionamento do sistema, a máquina virtual utilizada possui as seguintes características:
+\begin{itemize}
+  \item Processador de um núcleo;
+  \item 512MB de memória RAM;
+  \item 20 GB de SSD de armazenamento;
+\end{itemize}
+\\\null \quad Nessa máquina virtual foram instalados os componentes necessários para a realização do trabalho, como por exemplo:
+\begin{itemize}
+  \item Ubuntu 18.0;
+  \item Python 2.7;
+  \item Framework Django;
+  \item PostgreSQL;
+  \item Servidor Apache;
+  \item Git.
+\end{itemize}
+
+\subsection{Banco de Dados}
+O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade razoável para lidar com grandes volumes de dados.
+
+\figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{scale=0.5}
+
+\subsection{O Sistema de Pontuação}
+Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação. Para atingir este objetivo foi pensado nas seguintes formas de avaliação:
+\begin{itemize}
+  \item Modificar a pontuação:
+    \begin{itemize}
+      \item A cada N leituras verificar a proximidade da média dessas N leituras com a média do mesmo período do dia nos M dias anteriores. A proximidade desses valores indica uma provável corretude dos dados gerados, enquanto a diferença indica possíveis erros de leitura.
+    \end{itemize}
+  \item Aumentar a pontuação:
+  \begin{itemize}
+    \item A colaboração dos usuários com informações sobre suas percepções. Por hora, se houverem interações, verificar se há uma concentração nas respostas escolhidas. Por se tratarem de informações sobre sensações, não é possível afirmar que diferenças indicam erros.
+  \end{itemize}
+  \item Penalização:
+    \begin{itemize}
+      \item Interrupções no envio de dados. Se há uma interrupção no envio de dados, não há dados para serem considerados pelo sistema;
+      \item Dados muito constantes. Se nas últimas N horas não houve variação alguma entre as leituras é possível presumir que há algum erro na aquisição de dados por parte do sensor.
+    \end{itemize}
+\end{itemize}
+
+\subsection{A Interface do Sistema}
+Nesta subseção é exposta a interface desenvolvida e suas funcionalidades. Na Figura \ref{inicial}
+é mostrada a página inicial, onde há uma pequena explicação sobre o propósito do site e os links para os repositórios do GitHub onde se encontram disponíveis os arquivos da implementação do sistema.
+
+\figura[!h]{inicial.png}{Página inicial do site}{inicial}{scale=0.3}
+
+\null \quad Ao clicar em Dados (botão localizado na barra de navegação) o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
+
+\figura[!h]{principal.png}{Página principal do site}{principal}{scale=0.38}
+
+\null \quad Ao clicar na descrição de um sensor, o sistema retorna a página de detalhes para aquele sensor, que possui informações sobre a distribuição de leituras ao longo do tempo, leituras mais recentes referentes ao sensor, gráficos a respeito das informações coletadas nas últimas 24 horas e gráficos sobre a média histórica das leituras desse sensor, como mostra a Figura \ref{pSensor}.
+
+\figura[!h]{pSensor.png}{Página de detalhes de um sensor}{pSensor}{scale=0.38}
+
+\newpage
+\\\null \quad Para que os usuários possam fornecer informações sobre suas sensações e percepções, é necessário que o interessado em colaborar escaneie o QR-Code localizado próximo ao sensor, o que o redirecionará para uma página com uma pergunta aleatória referente ao dispositivo, como mostra a Figura \ref{pergunta}.
+
+\figura[!h]{pergunta.png}{Página com uma pergunta aleatória referente ao sensor}{pergunta}{scale=0.4}
+
+\\\null \quad Para que os usuários administradores possam cadastrar novos responsáveis, alterar informações sobre sensores e suas categorias, adicionar novas perguntas e respostas possíveis foi utilizada a ferramenta de adminstração fornecida pelo Framework Django, como mostra a Figura \ref{admin}
+
+\figura[!h]{admin.png}{Ferramenta de administração fornecida pelo Framework Django}{admin}{scale=0.5}
+
+
+\section{Construção do Ambiente IoT}
+\\\null \quad O ambiente \acrshort{IoT} em escala reduzida que é utilizado nesta seção é essencial para o teste de conceito
+do sistema proposto. A alimentação de dados pelos componentes da rede é necessária para que haja
+dados suficientes para o processamento do programa desenvolvido. As informações geradas por esses dispositivos, ao se comunicarem com o sistema, em colaboração
+com os usuários, permitem o pleno funcionamento da proposta.
+
+\subsection{Dispositivos Sensitivos}
+\quad Foram construídos 5 dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor}. Esta placa
+foi escolhida por seu baixo valor de custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão wireless disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
+\newpage
+\\\null \quad Esses equipamentos são capazes de medir temperatura ($^\circ$C) e umidade do ar (\%) utilizando o sensor DHT11. Este sensor foi escolhido
+por sua praticidade de uso e baixo custo.
+
+\figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.8}
+\\\null \quad Para a envio e coleta das informações geradas pelo sensor DHT11, foram utilizadas respectivamente as bibliotecas python Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT} em um script que segue o fluxograma da Figura \ref{fluxogramaSensor}
+
+\figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um sensor}{fluxogramaSensor}{scale=0.57}
+\newpage
+\subsection{Interação Sensores-Servidor}
+
+\\\null \quad A mensagem enviada pelos sensores é uma string no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
+No escopo deste trabalho são essenciais apenas as informações sobre identificador equipamento, o tipo de sensor que esse dispositivo se enquadra, como por exemplo umidade e temperatura e suas respectivas leituras, a Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
+\\\null \quad Ao receber essa mensagem, o sistema decodifica a mensagem JSON e cria um objeto Sensor no banco de dados caso o identificador recebido seja igual a 0, cria novas categorias de sensores caso as categorias recebidas não constem no banco de dados e armazena as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto Sensor recém criado é enviada do servidor para o dispositivo sensitivo o qual armazena este identicador em seu banco de dados.
+
+\\\null \quad A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
+
+
+\figura[!h]{mensagemJSON.jpg}{Formato genérico para a mensagem JSON}{mensagemJSON}{scale=0.6}
+
+\subsection{Localização}
+\quad O ambiente escolhido para a aplicação em escala reduzida é um terreno de 2500 $m²$ localizado em uma
+região rural do Distrito Federal. A disposição dos equipamentos foi feita conforme a imagem \ref{planta},
+existe uma concentração dos sensores nos locais onde há maior fluxo de pessoas e nos lugares de interesse de
+aquisição de dados.
+\\\null \quad Este local foi escolhido pela presença constante de pessoas para a colaboração com o sistema, WiFi disponível em toda a área do terreno e pelo conhecimento prévio de valores aceitáveis de temperatura
+  e umidade ao longo do ano.
+\newpage
+
+\figura{planta.jpg}{Planta baixa do ambiente escolhido para teste em escala reduzida. Os pontos em que os sensores foram instalados estão indicados em vermelho}{planta}{scale=1.4}
+
+Para que os usuários possam contribuir com as informações sobre suas sensações e percepções foram colocados QR-Codes próximos aos sensores como mostrado na Figura \ref{sensormsg} para que sejam escaneados e então redirecionem o usuário interessado em colaborar para uma página com uma pergunta aleatória referente ao sensor mais próximo ao QR-Code escaneado.
+
+\figura{sensormsg.jpg}{Sensor e QR-Code}{sensormsg}{scale=0.1}
+
+\subsection{Comportamento Esperado}
+\quad A montagem dos equipamentos foi realizada próxima ao soltício de verão. Neste contexto, o comportamento esperado para estes sensores é o seguinte:
+\begin{itemize}
+  \item Período de chuvas (do processo de montagem à meados de maio):
+  \begin{itemize}
+    \item Valores elevados de temperatura durante o dia;
+    \item Valores de temperatura amenos durante a noite;
+    \item Valores de umidade mais elevados;
+
+  \end{itemize}
+  \item Período de seca (meados de maio à meados de outubro):
+  \begin{itemize}
+    \item Valores de temperatura elevados durante o dia;
+    \item Valores de temperatura baixos durante a noite;
+    \item Valores de umidade decrescendo com o passar dos dias.
+  \end{itemize}
+  \item Sensores externos à residência devem ter variações maiores de temperatura e umidade.
+\end{itemize}
+
+\section{Dificuldades Encontradas}
+\quad Durante a execução do projeto, muitas dificuldades foram superadas para o atingimento dos objetivos traçados.
+\subsection{Localização dos Sensores}
+\quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília seguindo o esquema da Figura \ref{sqn202}, entretanto, alguns meses após o começo da coleta de dados foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
+\figura[!h]{sqn202.jpg}{Montagem inicial dos sensores}{sqn202}{scale=0.6}
+\\\null \quad Foi inevitável a eliminação dos dados produzidos até a data da transferência de localidade por se tratarem de regiões extremamente distintas, o que traria inúmeras inconsistências ao sistema. Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
+
+\subsection{Servidor}
+\quad Inicialmente, o servidor seria localizado em uma rede local e implementado em uma placa de desenvolvimento Raspberry Pi modelo B+ que possui as seguintes características físicas:
+\begin{itemize}
+  \item Tamanho: 85mm x 56mm;
+  \item Processador ARM em clock de 700MHz;
+  \item 512MB de memória RAM;
+  \item 40 pinos GPIO;
+  \item 4 portas USB 2.0.
+\end{itemize}
+\null\quad Anteriormente à mudança de localidade esta placa funcionou de forma adequada, armazenando os dados enquanto os outros elementos do sistema eram desenvolvidos. Após a mudança de localidade, devido à diversas falhas na rede elétrica houve uma corrupção dos dados armazenados na placa, o que levou à perda dos dados coletados até então, por volta de 300000 (trezentos mil) registros de leituras. Após essa perda de dados foi contratado um serviço externo e online, o que acarretou em um novo atraso no início da coleta de dados devido à necessidade da configuração referentes a um servidor remoto e online.
+
+\subsection{\acrlong{SGBD}}
+\quad Inicialmente, o \acrshort{SGBD} escolhido era o MySQL, entretanto, seguindo a implementação do \acrshort{DER} desenvolvido para este trabalho, este \acrlong{SGBD} não possuia um desempenho satisfatório ao atingir mais de 900000 (novecentos mil) registros de leituras, limitando consideravelmente a capacidade do servidor.
+\\\null \quad Devido à quantidade de dados já produzidos, à baixa capacidade computacional do servidor e inconsistências no formato do arquivo de exportação do \acrshort{SGBD} previamente utilizado, não foi possível a importação no PostgreSQL das informações contidas no MySQL, levando à perda de uma considerável amostra de dados.
