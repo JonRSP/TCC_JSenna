@@ -2,6 +2,7 @@
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{ix}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{ix}
 \glossaryentry{DER?\glossentry{DER}|setentrycounter[]{page}\glsnumberformat}{ix}
+\glossaryentry{OEE?\glossentry{OEE}|setentrycounter[]{page}\glsnumberformat}{x}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{1}
@@ -49,7 +50,7 @@
 \glossaryentry{SensorML?\glossentry{SensorML}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{16}
@@ -73,3 +74,8 @@
 \glossaryentry{DER?\glossentry{DER}|setentrycounter[]{page}\glsnumberformat}{34}
 \glossaryentry{SGBD?\glossentry{SGBD}|setentrycounter[]{page}\glsnumberformat}{34}
 \glossaryentry{SGBD?\glossentry{SGBD}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{IoT?\glossentry{IoT}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OEE?\glossentry{OEE}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OEE?\glossentry{OEE}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OEE?\glossentry{OEE}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{OEE?\glossentry{OEE}|setentrycounter[]{page}\glsnumberformat}{37}

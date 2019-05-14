@@ -1,0 +1,58 @@
+
+\quad Este capítulo trata sobre os resultados obtidos, trabalhos futuros e a conclusão sobre o trabalho.
+
+\section{Resultados}
+\\\null \quad Os resultados deste trabalho além da própria implementação do sistema são os dados coletados pelos sensores conectados ao ambiente \acrshort{IoT} e análises referentes a esses dados.
+\\\null \quad Do momento em que foi realizada a última restauração do banco de dado para seu estado inicial até o momento da escrita deste documento foram coletadas 1091516 (um milhão noventa e um mil quinhetas e dezesseis) leituras.
+\\\null \quad Para avaliação da qualidade dos sensores foi utilizado o \acrfull{OEE}, um conceito de engenharia de produção
+\\\null \quad A Disponibilidade de um equipamento pode ser dada pela razão entre o tempo útil (U) de funcionamento e o tempo total de funcionamento (N), no escopo deste trabalho o tempo útil é a quantidade de dias com o número de registros armazenados maior do que a metade do total esperado. O número de registros esperados por dia corresponde à multiplicação da quantidade de leituras por hora e o número de horas em um dia, o que corresponde a 2880 registros diários. A tabela \ref{disponibilidade} mostra os dados utilizados para o cálculo de disponibilidade dos sensores.
+
+\begin{center}
+\resizebox{500}{!}{%
+\begin{tabular}{lllll}
+  Sensor     & \begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular} & Tempo útil (U) & \begin{tabular}[c]{@{}l@{}}Tempo de\\  não funcionamento (I)\end{tabular} & Disponibilidade (D) \\
+
+Oficina    & 53                                                                             & 49                 & 4                                                                     & 92,45\%             \\
+Escritório & 101                                                                            & 95                 & 6                                                                     & 94,05\%             \\
+Quarto     & 101                                                                            & 99                 & 2                                                                     & 98,01\%             \\
+Varanda    & 101                                                                            & 93                 & 8                                                                     & 92,07\%             \\
+Piano      & 101                                                                            & 95                 & 6                                                                     & 94,05\%
+\end{tabular}%
+}
+\captionof{table}{Tabela que representa a disponibilidade dos sensores}\label{disponibilidade}
+\end{center}
+
+
+\\\null \quad A Produtividade de um equipamento pode ser calculada pela razão entre a quantidade de unidades produzidas(L) e a quantidade esperada(E), no escopo desse trabalho é utilizada como unidade produzida a leituras enviada pelo sensor e armazenada no servidor. O número de leituras esperado (E) é dado pelo número de dias de funcionamento (N) multiplicado pela quantidade de registros que deveriam ser enviados por dia (número de leituras por hora vezes 24 horas). A tabela \ref{produtividade} mostra os dados utilizados para o cálculo da produtividade dos sensores.
+
+\begin{center}
+\resizebox{500}{!}{%
+\begin{tabular}{lllll}
+  Sensor     & \begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular} & Número de leituras (L) & \begin{tabular}[c]{@{}l@{}}Número de leituras\\  esperado (E)\end{tabular} & Produtividade (P) \\
+
+  Oficina    & 53                                                                             & 140754                 & 152640                                                                     & 92,21\%             \\
+  Escritório & 101                                                                            & 233500                 & 290880                                                                     & 80,27\%             \\
+  Quarto     & 101                                                                            & 246550                 & 290880                                                                     & 84,76\%             \\
+  Varanda    & 101                                                                            & 233722                 & 290880                                                                     & 80,35\%             \\
+  Piano      & 101                                                                            & 236990                 & 290880                                                                     & 81,47\%
+\end{tabular}%
+}
+\captionof{table}{Tabela que representa a produtividade dos sensores}\label{produtividade}
+\end{center}
+
+\\\null \quad A Qualidade de um equipamento é dada pela razão entre a quantidade total produzida deduzida da quantidade inutilizada ou retrabalhada e a quantidade total produzida. No escopo deste trabalho não há a noção de quantidade inutilizada ou retrabalhada visto que uma leitura é armazenada ou não, o que leva a qualidade do que é produzido ser sempre igual a 100\%.
+\\\null \quad A \acrshort{OEE} é dada pela multiplicação entre os valores de Produtividade, Disponibilidade e Qualidade, gerando a tabela \ref{tabelaOEE} a seguir.
+
+\begin{center}
+\resizebox{425}{!}{%
+\begin{tabular}{lllll}
+Sensor     & \begin{tabular}[c]{@{}l@{}}Disponibilidade (D)\end{tabular} & Produtividade & \begin{tabular}[c]{@{}l@{}}Qualidade (Q)\end{tabular} & OEE \\
+Oficina    & 92,45\%                                                                             & 92,21\%                 & 100\%                                                                     & 85,24\%             \\
+Escritório & 94,05\%                                                                            & 80,27\%                 & 100\%                                                                     & 75,49\%             \\
+Quarto     & 98,01\%                                                                            & 84,76\%                 & 100\%                                                                     & 83,07\%             \\
+Varanda    & 92,07\%                                                                            & 80,35\%                & 100\%                                                                     & 73,97\%             \\
+Piano      & 94,05\%                                                                            & 81,47\%                 & 100\%                                                                     & 76,62\%
+\end{tabular}%
+}
+\captionof{table}{Tabela que representa a \acrshort{OEE} dos sensores}\label{tabelaOEE}
+\end{center}
