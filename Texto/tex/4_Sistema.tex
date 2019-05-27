@@ -1,7 +1,8 @@
 
-\quad Este capítulo trata sobre a implementação do sistema proposto e dos componentes necessários para seu funcionamento.
+\quad Este capítulo trata sobre a implementação do sistema SenseHera e dos componentes necessários para seu funcionamento. A seção \ref{sec:construcao} descreve ao desenvolvimento do sistema, a seção \ref{sec:ambiente} refere-se à construção do ambiente \acrshort{IoT} em escala reduzida e a seção \ref{sec:dificuldades} trata das dificuldades encontradas durante a execução do trabalho.
 \section{Construção do Sistema}
-\\\null \quad O propósito deste sistema é o armazenamento das informações produzidas pelos sensores conectados à ele, agir como intermediário entre os usuários e os dados, possibilitando a colaboração dos usuários com informações sobre fatos e sensações do ambiente e, a partir dos dados coletados pelos sensores e fornecidos pelos usuários, produzir uma noção de qualidade dos sensores.
+\label{sec:construcao}
+\\\null \quad O propósito deste sistema é a gestão das informações produzidas pelos sensores conectados à ele, agir como intermediário entre os usuários e os dados, possibilitando a colaboração dos usuários com informações sobre fatos e sensações do ambiente e, a partir dos dados coletados pelos sensores e fornecidos pelos usuários, produzir uma noção de qualidade dos sensores.
 
 \subsection{Requisitos}
 \null \quad Os requisitos que guiaram a construção do sistema estão elencados na lista a seguir:
@@ -42,7 +43,7 @@
 \figura[!h]{solucao2.jpg}{Esquema de participação dos usuários no sistema}{funcionamento2}{scale=0.7}
 
 \subsection{Servidor}
-\nul \quad Foi contratado um serviço online de baixo custo para o funcionamento do sistema; a máquina virtual utilizada possui as seguintes características:
+\nul \quad Foi contratado um serviço online de baixo custo (Amazon Lightsail \cite{lightsail}) para o funcionamento do sistema; a máquina virtual utilizada possui as seguintes características:
 \begin{itemize}
   \item Processador de um núcleo;
   \item 512MB de memória RAM;
@@ -64,6 +65,7 @@
 \figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{scale=0.5}
 \newpage
 \subsection{O Sistema de Pontuação}
+\label{subsec:pontuacao}
 \null \quad Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação a fim de se avaliar os sensores. Para atingir este objetivo foi pensado nas seguintes formas de avaliação:
 \begin{itemize}
   \item Modificar a pontuação
@@ -82,30 +84,31 @@
 \end{itemize}
 
 \subsection{A Interface do Sistema}
-\null \quad Nesta subseção é exposta a interface desenvolvida e suas funcionalidades. Na Figura \ref{inicial}
+\null \quad Nesta seção é exposta a interface desenvolvida e suas funcionalidades. Na Figura \ref{inicial}
 é mostrada a página inicial, na qual há uma pequena explicação sobre o propósito do site e os links para os repositórios do GitHub onde se encontram disponíveis os arquivos da implementação do sistema.
 
-\figura[!h]{inicial.png}{Página inicial do site}{inicial}{scale=0.3}
+\figura[!h]{inicial.png}{Página inicial do site}{inicial}{height=250,width=\textwidth}
 \newpage
-\null \quad Ao clicar em Dados (botão localizado na barra de navegação), o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como o número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
+\null \quad Ao clicar na aba "Dados" (botão localizado na barra de navegação), o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como o número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
 
-\figura[!h]{principal.png}{Página principal do site}{principal}{scale=0.38}
-
+\figura[!h]{principal.png}{Página principal do site}{principal}{height=250,width=\textwidth}
+\newpage
 \null \quad Ao clicar na descrição de um sensor, o sistema retorna a página de detalhes para aquele sensor, que possui informações sobre a distribuição de leituras ao longo do tempo, leituras mais recentes referentes ao sensor, gráficos a respeito das informações coletadas nas últimas 24 horas e gráficos sobre a média histórica das leituras desse sensor, como mostra a Figura \ref{pSensor}.
-
-\figura[!h]{pSensor.png}{Página de detalhes de um sensor}{pSensor}{scale=0.38}
+\newpage
+\figura[!h]{pSensor.png}{Página de detalhes de um sensor}{pSensor}{height=250,width=\textwidth}
 
 
 \\\null \quad Para que os usuários possam fornecer informações sobre suas sensações e percepções, é necessário que o interessado em colaborar escaneie o QR-Code localizado próximo ao sensor, o que o redirecionará para uma página com uma pergunta aleatória referente ao dispositivo, como mostra a Figura \ref{pergunta}.
 
-\figura[!h]{pergunta.png}{Página com uma pergunta aleatória referente ao sensor}{pergunta}{scale=0.4}
+\figura[!h]{pergunta.png}{Página com uma pergunta aleatória referente ao sensor}{pergunta}{height=200,width=\textwidth}
 
-\\\null \quad Para que os usuários administradores possam cadastrar novos responsáveis, alterar informações sobre sensores e suas categorias, adicionar novas perguntas e respostas possíveis, foi utilizada a ferramenta de adminstração fornecida pelo Framework Django, como mostra a Figura \ref{admin}
+\\\null \quad Para que os usuários administradores possam cadastrar novos responsáveis, alterar informações sobre instâncias de sensores e suas categorias, adicionar novas perguntas e respostas possíveis, foi utilizada a ferramenta de adminstração fornecida pelo Framework Django, como mostra a Figura \ref{admin}.
 
 \figura[!h]{admin.png}{Ferramenta de administração fornecida pelo Framework Django}{admin}{scale=0.5}
 
 
 \section{Construção do Ambiente IoT}
+\label{sec:ambiente}
 \\\null \quad O ambiente \acrshort{IoT} em escala reduzida utilizado nesta seção é essencial para o teste de conceito
 do sistema proposto. A alimentação de dados pelos componentes da rede é necessária para que haja
 dados suficientes para o processamento do programa desenvolvido. As informações geradas por esses dispositivos, ao se comunicarem com o sistema, em colaboração
@@ -113,23 +116,21 @@ com os usuários, permitem o pleno funcionamento da proposta.
 
 \subsection{Dispositivos Sensitivos}
 \quad Foram construídos 5 dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor}. Esta placa
-foi escolhida por seu baixo valor de custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão wireless disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
+foi escolhida por seu baixo valor de custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão \textit{wireless} disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
 
 \\\null \quad Esses equipamentos são capazes de medir temperatura ($^\circ$C) e umidade do ar (\%) utilizando o sensor DHT11. Este sensor foi escolhido
 por sua praticidade de uso e baixo custo.
 \\\\\\
 \figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.8}
-\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foram utilizadas respectivamente as bibliotecas python Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT} em um script que segue o fluxograma da Figura \ref{fluxogramaSensor}
+\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foram utilizadas respectivamente as bibliotecas python Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT} em um script que segue o fluxograma da Figura \ref{fluxogramaSensor}.
 
 \figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um sensor}{fluxogramaSensor}{scale=0.57}
 \newpage
 \subsection{Interação Sensores-Servidor}
 
-\\\null \quad A mensagem enviada pelos sensores é uma string no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
+\\\null \quad A mensagem enviada pelos sensores é uma \textit{string} no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
 No escopo deste trabalho são essenciais apenas as informações sobre o código identificador do equipamento, o tipo de sensor que esse dispositivo se enquadra, como por exemplo umidade e temperatura, e suas respectivas leituras. A Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
-\\\null \quad Ao receber a informação, o sistema decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0, cria novas categorias de sensores caso as categorias recebidas não constem no banco de dados e armazena as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo o qual armazena este identicador em seu banco de dados.
-
-\\\null \quad A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
+\\\null \quad Ao receber a informação, o sistema decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0, cria novas categorias de sensores caso as categorias recebidas não constem no banco de dados e armazena as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo o qual armazena este identicador em seu banco de dados. A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
 \\\\\\
 \figura[!h]{mensagemJSON.jpg}{Formato genérico para a mensagem JSON}{mensagemJSON}{scale=0.6}
 
@@ -168,11 +169,11 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
 \end{itemize}
 
 \section{Dificuldades Encontradas}
+\label{sec:dificuldades}
 \quad Durante a execução do projeto, muitas dificuldades foram superadas para que os objetivos traçados fossem atingidos.
 \subsection{Localização dos Sensores}
-\quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília, seguindo o esquema da Figura \ref{sqn202}. Entretanto, alguns meses após o começo da coleta de dados foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
-\figura[!h]{sqn202.jpg}{Montagem inicial dos sensores}{sqn202}{scale=0.6}
-\\\null \quad Foi inevitável a eliminação dos dados produzidos até a data da transferência de localidade por se tratarem de regiões extremamente distintas, o que traria inúmeras inconsistências ao sistema. Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
+\quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília. Entretanto, alguns meses após o começo da coleta de dados foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
+\\\null \quad Foi inevitável a eliminação dos dados produzidos até a data da transferência de localidade por se tratarem de regiões distintas, o que traria inconsistências ao sistema. Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
 
 \subsection{Servidor}
 \quad Inicialmente, o servidor seria localizado em uma rede local e implementado em uma placa de desenvolvimento Raspberry Pi modelo B+ que possui as seguintes características físicas:
@@ -183,8 +184,8 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
   \item 40 pinos GPIO;
   \item 4 portas USB 2.0.
 \end{itemize}
-\null\quad Anteriormente à mudança de localidade, esta placa funcionou de forma adequada, armazenando os dados enquanto os outros elementos do sistema eram desenvolvidos. Após a mudança de localidade, devido à diversas falhas na rede elétrica, houve uma corrupção dos dados armazenados na placa, o que levou à perda dos dados coletados até então, por volta de 300000 (trezentos mil) registros de leituras. Após essa perda de dados, foi contratado um serviço externo e online, o que acarretou em um novo atraso no início da coleta de dados devido à necessidade da configuração referentes a um servidor remoto e online.
+\null\quad Anteriormente à mudança de localidade, esta placa funcionou de forma adequada, armazenando os dados enquanto os outros elementos do sistema eram desenvolvidos. Após a mudança de localidade, devido a diversas falhas na rede elétrica, houve uma corrupção dos dados armazenados na placa, o que levou à perda dos dados coletados até então, por volta de 300.000 (trezentos mil) registros de leituras. Após essa perda de dados, foi contratado um serviço externo e online, o que acarretou em um novo atraso no início da coleta de dados devido à necessidade da configuração referentes a um servidor remoto e online.
 
 \subsection{\acrlong{SGBD}}
-\quad Inicialmente, o \acrshort{SGBD} escolhido era o MySQL. Entretanto, seguindo a implementação do \acrshort{DER} desenvolvido para este trabalho, este \acrlong{SGBD} não possuia um desempenho satisfatório ao atingir mais de 900000 (novecentos mil) registros de leituras, limitando consideravelmente a capacidade do servidor.
+\quad Inicialmente, o \acrshort{SGBD} escolhido foi o MySQL. Entretanto, seguindo a implementação do \acrshort{DER} desenvolvido para este trabalho, este \acrlong{SGBD} não possuia um desempenho satisfatório ao atingir mais de 900.000 (novecentos mil) registros de leituras, limitando consideravelmente a capacidade do servidor.
 \\\null \quad Devido à quantidade de dados já produzidos, à baixa capacidade computacional do servidor e  inconsistências no formato do arquivo de exportação do \acrshort{SGBD} previamente utilizado, não foi possível a importação no PostgreSQL das informações contidas no MySQL, levando à perda de uma considerável amostra de dados.
