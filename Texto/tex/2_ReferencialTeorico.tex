@@ -1,21 +1,22 @@
-O trabalho visa a avaliação e classificação de
-dispositivos categorizados em \acrfull{IoT}. %expandir
+Este capitulo apresenta o referencial teórico necessário para o desenvolvimento e compreendimento deste projeto final. A Seção \ref{sec:siscol} trata de sistemas colaborativos, a Seção \ref{sec:internetofthings} apresenta informações sobre o domínio da \acrfull{IoT}, a Seção \ref{sec:dados} trata sobre dados no domínio de \acrshort{IoT}, a Seção \ref{sec:qualidade} trata da qualidade de dados e equipamentos e a Seção \ref{sec:plataforma} apresenta as plataformas utilizadas para construção do projeto.
 
 \section{Sistemas Colaborativos}
+\label{sec:siscol}
 \qqad A colaboração é um ponto central para qualquer comportamento inteligente.
 Atividades que envolvem colaboração permeiam praticamente todas as áreas da sociedade. Estas atividades variam desde operações coordenadas,
 bem planejadas, como em times de esportes e grupos musicais até colaborações espontâneas
 entre pessoas que percebem a necessidade de resolver problemas em conjunto.
-Tomando como exemplo a colaboração para a produção do conhecimento científico, esta ocorre em vários níveis: entre pessoas ou até mesmo entre diversas áreas da ciência.
- \cite{cbarbara}
+Tomando como exemplo a colaboração para a produção do conhecimento científico, esta ocorre em vários níveis: entre pessoas ou até mesmo entre diversas áreas da ciência \cite{cbarbara}.
+
 \subsection{Colaboração versus Interação}
-Segundo o dicionário, temos as seguintes definições:%referência do dicionário
+Segundo o dicionário Aurélio \cite{aurelio}, temos as seguintes definições:%referência do dicionário
 \begin{itemize}
   \item \textbf{Colaboração:}
   \begin{enumerate}
     \item \textit{Trabalho feito em comum com um ou mais indivíduos;}
     \item \textit{Trabalho, ideia, doação etc. que contribui para a realização de algo ou para ajudar alguém.}
   \end{enumerate}
+\newpage
   \item \textbf{Interação:}
   \begin{enumerate}
     \item \textit{Ação mútua entre dois ou mais corpos ou indivíduos;}
@@ -23,20 +24,20 @@ Segundo o dicionário, temos as seguintes definições:%referência do dicionár
   \end{enumerate}
 \end{itemize}
  \null
-\quad A partir dessas definições, é possível notar que a colaboração consiste na união dos esforços
+\quad A partir dessas definições, é possível concluir que a colaboração consiste na união dos esforços
 para a obtenção de um objetivo comum desejado por todos os indivíduos envolvidos, enquanto na interação
 não há, necessariamente, a presença de um objetivo comum entre os atores, tão pouco a união de esforços. \\ \null \quad
 Para a autora Barbara Grosz \cite{cbarbara}, a colaboração, além de ser uma união de esforços para um objetivo comum,
 precisa, também, ser projetada desde o início da resolução, não podendo ser apenas inserida durante o processo, visto que é
 necessária a participação de todos os indivíduos para a modelagem do problema e, por consequência, a modelagem e execução da resolução.
-
-\subsection{Sistemas Computacionais Colaborativos}
-\quad Sistemas computacionais colaborativos são projetados para transformar um computador em algo mais complexo e útil do que apenas uma ferramenta.
+\\
+\null \quad Sistemas computacionais colaborativos são projetados para transformar um computador em algo mais complexo e útil do que apenas uma ferramenta.
 Para o atingimento do objetivo desejado pela comunidade de usuários desses sistemas, seus integrantes devem auxiliar no povoamento de dados,
-tornando o sistema mais inteligente, e por sua vez, conseguindo produzir informações mais consistentes e relevantes para os usuários.
+tornando o sistema mais inteligente, e por sua vez, conseguindo produzir informações mais consistentes e relevantes para os usuários \cite{cbarbara}.
 %aumentar este tópico
 
 \section{Internet das Coisas}%
+\label{sec:internetofthings}
 \quad
 A \acrlong{IoT} é uma nova abordagem tecnológica idealizada como uma conexão global
 de máquinas e dispositivos capazes de interagir e até colaborar entre si. Em um ambiente \acrshort{IoT} vários objetos do cotidiano trocam informações
@@ -44,46 +45,46 @@ ou colaboram, através da internet, para serem mais eficientes e realizarem dive
 Os objetos passam a agir de forma sensorial, de modo a favorecer diversos setores como:
 indústria, hospitais, agropecuária, transporte público entre muitos outros. A partir desta
 elevada disponibilidade de recursos, a \acrshort{IoT} é reconhecida com uma das áreas tecnológicas mais importantes
-do futuro e está recebendo, cada vez mais, atenção de desenvolvedores, usuários, governos e indústrias.
+do futuro e está recebendo, cada vez mais, atenção de desenvolvedores, usuários, governos e indústrias \cite{giusto}.
 \\ \null
 \quad
 Um dos principais objetivos da \acrlong{IoT} é permitir
-que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avaliar dados e informações dos ambientes ao seu arredor.
+que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avaliar dados e informações dos ambientes ao seu arredor \cite{IOTS}.
  Esse melhor entendimento do seu ambiente torna-se viável através da utilização
  de diversos tipos de dispositivos sensitivos (sensores) para a aquisição de dados e, após a percepção e a interpretação
- de seu ambiente, é possível a realização de intervenções por meio de dispositivos atuadores. \\\\\\\\ \null
+ de seu ambiente, é possível a realização de intervenções por meio de dispositivos atuadores \cite{IOTV}. \\\\\\\\ \null
  \quad A \acrshort{IoT}
  inseriu uma nova dimensão na comunicação, que não ocorre apenas a qualquer momento e em qualquer lugar, mas também, pode ser realizada por qualquer objeto
- com capacidade comunicativa, conforme mostra a imagem \ref{refaxisiot}.
-  \figura[!h]{axisiot.png}{Nova dimensão introduzida em comunicações\cite{IOTS}}{refaxisiot}{scale=0.5}%
+ com capacidade comunicativa, conforme mostra a Figura \ref{refaxisiot}.
+  \figura[!h]{axisiot.png}{Nova dimensão introduzida em comunicações (adaptado de \cite{IOTS})}{refaxisiot}{scale=0.5}%
 \\ \null
  \quad
- A \acrlong{IoT} surgiu a partir de um cojunto de diferentes visões como é possível observar na figura \refFig{refiotvision}, cada qual com seus objetivos específicos. %expandir
+ A \acrlong{IoT} surgiu a partir de um cojunto de diferentes visões como é possível observar na  \refFig{refiotvision}, cada qual com seus objetivos específicos. %expandir
  \pagebreak
- \figura[!h]{visionsiot}{O paradigma \acrlong{IoT} como um resultado de diferentes visões\cite{IOTS}}{refiotvision}{}%
+ \figura[!h]{visionsiot}{O paradigma \acrlong{IoT} como um resultado de diferentes visões (adaptado de \cite{IOTS})}{refiotvision}{}%
 \subsection{Definição}
 	\quad Em 2012, a \acrfull{ITU} realizou estudos sobre infraestrutura
-	de informação global, aspectos de procolos de internet e redes da próxima geração.
+	de informação global, aspectos de protocolos de internet e redes da próxima geração.
 	A partir desse estudo foi construída a recomendação ITU-T Y.2060 \cite{ITU} que trata sobre a \acrlong{IoT}
 	e possui o intuito de definir seus conceito e escopo, identificar
 	suas características fundamentais e seus requerimentos de alto-nivel.
   \\ \null
-  \quad	No documento produzido pela \acrshort{ITU}, foram consolidadadas as seguintes definições:
+  \quad	No documento produzido pela \acrshort{ITU}, foram consolidadadas as seguintes definições \cite{ITU}:
 	\begin{itemize}
 		\item \acrlong{IoT} é "uma infraestrutura global para a Sociedade de Informações, permitindo serviços avançados ao
 		interconectar (fisicamente e virtualmente) coisas devido à existência e evolução da interoperabilidade
-	de tecnologias de comunicação e informação" \cite{ITU};%tradução livre
+	de tecnologias de comunicação e informação" (tradução livre);%tradução livre
 		\item Dispositivo, no contexto de \acrshort{IoT}, é um equipamento que, obrigatoriamente, possui a capacidade
 		de comunicação e, opcionalmente, possui capacidade de sensitividade, atuação, captura de dados,
-		armazenamento de dados e/ou processamento de dados \cite{ITU};
+		armazenamento de dados e/ou processamento de dados;
 		\item Coisas, no contexto de \acrshort{IoT}, são "objetos
 	no mundo físico (objetos físicos) ou no mundo das informações (objetos virtuais), os quais são capazes
-	de serem identificados e integrados a uma rede de comunicações". Objetos físicos podem sentir, atuar e conectar.
-	Objetos virtuais podem ser armazenados, processados e acessados.\cite{ITU}
+	de serem identificados e integrados a uma rede de comunicações" (tradução livre). Objetos físicos podem sentir, atuar e conectar.
+	Objetos virtuais podem ser armazenados, processados e acessados.
 	\end{itemize}
-	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT} \cite{ITU}}{refiottec}{}%
+	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT} (adaptado de \cite{ITU})}{refiottec}{}%
 % [1] ITU\\
-\subsection{Tecnologias essenciais}
+\subsection{Tecnologias Essenciais}
 	\subsubsection{\acrfull{RFID}}
 		\begin{itemize}
 			\item Esta tecnologia permite identificação automática e captura de informação por meio de rádio frequência.
@@ -102,7 +103,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 		\begin{itemize}
 			\item O middleware é a camada de abstração entre aplicações de software utilizada para auxiliar o trabalho dos desenvolvedores
 			 no que toca à comunicação entre softwares e operações de recebimento e envio de dados. O objetivo do middleware, no contexto
-			  de \acrshort{IoT}, é simplificar a integração entre dispositivos heterogêneos e a camada de aplicação.
+			  de \acrshort{IoT}, é simplificar a integração entre dispositivos heterogêneos e a camada de aplicação \cite{middleware}.
 		\end{itemize}
 	\subsubsection{Computação em nuvem}
 		\begin{itemize}
@@ -113,15 +114,14 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 	\subsubsection{Aplicações de software}
 		\begin{itemize}
 			\item Aplicações \acrshort{IoT} permitem interações e colaborações dispositivo-dispositivo e humano-dispositivo de uma forma confiável e robusta.
-			As aplicações nos dispositivos devem garantir que as informações sejam recebidas e processadas de maneira adequada, no momento
-			oportuno.
+			As aplicações nos dispositivos devem garantir que as informações sejam recebidas e processadas de maneira adequada, no momento oportuno \cite{service}.
 		\end{itemize}
 
 %\end{itemize}
 
 \subsection{Desafios Conhecidos}
 	\quad A \acrlong{IoT} possui diversos desafios conhecidos devido à sua própria concepção. Essas dificuldades devem ser superadas para que a
-	\acrshort{IoT} possa ser devidamente implementada e amplamente utilizada. Alguns fatores críticos podem ser elencados:
+	\acrshort{IoT} possa ser devidamente implementada e amplamente utilizada. Alguns fatores críticos podem ser elencados \cite{roadmap}:
 	\subsubsection{Infraesturura de rede}
 		\quad O custo se eleva a partir da complexidade da infraestrutura para interconectar os dispositivos. Para uma grande rede de sensores é necessário o desdobramento da respectiva infraestrutua:
 		 cabeamento, equipamentos de gerenciamento de redes, redes sem fio e contratação dos canais de comunicação, entre outros.
@@ -142,6 +142,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dados}%
+\label{sec:dados}
 	\quad Uma rede \acrlong{IoT} tem como objetivo a compreensão do ambiente em que está situado por meio das informações geradas por diversos
   sensores. Este entendimento é baseado em três tipos de dados \cite{SemIOT}:
   \begin{itemize}
@@ -158,27 +159,27 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
   Entretanto existe um desafio inexplorado em lidar com o dinamismo dos metadados em \acrshort{IoT} \cite{collaborative}.
 
 	\subsection{Metadados}
-  \quad Metadados são as principais ferramentas para descrever e gerenciar recursos de informações extremamente dinâmicos, como os dados
-  contidos na Rede Mundial de Computadores.
+  \quad Metadados são as principais ferramentas para descrever e gerenciar recursos de informações  dinâmicos, como os dados
+  contidos na Rede Mundial de Computadores (WWW).
 		\subsubsection{Princípios}
     \quad Os seguintes princípios são considerados básicos para o desenvolvimento de soluções práticas em desafios de semântica
-    e interoperabilidade de dispositivos em qualquer domínio e em qualquer conjunto de metadados \cite{metadata}.
+    e interoperabilidade de dispositivos em qualquer domínio e em qualquer conjunto de metadados \cite{metadata}:
 		\begin{itemize}
-		  \item \textbf{Modularidade} de metadados é um pricípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
+		  \item Modularidade. Modularidade de metadados é um pricípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
       de conteúdo. A modularidade permite que projetistas criem novos esquemas de metadados baseados em projetos
       já existentes e se beneficiem de boas práticas já observadas. Em um ambiente com metadados modulares, elementos de informação de diferentes esquemas
       podem ser combinados de forma interoperável tanto sintaticamente quanto semanticamente.
-      \item \textbf{Flexibilidade}. Sistemas de metadados precisam ser flexíveis para acomodar as particularidades de uma determinada aplicação.
+      \item Flexibilidade. Sistemas de metadados precisam ser flexíveis para acomodar as particularidades de uma determinada aplicação.
       Arquiteturas de metadados devem se adequar facilmente à noção de um esquema base aliado a elementos adicionais necessários para uma aplicação local ou a um
       domínio específico sem comprometer a interoperabilidade proporcionada pelo esquema base.
-      \item \textbf{Refinamento}. O nível de detalhamento necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar custos
+      \item Refinamento. O nível de detalhamento necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar custos
       desnecessários com armazenamento e processamento, o desenvolvimento dos padrões de metadados devem permitir que os projetistas
       escolham o nível de detalhamento apropriado para uma dada aplicação.
-      \item \textbf{Multilinguismo}. O multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
+      \item Multilinguismo. O multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
       Por ter a possibilidade de conectar sistemas de diversas partes do planeta, é importante que a comunicação dos metadados respeite requisitos gerais de linguagem e formatação.
 		\end{itemize}
   \subsection{Metadados de sensores}
-    \quad Denomina-se metadados de sensor o modelo que descreve o dispositivo sensitivo e suas capacidades, como por exemplo:
+    \quad Denomina-se metadados de sensor o modelo que descreve o dispositivo sensitivo e suas capacidades, como por exemplo \cite{SML}:
     \begin{itemize}
       \item Modelo;
       \item Localização;
@@ -187,7 +188,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
     \end{itemize}
 
      \quad A \acrfull{SensorML} \cite{SML} é uma coleção de padrões
-    desenvolvida para representar informações de sensores em formato XML. Os propósitos da \acrshort{SensorML} são:
+    desenvolvida para representar informações de sensores em formato XML, apesar de sua formatação obsoleta, os princípios utilizados para sua criação podem ser levados em consideração na utilização de outros padrões. Os propósitos da \acrshort{SensorML} incluem:
     \begin{itemize}
       \item Prover descrições de sensores e sistemas de sensores para gerenciamento de inventário;
       \item Providenciar informação sobre o sensor e sobre processamento;
@@ -195,35 +196,38 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
       \item Suportar informações de geolocalização de valores coletados;
       \item Fornecer informações de desempenho;
       \item Providenciar uma descrição explícita sobre o processo em que os dados foram obtidos;
-      \item Prover uma cadeia de processos executáveeis para derivar novos produtos de informação;
+      \item Prover uma cadeia de processos executáveis para derivar novos produtos de informação;
       \item Arquivar propriedades fundamentais e suposições sobre os sistemas de sensores.
     \end{itemize}
+\section{Qualidade}
+\label{sec:qualidade}
+\quad Em ambientes \acrshort{IoT} as informações geradas são heterogêneas devido a sua origem em fontes heterogêneas (diferentes classes e tipos de sensores) as quais não necessariamente são conhecidas ou podem ser auditadas \cite{dataquality}. O aumento no volume de informações geradas por ambientes \acrshort{IoT} causa uma preocupação com a qualidade dos dados coletados para que decisões mais acertivas possam ser tomadas por sistemas autônomos.
+\\\null\quad Dados de alta qualidade são caracterizados pela consistência; se as informações geradas por fontes novas podem ser consideradas consistentes com as informações coletadas por fontes já verificadas, então os novos dados podem ser considerados de alta qualidade \cite{dataquality}.
+\\\null\quad No contexto industrial, qualidade de um equipamento é geralmente calculada por meio da ferramenta \textit{\acrlong{OEE}} (\acrshort{OEE}), criada em 1988 no Japão. Essa métrica utiliza os conceitos de Produtividade, Qualidade e Disponibilidade de um equipamento para definir sua qualidade geral. A qualidade geral, por sua vez, pode ser utilizada para se obter o nível de confiança de um dado equipamento, tomar decisões sobre substituição de equipamentos ou realizar mudanças no processo produtivo \cite{artigoOEE}.
+
 \section{Plataforma}
-\quad A plataforma escolhida para a implementação do ambiente \acrlong{IoT}, deste trabalho, é a placa Raspberry Pi 0 W. Para a implementação do servidor do sistema
-será utilizada a placa Raspberry Pi modelo B+.
+\label{sec:plataforma}
+\quad Este projeto inclui o desenvolvimento de hardware (na montagem dos sensores) e software (na construção do sistema colaborativo).
+\\\null\quad A plataforma de hardware escolhida para a implementação do ambiente \acrlong{IoT}, deste trabalho, é a placa Raspberry Pi 0 W. Para a implementação do servidor do sistema foi utilizado um serviço online da Amazon \cite{lightsail}.
 \subsection{Histórico}
-\quad "A Fundação Raspberry Pi é uma instituição de caridade sediada no Reino Unido que trabalha para o empoderamento digital de pessoas ao redor do mundo,
+\quad Fundada em 2009 por David Braben, Jack Lang, Pete Lomas, Alan Mycroft, Robert Mullins e Eben Upton, com o apoio do Laboratório de computadores da Universidade de Cambridge e a empresa Broadcom, a Fundação Raspberry Pi tem como objetivo promover e estudar a ciência da computação e assuntos correlatos, especialmente em nível escolar.
+\\\null\quad "A Fundação Raspberry Pi é uma instituição de caridade sediada no Reino Unido que trabalha para o empoderamento digital de pessoas ao redor do mundo,
 de forma a torna-las capazes de entender e dar forma ao mundo digital. Desvendando as soluções para os
-problemas que as afligem e estando, também, capazes para os empregos do futuro" \cite{rasp}.\\\null
-\quad Fundada em 2009 por David Braben, Jack Lang, Pete Lomas, Alan Mycroft, Robert Mullins e Eben Upton, com o apoio do Laboratório de computadores da Universidade de Cambridge e a empresa Broadcom
-, a Fundação Raspberry Pi tem como objetivo promover e estudar a ciência da computação e assuntos correlatos, especialmente em nível escolar.
+problemas que as afligem e estando, também, capazes para os empregos do futuro" (tradução livre) \cite{rasp}.
 \\\null \quad Em 2011 a Fundação desenvolveu seu primeiro computador em placa única, nomeado Raspberry Pi. A meta seria vender estas placas
 de desenvolvimento em duas versões, custando 25 dólares a versão mais simples e 35 dólares a versão mais elaborada. A versão mais complexa começou a ser vendida
 em 29 de Fevereiro de 2012. O Raspberry Pi foi criado para estimular o estudo da ciência da computação em escolas.
 \subsection{Características de Hardware}
-\quad As placas escolhidas para a realização do trabalho possuem semelhanças e diferenças em suas montagens, como descrito nos tópicos a seguir:
+\quad A placa escolhida para a montagem dos sensores do trabalho e o servidor contratado possuem semelhanças e diferenças em suas características, como descrito nos tópicos a seguir:
 \begin{itemize}
-  \item Raspberry Pi modelo B+ (figura \ref{figRaspB}):
+  \item Servidor Amazon Lightsail:
   \begin{itemize}
-    \item Tamanho: 85mm x 56mm;
-    \item Processador ARM em clock de 700MHz;
+    \item Processador de um núcleo;
     \item 512MB de memória RAM;
-    \item 40 pinos GPIO;
-    \item 4 portas USB 2.0.
-    \figura[!h]{RaspB.png}{Placa de desenvolvimento Raspberry Pi modelo B+ \cite{RaspB}}{figRaspB}{scale=0.32}%
+    \item 20 GB de SSD de armazenamento.
   \end{itemize}
   %\pagebreak
-  \item Raspberry Pi 0 W (figura \ref{figrasp0}):
+  \item Raspberry Pi 0 W (Figura \ref{figrasp0}):
   \begin{itemize}
     \item Tamanho: 66mm x 30,5mm;
     \item Processador ARM em clock de 1GHz;
@@ -236,5 +240,7 @@ em 29 de Fevereiro de 2012. O Raspberry Pi foi criado para estimular o estudo da
   \end{itemize}
 \end{itemize}
 \subsection{Características de Software}
-\quad Em todas as placas será utilizado o sistema Raspbian Stretch Lite na última versão disponível (lançada em 27 de Junho de 2018).
+\quad Em todos os sensores foi utilizado o sistema Raspbian Stretch Lite na última versão disponível ao momento do desenvolvimento do projeto (lançada em 27 de Junho de 2018).
 Este sistema operacional, baseado na distribuição linux Debian, é a versão recomendada pelo fabricante para todas as placas Raspberry Pi presentes no mercado.
+\\\null\quad No servidor contratado, foi instalado o sistema operacional Ubuntu 18.04. É utilizado o gerenciador de requisições HTTP Apache e o framework Django.
+\\\null\quad O Django é um framework para desenvolvimento web baseado na linguagem Python, segundo seus desenvolvedores, é uma ferramenta que facilita o desenvolvimento ao simplificar as tarefas necessárias para assegurar o funcionamento online, segurança e escalabilidade \cite{django}.
