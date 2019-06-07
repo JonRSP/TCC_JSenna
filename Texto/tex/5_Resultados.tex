@@ -1,11 +1,11 @@
 
-\quad Este capítulo trata sobre os resultados obtidos após a execução do trabalho.
-
-\section{Resultados}
+% \quad Este capítulo trata sobre os resultados obtidos após a execução do trabalho.
+%
+% \section{Resultados}
 \\\null \quad Os resultados deste projeto, além da própria implementação do sistema, são os dados coletados pelos sensores conectados ao ambiente \acrshort{IoT} e análises referentes a esses dados.
- Do momento em que foi executada a última restauração do banco de dados para seu estado inicial (realizada em 12/02/2019) até o momento da escrita deste documento foram coletadas 1.091.516 (um milhão noventa e um mil quinhetas e dezesseis) leituras.
+ Do momento em que foi executada a última restauração do banco de dados para seu estado inicial (realizada em 12/02/2019), até o momento da escrita deste documento, foram coletadas 1.091.516 (um milhão noventa e um mil quinhetas e dezesseis) leituras.
 \\\null \quad Para a comparação com a métrica de qualidade dos sensores implementada no sistema, foi utilizado a \textit{\acrlong{OEE}} (\acrshort{OEE}), uma métrica quantitativa desenvolvida em 1988 no Japão dentro do conceito de manutenção produtiva total que tem como objetivo medir diferentes tipos de perda de eficiência de um equipamento e indicar áreas para o aperfeiçoamento do processo de produção \cite{artigoOEE}.
-\\\null \quad A Disponibilidade (D) de um equipamento pode ser dada pela razão entre o tempo útil (U) de funcionamento e o tempo total de funcionamento (N), como mostra a Equação \ref{eq:disp}. No escopo deste trabalho o tempo útil é a quantidade de dias com o número de registros armazenados maior do que a metade do total esperado. O número de registros esperados por dia corresponde à multiplicação da quantidade de leituras por hora e o número de horas em um dia, o que corresponde a 2880 registros diários. A Tabela \ref{disponibilidade} mostra os dados utilizados para o cálculo de disponibilidade dos sensores.
+\\\null \quad A Disponibilidade (D) de um equipamento pode ser dada pela razão entre o tempo útil (U) de funcionamento e o tempo total de funcionamento (N), como mostra a Equação \ref{eq:disp}. No escopo deste trabalho, o tempo útil é a quantidade de dias com o número de registros armazenados maior do que a metade do total esperado. O número de registros esperados por dia corresponde à multiplicação da quantidade de leituras por hora e o número de horas em um dia, o que corresponde a 2880 registros diários. A Tabela \ref{disponibilidade} mostra os dados utilizados para o cálculo de disponibilidade dos sensores.
 
 \begin{equation}
   D = \frac{U}{N}
@@ -34,7 +34,7 @@ Piano      & 101                                                                
 \end{center}
 
 
-\\\null \quad A Produtividade (P) de um equipamento pode ser calculada pela razão entre a quantidade de unidades produzidas (L) e a quantidade esperada (E), como mostra a Equação \ref{eq:prod}. No escopo desse trabalho é utilizada como unidade produzida a leitura enviada pelo sensor e armazenada no servidor. O número de leituras esperado (E) é dado pelo número de dias de funcionamento (N) multiplicado pela quantidade de registros que deveriam ser enviados por dia (número de leituras por hora vezes 24 horas), seguindo a Equação \ref{eq:esp}. A Tabela \ref{produtividade} mostra os dados utilizados para o cálculo da produtividade dos sensores.
+\\\null \quad A Produtividade (P) de um equipamento pode ser calculada pela razão entre a quantidade de unidades produzidas (L) e a quantidade esperada (E), como mostra a Equação \ref{eq:prod}. No escopo desse trabalho, é utilizada como unidade produzida a leitura enviada pelo sensor e armazenada no servidor. O número de leituras esperado (E) é dado pelo número de dias de funcionamento (N) multiplicado pela quantidade de registros que deveriam ser enviados por dia (número de leituras por hora vezes 24 horas), seguindo a Equação \ref{eq:esp}. A Tabela \ref{produtividade} mostra os dados utilizados para o cálculo da produtividade dos sensores.
 
 \begin{equation}
   P = \frac{L}{E}
@@ -66,7 +66,7 @@ Piano      & 101                                                                
 }
 \end{center}
 
-\\\null \quad A Qualidade (Q) de um equipamento é dada pela razão entre a quantidade total produzida deduzida da quantidade inutilizada ou retrabalhada e a quantidade total produzida. No escopo deste trabalho não há a noção de quantidade inutilizada ou retrabalhada visto que uma leitura pode apenas ser armazenada ou não, o que leva a qualidade do que é produzido ser sempre igual a 100\%.
+\\\null \quad A Qualidade (Q) de um equipamento é dada pela razão entre a quantidade total produzida deduzida da quantidade inutilizada ou retrabalhada e a quantidade total produzida. No escopo deste trabalho, não há a noção de quantidade inutilizada ou retrabalhada visto que uma leitura pode apenas ser armazenada ou não, o que leva a qualidade do que é produzido ser sempre igual a 100\%.
 \\\null \quad A \acrshort{OEE} é dada pela multiplicação entre os valores de Produtividade, Disponibilidade e Qualidade, conforme a Equação \ref{eq:OEE}, gerando a Tabela \ref{tabelaOEE} a seguir.
 
 \begin{equation}
