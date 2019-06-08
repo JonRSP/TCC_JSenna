@@ -1,9 +1,12 @@
 
-% \quad Este capítulo trata sobre os resultados obtidos após a execução do trabalho.
+\quad Este capítulo trata sobre os resultados obtidos após a execução do trabalho. A Seção \ref{sec:provadeconceito} trata de uma prova de conceito do sistema. A Seção \ref{sec:testecomparativo} refere-se a um teste comparativo realizado entre os resultados obtidos pelo sistema SenseHera e os resultados obtidos a partir de uma ferramenta muito utilizada na indústria para avaliação de qualidade de equipamentos.
 %
-% \section{Resultados}
+\section{Prova de Conceito}
+\label{sec:provadeconceito}
+ \section{Teste Comparativo}
+ \label{sec:testecomparativo}
 \\\null \quad Os resultados deste projeto, além da própria implementação do sistema, são os dados coletados pelos sensores conectados ao ambiente \acrshort{IoT} e análises referentes a esses dados.
- Do momento em que foi executada a última restauração do banco de dados para seu estado inicial (realizada em 12/02/2019), até o momento da escrita deste documento, foram coletadas 1.091.516 (um milhão noventa e um mil quinhetas e dezesseis) leituras.
+ Do momento em que foi executada a última restauração do banco de dados para seu estado inicial (realizada em 12/02/2019), até o dia 17/05/2019, foram coletadas 1.091.516 (um milhão noventa e um mil quinhetas e dezesseis) leituras.
 \\\null \quad Para a comparação com a métrica de qualidade dos sensores implementada no sistema, foi utilizado a \textit{\acrlong{OEE}} (\acrshort{OEE}), uma métrica quantitativa desenvolvida em 1988 no Japão dentro do conceito de manutenção produtiva total que tem como objetivo medir diferentes tipos de perda de eficiência de um equipamento e indicar áreas para o aperfeiçoamento do processo de produção \cite{artigoOEE}.
 \\\null \quad A Disponibilidade (D) de um equipamento pode ser dada pela razão entre o tempo útil (U) de funcionamento e o tempo total de funcionamento (N), como mostra a Equação \ref{eq:disp}. No escopo deste trabalho, o tempo útil é a quantidade de dias com o número de registros armazenados maior do que a metade do total esperado. O número de registros esperados por dia corresponde à multiplicação da quantidade de leituras por hora e o número de horas em um dia, o que corresponde a 2880 registros diários. A Tabela \ref{disponibilidade} mostra os dados utilizados para o cálculo de disponibilidade dos sensores.
 
@@ -11,30 +14,30 @@
   D = \frac{U}{N}
   \label{eq:disp}
 \end{equation}
-\newpage
+
 \begin{center}
-\captionof{table}{Tabela que representa a disponibilidade dos sensores}\label{disponibilidade}
+\captionof{table}{Tabela que representa a disponibilidade dos sensores.}\label{disponibilidade}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lllll}
+\begin{tabular}{rrrrr}
   \hline
   Sensor     & \begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tempo útil\\em dias (U)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tempo de\\  não funcionamento\\em dias (I)\end{tabular} & Disponibilidade (D) \\
 \hline
 Oficina    & 53                                                                             & 49                 & 4                                                                     & 92,45\%             \\
 \hline
-Escritório & 101                                                                            & 95                 & 6                                                                     & 94,05\%             \\
+Escritório & 95                                                                            & 89                 & 6                                                                     & 93,68\%             \\
 \hline
-Quarto     & 101                                                                            & 99                 & 2                                                                     & 98,01\%             \\
+Quarto     & 95                                                                            & 93                 & 2                                                                     & 97,89\%             \\
 \hline
-Varanda    & 101                                                                            & 93                 & 8                                                                     & 92,07\%             \\
+Varanda    & 95                                                                            & 87                 & 8                                                                     & 91,57\%             \\
 \hline
-Piano      & 101                                                                            & 95                 & 6                                                                     & 94,05\%
+Piano      & 95                                                                            & 89                 & 6                                                                     & 93,68\%
 
 \end{tabular}%
 }
 \end{center}
 
 
-\\\null \quad A Produtividade (P) de um equipamento pode ser calculada pela razão entre a quantidade de unidades produzidas (L) e a quantidade esperada (E), como mostra a Equação \ref{eq:prod}. No escopo desse trabalho, é utilizada como unidade produzida a leitura enviada pelo sensor e armazenada no servidor. O número de leituras esperado (E) é dado pelo número de dias de funcionamento (N) multiplicado pela quantidade de registros que deveriam ser enviados por dia (número de leituras por hora vezes 24 horas), seguindo a Equação \ref{eq:esp}. A Tabela \ref{produtividade} mostra os dados utilizados para o cálculo da produtividade dos sensores.
+\\\null \quad A Produtividade (P) de um equipamento pode ser calculada pela razão entre a quantidade de unidades produzidas (L) e a quantidade esperada (E), como mostra a Equação \ref{eq:prod}. No escopo desse trabalho, é utilizada como unidade produzida a leitura enviada pelo sensor e armazenada no servidor. O número de leituras esperado (E) é dado pelo número de dias de funcionamento (N) multiplicado pela quantidade de registros que deveriam ser enviados por dia (número de leituras por hora vezes 24 horas), no contexto dos sensores utilizados no ambiente \acrshort{IoT} em escala reduzida, cada dispositivo sensitivo envia duas leituras por minuto, uma referente à temperatura e outra à umidade,  seguindo a Equação \ref{eq:esp}. A Tabela \ref{produtividade} mostra os dados utilizados para o cálculo da produtividade dos sensores.
 
 \begin{equation}
   P = \frac{L}{E}
@@ -47,26 +50,34 @@ Piano      & 101                                                                
 \end{equation}
 
 \begin{center}
-\captionof{table}{Tabela que representa a produtividade dos sensores}\label{produtividade}
+\captionof{table}{Tabela que representa a produtividade dos sensores.}\label{produtividade}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lllll}
+\begin{tabular}{lrrrr}
   \hline
-  Sensor     & \begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular} & Número de leituras (L) & \begin{tabular}[c]{@{}l@{}}Número de leituras\\  esperado (E)\end{tabular} & Produtividade (P) \\
-  \hline
-  Oficina    & 53                                                                             & 140754                 & 152640                                                                     & 92,21\%             \\
-  \hline
-  Escritório & 101                                                                            & 233500                 & 290880                                                                     & 80,27\%             \\
-  \hline
-  Quarto     & 101                                                                            & 246550                 & 290880                                                                     & 84,76\%             \\
-  \hline
-  Varanda    & 101                                                                            & 233722                 & 290880                                                                     & 80,35\%             \\
-  \hline
-  Piano      & 101                                                                            & 236990                 & 290880                                                                     & 81,47\%
+Sensor     & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular}} & \multicolumn{1}{l}{Número de leituras (L)} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de leituras\\  esperado (E)\end{tabular}} & \multicolumn{1}{l}{Disponibilidade (D)} \\
+\hline
+Oficina    & 53                                                                                                 & 140754                                     & 152640                                                                                         & 92,21\%                                 \\
+\hline
+Escritório & 95                                                                                                 & 233500                                     & 273600                                                                                         & 85,34\%                                 \\
+\hline
+Quarto     & 95                                                                                                 & 246550                                     & 273600                                                                                         & 90,11\%                                 \\
+\hline
+Varanda    & 95                                                                                                 & 233722                                     & 273600                                                                                         & 85,42\%                                 \\
+\hline
+Piano      & 95                                                                                                 & 236990                                     & 273600                                                                                         & 86,62\%
 \end{tabular}%
 }
 \end{center}
 
-\\\null \quad A Qualidade (Q) de um equipamento é dada pela razão entre a quantidade total produzida deduzida da quantidade inutilizada ou retrabalhada e a quantidade total produzida. No escopo deste trabalho, não há a noção de quantidade inutilizada ou retrabalhada visto que uma leitura pode apenas ser armazenada ou não, o que leva a qualidade do que é produzido ser sempre igual a 100\%.
+\\\null \quad A característica Qualidade (Q) em uma avaliação de \textit{\acrlong{OEE}} de um equipamento é dada pela razão entre a quantidade total produzida (T) deduzida da quantidade inutilizada ou retrabalhada (U) e a quantidade total produzida (T), conforme mostra a Equação \ref{eq:qualidade}.
+\\ \null \quad Visto que neste trabalho de conclusão de curso o objetivo é apresentar uma avaliação dos sensores, não foi realizada uma avaliação do dado produzido pelos equipamentos, não exitindo, então, a noção de quantidade inutilizada ou retrabalhada uma vez que uma leitura pode apenas ser armazenada ou não, o que leva a qualidade do que é produzido ser sempre igual a 100\%.
+
+\begin{equation}
+  Q = \frac{T-U}{T}
+  \label{eq:qualidade}
+\end{equation}
+
+
 \\\null \quad A \acrshort{OEE} é dada pela multiplicação entre os valores de Produtividade, Disponibilidade e Qualidade, conforme a Equação \ref{eq:OEE}, gerando a Tabela \ref{tabelaOEE} a seguir.
 
 \begin{equation}
@@ -75,44 +86,44 @@ Piano      & 101                                                                
 \end{equation}
 
 \begin{center}
-\captionof{table}{Tabela que representa a \acrshort{OEE} dos sensores}\label{tabelaOEE}
+\captionof{table}{Tabela que representa a \acrshort{OEE} dos sensores.}\label{tabelaOEE}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{lllll}
+\begin{tabular}{lrrrr}
   \hline
 Sensor     & \begin{tabular}[c]{@{}l@{}}Disponibilidade (D)\end{tabular} & Produtividade (P) & \begin{tabular}[c]{@{}l@{}}Qualidade (Q)\end{tabular} & OEE \\
 \hline
 Oficina    & 92,45\%                                                                             & 92,21\%                 & 100\%                                                                     & 85,24\%             \\
 \hline
-Escritório & 94,05\%                                                                            & 80,27\%                 & 100\%                                                                     & 75,49\%             \\
+Escritório & 93,68\%                                                                            & 85,34\%                 & 100\%                                                                     & 79,94\%             \\
 \hline
-Quarto     & 98,01\%                                                                            & 84,76\%                 & 100\%                                                                     & 83,07\%             \\
+Quarto     & 97,89\%                                                                            & 90,11\%                 & 100\%                                                                     & 88,20\%             \\
 \hline
-Varanda    & 92,07\%                                                                            & 80,35\%                & 100\%                                                                     & 73,97\%             \\
+Varanda    & 91,57\%                                                                            & 85,42\%                & 100\%                                                                     & 78,22\%             \\
 \hline
-Piano      & 94,05\%                                                                            & 81,47\%                 & 100\%                                                                     & 76,62\%
+Piano      & 93,68\%                                                                            & 86,62\%                & 100\%                                                                     & 81,15\%
 \end{tabular}%
 }
 \end{center}
 
-\\\null \quad O sistema de pontuação utilizado está descrito na seção \ref{subsec:pontuacao}, o que inclui, por exemplo, as considerações de regularidade das leituras, interrupções no envio de dados e as colaborações dos usuários.
+\\\null \quad O sistema de pontuação utilizado está descrito na Seção \ref{subsec:pontuacao}, o que inclui, por exemplo, as considerações de regularidade das leituras, interrupções no envio de dados e as colaborações dos usuários.
 \\\null \quad A Tabela \ref{tabelaComparacao} mostra a média da pontuação dos sensores calculada pelo sistema em comparação com a pontuação \acrshort{OEE}. A utilização da média da pontuação calculada foi necessária devido ao fato da \textit{\acrlong{OEE}} tratar de dados históricos.
 
 \begin{center}
-\captionof{table}{Tabela que representa a comparação entre \acrshort{OEE} dos sensores e a pontuação calculada pelo sistema}\label{tabelaComparacao}
-\resizebox{250}{!}{%
-\begin{tabular}{lllll}
+\captionof{table}{Tabela que representa a comparação entre \acrshort{OEE} dos sensores e a pontuação calculada pelo sistema.}\label{tabelaComparacao}
+\resizebox{200}{!}{%
+\begin{tabular}{lrr}
   \hline
-Sensor     & OEE  & \begin{tabular}[c]{@{}l@{}}Pontuação \\ Calculada \end{tabular}\\
+Sensor     & \multicolumn{1}{l}{OEE} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Pontuação\\ Calculada\end{tabular}} \\
 \hline
-Oficina    & 85,24\%                                                                             & 88\%                 \\
+Oficina    & 85,24\%                 & 88\%                                                                              \\
 \hline
-Escritório & 75,49\%                                                                            & 84,4\%                 \\
+Escritório & 79,94\%                 & 84,4\%                                                                            \\
 \hline
-Quarto     & 83,07\%                                                                            & 89\%                 \\
+Quarto     & 88,20\%                 & 89\%                                                                              \\
 \hline
-Varanda    & 73,97\%                                                                            & 83,6\%                \\
+Varanda    & 78,22\%                 & 83,6\%                                                                            \\
 \hline
-Piano      & 76,62\%                                                                            & 85,7\%
+Piano      & 81,15\%                 & 85,7\%
 
 \end{tabular}%
 }

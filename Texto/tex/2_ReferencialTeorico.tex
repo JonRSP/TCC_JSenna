@@ -79,7 +79,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 		armazenamento de dados e/ou processamento de dados;
 		\item Coisas, no contexto de \acrshort{IoT}, são "objetos
 	no mundo físico (objetos físicos) ou no mundo das informações (objetos virtuais), os quais são capazes
-	de serem identificados e integrados a uma rede de comunicações" (tradução livre). Conforme mostra a Figura \ref{refiottec} dispositivos comunicam-se entre si e objetos físicos, relacionados aos dispositivos, mapeam as informações coletadas em objetos virtuais. Objetos físicos podem sentir, atuar e conectar.
+	de serem identificados e integrados a uma rede de comunicações" (tradução livre). Conforme mostra a Figura \ref{refiottec}, dispositivos comunicam-se entre si e objetos físicos, relacionados aos dispositivos, mapeam as informações coletadas em objetos virtuais. Objetos físicos podem sentir, atuar e conectar.
 	Objetos virtuais podem ser armazenados, processados e acessados.
 	\end{itemize}
 	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT} (adaptado de \cite{ITU})}{refiottec}{height=250,width=\textwidth}%
@@ -118,7 +118,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 \label{subsec:desafios}
 	\quad A \acrlong{IoT} possui diversos desafios conhecidos devido à sua própria concepção. Essas dificuldades devem ser superadas para que a
 	\acrshort{IoT} possa ser devidamente implementada e amplamente utilizada. Alguns fatores críticos podem ser elencados \cite{roadmap}:
-  \itemize{
+  \begin{itemize}
 		\item Infraesturura de rede: o custo se eleva a partir da complexidade da infraestrutura para interconectar os dispositivos. Para uma grande rede de sensores é necessário o desdobramento da respectiva infraestrutura:
 		 cabeamento, equipamentos de gerenciamento de redes, redes sem fio e contratação dos canais de comunicação, entre outros.
 
@@ -132,7 +132,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 		\item Consumo de energia: é imperativo que o consumo de energia dos dispositivos sensitivos seja o menor possível. Em muitos cenários é improvável a presença de uma
 		rede de energia elétrica e até mesmo sua constante manutenção. Então, os equipamentos devem ter a capacidade de manter sua funcionalidade por meio do uso baterias por
 		uma quantidade de tempo considerável.
-}
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,17 +160,17 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
     \quad Os seguintes princípios são considerados básicos para o desenvolvimento de soluções práticas em desafios de semântica
     e interoperabilidade de dispositivos em qualquer domínio e em qualquer conjunto de metadados \cite{metadata}:
 		\begin{itemize}
-		  \item Modularidade: Modularidade de metadados é um princípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
+		  \item Modularidade: a modularidade de metadados é um princípio chave para a organização de ambientes caracterizados pela diversidade de fontes e estilos
       de conteúdo. A modularidade permite que projetistas criem novos esquemas de metadados baseados em projetos
       já existentes e se beneficiem de boas práticas já observadas. Em um ambiente com metadados modulares, elementos de informação de diferentes esquemas
       podem ser combinados de forma interoperável, tanto sintaticamente quanto semanticamente.
-      \item Flexibilidade: Sistemas de metadados precisam ser flexíveis para acomodar as particularidades de uma determinada aplicação.
+      \item Flexibilidade: sistemas de metadados precisam ser flexíveis para acomodar as particularidades de uma determinada aplicação.
       Arquiteturas de metadados devem se adequar facilmente à noção de um esquema base aliado a elementos adicionais necessários para uma aplicação local, ou a um
       domínio específico sem comprometer a interoperabilidade proporcionada pelo esquema base.
-      \item Refinamento: O nível de detalhamento necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar custos
+      \item Refinamento: o nível de detalhamento necessário para cada domínio de aplicação pode variar consideravelmente. Para evitar custos
       desnecessários com armazenamento e processamento, o desenvolvimento dos padrões de metadados devem permitir que os projetistas
       escolham o nível de detalhamento apropriado para uma dada aplicação.
-      \item Multilinguismo: O multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
+      \item Multilinguismo: o multilinguismo é essencial ao adotar arquiteturas de metadados que respeitem a diversidade linguística e cultural.
       Por ter a possibilidade de conectar sistemas de diversas partes do planeta, é importante que a comunicação dos metadados respeite requisitos gerais de linguagem e formatação.
 		\end{itemize}
   \subsection{Metadados de Sensores}
