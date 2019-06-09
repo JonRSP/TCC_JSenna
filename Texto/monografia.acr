@@ -16,9 +16,8 @@
 		\setentrycounter[]{page}\glsnumberformat{24}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{30}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{39}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{44}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{46}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{48\delimN 49}}}%
+		\setentrycounter[]{page}\glsnumberformat{47\delimN 48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{51\delimN 52}}}%
 \glossentry{ITU}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
@@ -26,8 +25,9 @@
 		\setentrycounter[]{page}\glsnumberformat{xi}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{45\delimR 47}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{47}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{49\delimN 50}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{52}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossentry{RFID}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{8\delimN 9}}}%

@@ -60,13 +60,13 @@
 \end{itemize}
 
 \subsection{Banco de Dados}
-\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volumes de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido. A Figura \ref{MR} mostra o Modelo Relacional implementado.
+\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volume de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido. A Figura \ref{MR} mostra o Modelo Relacional implementado.
 
 \figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{scale=0.5}
 \newpage
 \figura[!h]{tccMR.jpg}{Modelo Relacional implementado}{MR}{scale=0.5}
-\\\null \quad A entidade Respostas\_Possíveis foi criada com o intúito de evitar problemas durante a fase de colaboração humana com o sistema. Ao fixar as possibilidades de respostas para cada pergunta, evita-se problemas como por exemplo, erros de ortografia e erros na compreensão da pergunta.
-\\\null \quad A entidade Tipo\_Pergunta implementa o que foi proposto na Figura \ref{funcionamento2}, as perguntas podem ser utilizadas para se obter o contexto espacial ou psicológico.
+A entidade "Respostas\_Possíveis"\ foi criada com o intuito de evitar problemas durante a fase de colaboração humana com o sistema. Ao fixar as possibilidades de respostas para cada pergunta, evitam-se problemas como, por exemplo, erros de ortografia e erros na compreensão da pergunta.
+\\\null \quad A entidade "Tipo\_Pergunta"\ implementa o que foi proposto na Figura \ref{funcionamento2}. As\ perguntas podem ser utilizadas para se obter o contexto espacial ou psicológico.
 \subsection{O Sistema de Pontuação}
 \label{subsec:pontuacao}
 \null \quad Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação a fim de avaliar os sensores. Para atingir este objetivo, foi pensado nas seguintes formas de avaliação:
@@ -118,22 +118,22 @@ dados suficientes para o processamento do programa desenvolvido. As informaçõe
 com os usuários, permitem o pleno funcionamento da proposta.
 
 \subsection{Dispositivos Sensitivos}
-\quad Foram construídos 5 dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor}. Esta placa
+\quad Foram construídos 5 (cinco) dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor}. Esta placa
 foi escolhida por seu baixo custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão \textit{wireless} disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
 \\\null \quad Os dispositivos, após a montagem final, são capazes de medir temperatura ($^\circ$C) e umidade do ar (\%) utilizando o sensor DHT11. Este sensor foi escolhido
 por sua praticidade de uso e baixo custo.
 \\\\\\
 \figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.8}
-\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foi desenvolvido um \textit{script} Python que segue o fluxograma da Figura \ref{fluxogramaSensor}. Nesse \textit{script} foram utilizadas as bibliotecas Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT}.
+\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foi desenvolvido um \textit{script} Python que segue o fluxograma da Figura \ref{fluxogramaSensor}. Nesse \textit{script}, foram utilizadas as bibliotecas Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT}.
 
 \figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um dispositivo sensitivo construído}{fluxogramaSensor}{scale=0.57}
 \newpage
 \subsection{Interação Sensores-Servidor}
 
 \\\null \quad A mensagem enviada pelos sensores é uma \textit{string} no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
-No escopo deste trabalho são essenciais apenas as informações sobre o código identificador do equipamento, os tipos de sensor que esse dispositivo se enquadra (um dispositivo sensitivo pode ter vários tipos de sensor associados), como por exemplo, umidade e temperatura, e suas respectivas leituras. A Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
-\\\null \quad Ao receber a informação, o sistema SenseHera decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0. Neste caso, criam-se novas categorias de sensores se as categorias recebidas não constem no banco de dados e armazenam-se as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo, o qual armazena este identificador em seu banco de dados. A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
-\\\null\quad A Figura \ref{mensagemJSONExemplo} mostra um exemplo de uma mensagem inicial enviada de um dispositivo sensitivo para o sistema SenseHera. A Figura \ref{mensagemJSONExemplo2} mostra um exemplo de mensagem subsequente à mensagem inicial, neste caso, ao receber a primeira mensagem, o SenseHera criou uma instância da entidade Sensor cujo identificador é igual à 5 e enviou esse código para o dispositivo.
+No escopo deste trabalho, são essenciais apenas as informações sobre o código identificador do equipamento, os tipos de sensor que esse dispositivo se enquadra (um dispositivo sensitivo pode ter vários tipos de sensor associados), como, por exemplo, umidade e temperatura, e suas respectivas leituras. A Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
+\\\null \quad Ao receber a informação, o sistema SenseHera decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0. Neste caso, criam-se novas categorias de sensores se as que forem recebidas não constem no banco de dados. Após isso, armazenam-se as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo, o qual armazena este identificador em seu banco de dados. A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
+\\\null\quad A Figura \ref{mensagemJSONExemplo} mostra um exemplo de uma mensagem inicial enviada de um dispositivo sensitivo para o sistema SenseHera. A Figura \ref{mensagemJSONExemplo2} mostra um exemplo de mensagem subsequente à mensagem inicial. Neste contexto, ao receber a primeira mensagem, o SenseHera criou uma instância da entidade Sensor cujo identificador é igual a 5 e enviou esse código para o dispositivo.
 \\\\\\
 \figura[!h]{mensagemJSON.jpg}{Formato genérico para a mensagem JSON}{mensagemJSON}{scale=0.6}
 \pagebreak
@@ -155,7 +155,7 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
 \figura{sensormsg.jpg}{Sensor e QR-Code}{sensormsg}{width=\textwidth, height=250}
 
 \subsection{Comportamento Esperado}
-\quad A montagem dos equipamentos foi realizada próxima ao solstício de verão, mas a base de dados de leituras considerada teve o início de sua preenchimento no mês de fevereiro. Neste contexto, o comportamento esperado para estes sensores é o seguinte:
+\quad A montagem dos equipamentos foi realizada próxima ao solstício de verão, mas a base de dados de leituras considerada teve o início de seu preenchimento no mês de fevereiro. Neste contexto, o comportamento esperado para estes sensores é o seguinte:
 \begin{itemize}
   \item Período chuvoso (meados de outubro à meados de maio):
   \begin{itemize}
@@ -172,7 +172,7 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
   \end{itemize}
   \item Sensores externos à residência devem ter variações maiores de temperatura e umidade.
 \end{itemize}
-\null \quad Caso os sensores apresentassem um coportamento excessivamente distinto do esperado, o efeito deveria ser refletido no resultado calculado pelo sistema SenseHera.
+\null \quad Caso os sensores apresentassem um comportamento excessivamente distinto do esperado, o efeito deveria ser refletido no resultado calculado pelo sistema SenseHera.
 
 \section{Dificuldades Encontradas}
 \label{sec:dificuldades}
