@@ -3,6 +3,42 @@
 %
 \section{Prova de Conceito}
 \label{sec:provadeconceito}
+\\\null \quad Para a prova de conceito do sistema SenseHera foi realizada a verificação da adição de um novo dispositivo sensitivo no ambiente \acrshort{IoT} em escala reduzida (Seção \ref{subsec:dispositivo}), inspeção dos dados coletados por um dos sensores durante um período de tempo (Seção \ref{subsec:dados}), realização de uma simulação de uma colaboração por parte de um usuário (Seção \ref{subsec:colaboracao}) e da utilização do sistema para a visualização dos dados coletados (Seção \ref{subsec:utilizacao}).
+
+\subsection{Adição de Dispositivos no Ambiente IoT}
+\label{subsec:dispositivo}
+\\\null \quad Supõe-se a construção de um novo dispositivo sensitivo, como mostra a Figura \ref{prova1} e sua configuração prévia (instalação do sistema operacional e das ferramentas necessárias para seu funcionamento e o \textit{download} do código desenvolvido para os sensores).
+\pagebreak
+\figura[!h]{prova1.jpg}{Novo dispositivo sensitivo construído}{prova1}{scale=0.17}
+\\\null \quad Ao iniciar o código desenvolvido, o dispositivo cria um banco de dados local, realiza as leituras por meio do sensor DHT11, monta uma mensagem semelhante à mensagem mostrada na Figura \ref{mensagemJSONExemplo}, podendo ser diferente apenas os valores das leituras.
+\\\null \quad Quando o SenseHera recebe a mensagem, é criada uma instância da entidade Sensor, as leituras são armazenadas no banco de dados do servidor e o identificador da instância criada é enviada ao sensor. A partir deste momento, já é possível observar na página web que um novo sensor foi adicionado com o nome de "Descrição temporária sensor 2", conforme mostra a Figura \ref{prova2}. Novas leituras desse dispositivo são associadas à instância cuja descrição é "Descrição temporária sensor 2". Esta descrição pode ser alterada utilizando a ferramenta de adminstração disponibilizada pelo Django.
+\pagebreak
+\figura[!h]{prova2.png}{Novo dispositivo sensitivo adicionado ao sistema}{prova2}{width=\textwidth, height=200}
+
+\subsection{Inspeção dos Dados Coletados}
+\label{subsec:dados}
+\\\null \quad É realizado o acesso do servidor via \textit{\acrlong{SSH}} (\acrshort{SSH}) e o acesso direto ao banco de dados é feito a partir da ferramenta para linha de comando do PostgreSQL, conforme mostra a Figura \ref{prova3}.
+\figura[!h]{prova3.png}{Acesso ao banco de dados via SSH}{prova3}{width=\textwidth,height=125}
+\\\null \quad A Figura \ref{prova4} mostra as leituras coletadas durante um período de dez minutos pelo sensor cujo ID é 4. Foram realizadas 22 leituras, 11 referentes à temperatura e 11 referentes à umidade. É possível observar a variação nos registros, o que mostra a variação ocorrida no mundo físico.
+\figura[!h]{prova4.png}{Registros de sensor em um período de dez minutos}{prova4}{scale=0.7}
+
+\subsection{Simulação de Colaboraçãopor um Usuário}
+\label{subsec:colaboracao}
+\\\null \quad Supõe-se um usuário do sistema, ao se deparar com algum dos QR-Codes apresentados na Figura \ref{prova5} ele decide escaneá-lo.
+\figura[!h]{prova5.jpg}{QR-Codes localizados próximos aos sensores}{prova5}{width=\textwidth, height=250}
+
+\\\null \quad Ao ser redirecionado pelo \textit{software} de escaneamento para a página web, uma pergunta é aleatoriamente escolhida pelo sistema, a qual é apresentada para o usuário, conforme a Figura \ref{prova6}. Como o conjunto de respostas possíveis para uma pergunta é pré-definido, evita-se erros de ortografia e erros de entendimento da pergunta, como mostra a Figura \ref{prova7}. O colaborador envia sua resposta para o SenseHera. A cada hora o sistema irá verificar se há uma concentração das respostas e realizar as operações referentes ao cálculo da pontuação do sensor.
+\figura[!h]{prova6.jpg}{Exemplo de pergunta apresentada ao colaborador}{prova6}{scale=0.17}
+\figura[!h]{prova7.jpg}{Exemplo de um conjunto de respostas possíves apresentadas ao colaborador}{prova7}{scale=0.17}
+
+\subsection{Utilização do Sistema}
+\label{subsec:utilizacao}
+\\\null \quad Supõe-se um usuário do sistema com interesse em controlar as condições de temperatura e umidade de um dos cômodos da residência em que o SenseHera está funcionando. Ao abrir a página de dados, todos os dispositivos sensitivos estão listados à esquerda, como mostra a Figura \ref{prova8}.
+\figura[!h]{prova8.png}{Lista de dispositivos}{prova8}{scale=0.17}
+\\\null \quad O usuário, então, escolhe o cômodo que deseja visualizar as informações coletadas. Na página com os detalhes de um sensor, é possível ver informações sobre as últimas leituras e a pontuação do sensor, como mostra a Figura \ref{prova9}. Também é possível verificar a média das leituras nas últimas 24 horas, bem como a média histórica dos registros, respectivamente, nas Figuras \ref{prova10} e \ref{prova11}
+\figura[!h]{prova9.png}{Últimas leituras e pontuação do sensor}{prova9}{scale=0.17}
+\figura[!h]{prova10.png}{Gráficos com a média das leituras das últimas 24 horas}{prova10}{scale=0.17}
+\figura[!h]{prova11.png}{Gráficos com a média histórica das leituras}{prova11}{scale=0.17}
  \section{Teste Comparativo}
  \label{sec:testecomparativo}
 \\\null \quad Os resultados deste projeto, além da própria implementação do sistema, são os dados coletados pelos sensores conectados ao ambiente \acrshort{IoT} e análises referentes a esses dados.

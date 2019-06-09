@@ -60,10 +60,13 @@
 \end{itemize}
 
 \subsection{Banco de Dados}
-\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volumes de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido.
+\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volumes de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido. A Figura \ref{MR} mostra o Modelo Relacional implementado.
 
 \figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{scale=0.5}
 \newpage
+\figura[!h]{tccMR.jpg}{Modelo Relacional implementado}{MR}{scale=0.5}
+\\\null \quad A entidade Respostas\_Possíveis foi criada com o intúito de evitar problemas durante a fase de colaboração humana com o sistema. Ao fixar as possibilidades de respostas para cada pergunta, evita-se problemas como por exemplo, erros de ortografia e erros na compreensão da pergunta.
+\\\null \quad A entidade Tipo\_Pergunta implementa o que foi proposto na Figura \ref{funcionamento2}, as perguntas podem ser utilizadas para se obter o contexto espacial ou psicológico.
 \subsection{O Sistema de Pontuação}
 \label{subsec:pontuacao}
 \null \quad Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação a fim de avaliar os sensores. Para atingir este objetivo, foi pensado nas seguintes formas de avaliação:
@@ -89,7 +92,7 @@
 
 \figura[!h]{inicial.png}{Página inicial do site}{inicial}{height=250,width=\textwidth}
 \newpage
-\null \quad Ao clicar na aba "Dados"  (botão localizado na barra de navegação), o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como o número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
+\null \quad Ao clicar na aba "Dados"\ (botão localizado na barra de navegação), o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como o número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
 
 \figura[!h]{principal.png}{Página principal do site}{principal}{height=250,width=\textwidth}
 \newpage
@@ -121,18 +124,21 @@ foi escolhida por seu baixo custo, seu desempenho computacional proporcional ao 
 por sua praticidade de uso e baixo custo.
 \\\\\\
 \figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.8}
-\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foram utilizadas, respectivamente, as bibliotecas python Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT} em um \textit{script} que segue o fluxograma da Figura \ref{fluxogramaSensor}.
+\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foi desenvolvido um \textit{script} Python que segue o fluxograma da Figura \ref{fluxogramaSensor}. Nesse \textit{script} foram utilizadas as bibliotecas Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT}.
 
-\figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um sensor}{fluxogramaSensor}{scale=0.57}
+\figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um dispositivo sensitivo construído}{fluxogramaSensor}{scale=0.57}
 \newpage
 \subsection{Interação Sensores-Servidor}
 
 \\\null \quad A mensagem enviada pelos sensores é uma \textit{string} no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
-No escopo deste trabalho são essenciais apenas as informações sobre o código identificador do equipamento, os tipos de sensor que esse dispositivo se enquadra (um dispositivo sensitivo pode ter vários tipos de sensor associados), como, por exemplo, umidade e temperatura, e suas respectivas leituras. A Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
-\\\null \quad Ao receber a informação, o sistema decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0. Neste caso, criam-se novas categorias de sensores se as categorias recebidas não constem no banco de dados e armazenam-se as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo, o qual armazena este identificador em seu banco de dados. A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
+No escopo deste trabalho são essenciais apenas as informações sobre o código identificador do equipamento, os tipos de sensor que esse dispositivo se enquadra (um dispositivo sensitivo pode ter vários tipos de sensor associados), como por exemplo, umidade e temperatura, e suas respectivas leituras. A Figura \ref{mensagemJSON} mostra o formato da informação a ser enviada.
+\\\null \quad Ao receber a informação, o sistema SenseHera decodifica a mensagem JSON e cria um objeto sensor no banco de dados caso o identificador recebido seja igual a 0. Neste caso, criam-se novas categorias de sensores se as categorias recebidas não constem no banco de dados e armazenam-se as leituras, permitindo uma rápida e simples adição de sensores ao sistema, bastando, apenas, o envio da mensagem inicial. A chave primária desse objeto sensor recém criado é enviada do servidor para o dispositivo sensitivo, o qual armazena este identificador em seu banco de dados. A partir deste momento, novos envios contam com o novo valor do identificador, o que sinaliza para o sistema que deve apenas armazenar as leituras recebidas e associá-las ao sensor cuja chave primária é igual à recebida.
+\\\null\quad A Figura \ref{mensagemJSONExemplo} mostra um exemplo de uma mensagem inicial enviada de um dispositivo sensitivo para o sistema SenseHera. A Figura \ref{mensagemJSONExemplo2} mostra um exemplo de mensagem subsequente à mensagem inicial, neste caso, ao receber a primeira mensagem, o SenseHera criou uma instância da entidade Sensor cujo identificador é igual à 5 e enviou esse código para o dispositivo.
 \\\\\\
 \figura[!h]{mensagemJSON.jpg}{Formato genérico para a mensagem JSON}{mensagemJSON}{scale=0.6}
-
+\pagebreak
+\figura[!h]{mensagemJSONExemplo.jpg}{Exemplo de uma mensagem inicial em formato JSON}{mensagemJSONExemplo}{scale=0.6}
+\figura[!h]{mensagemJSONExemplo2.jpg}{Exemplo de uma mensagem subsequente à mensagem inicial em formato JSON}{mensagemJSONExemplo2}{scale=0.6}
 \subsection{Localização do Ambiente IoT em Escala Reduzida}
 \quad O ambiente escolhido para a aplicação em escala reduzida é um terreno de 2500 $m^2$ localizado em uma
 região rural do Distrito Federal. A disposição dos equipamentos foi feita conforme a Figura \ref{planta},
@@ -173,7 +179,7 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
 \quad Durante a execução do projeto, muitas dificuldades foram superadas para que os objetivos traçados fossem atingidos.
 \subsection{Localização dos Sensores}
 \quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília. Entretanto, alguns meses após o começo da coleta de dados, foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
-\\\null \quad Foi inevitável a eliminação dos dados produzidos até a data da transferência de localidade por se tratarem de regiões distintas e a utilização dos mesmos sensores, o que traria inconsistências ao sistema. Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
+\\\null \quad Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
 
 \subsection{Servidor}
 \quad Inicialmente, o servidor seria localizado em uma rede local e implementado em uma placa de desenvolvimento Raspberry Pi modelo B+ que possui as seguintes características físicas:
@@ -187,5 +193,5 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
 \null\quad Anteriormente à mudança de localidade, esta placa funcionou de forma adequada, armazenando os dados enquanto os outros elementos do sistema eram desenvolvidos. Após a mudança, devido a diversas falhas na rede elétrica, houve uma corrupção dos dados armazenados na placa, o que levou à perda dos dados coletados até então, por volta de 300.000 (trezentos mil) registros de leituras. Após essa perda de dados, foi contratado um serviço externo e online, o que acarretou em um novo atraso no início da coleta de dados devido à necessidade da configuração referentes a um servidor remoto e online.
 
 \subsection{\acrlong{SGBD}}
-\quad Inicialmente, o \acrshort{SGBD} escolhido foi o MySQL. Entretanto, seguindo a implementação do \acrshort{DER} desenvolvido para este trabalho, este \acrlong{SGBD} não possuia um desempenho satisfatório ao atingir mais de 900.000 (novecentos mil) registros de leituras. Este fato tornou o sistema web inutilizável em razão da lentidão causada pelas operações no banco de dados.
+\quad Inicialmente, o \acrshort{SGBD} escolhido foi o MySQL. Entretanto, seguindo a implementação do \acrshort{DER} desenvolvido para este trabalho, este \acrlong{SGBD}, associado ao \textit{framework} Django, não possuia um desempenho satisfatório ao atingir mais de 900.000 (novecentos mil) registros de leituras. Ao testar o \acrshort{SGBD} PostgreSQL, foi verificado que o seu desempenho, utilizando as ferramentas de acesso ao banco de dados fornecidas pelo Django, era adequado.
 \\\null \quad Devido à quantidade de dados já produzidos, à baixa capacidade computacional do servidor e  inconsistências no formato do arquivo de exportação do \acrshort{SGBD} previamente utilizado, não foi possível a importação no PostgreSQL das informações contidas no MySQL, levando à perda de uma considerável amostra de dados.
