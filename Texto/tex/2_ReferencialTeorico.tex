@@ -1,15 +1,15 @@
-Este capítulo apresenta o referencial teórico necessário para o desenvolvimento e compreensão deste projeto final. A Seção \ref{sec:siscol} trata de sistemas colaborativos, a Seção \ref{sec:internetofthings} apresenta informações sobre o domínio da \acrfull{IoT}, a Seção \ref{sec:dados} trata sobre dados no domínio de \acrshort{IoT}, a Seção \ref{sec:qualidade} trata da qualidade de dados e equipamentos e a Seção \ref{sec:plataforma} apresenta as plataformas utilizadas para construção do projeto.
+\null \quad Este capítulo apresenta o referencial teórico necessário para o desenvolvimento e compreensão deste projeto final. A Seção \ref{sec:siscol} trata de sistemas colaborativos, a Seção \ref{sec:internetofthings} apresenta informações sobre o domínio da \acrfull{IoT}, a Seção \ref{sec:dados} trata sobre dados no domínio de \acrshort{IoT}, a Seção \ref{sec:qualidade} trata da qualidade de dados e equipamentos e a Seção \ref{sec:plataforma} apresenta as plataformas utilizadas para construção do projeto.
 
 \section{Sistemas Colaborativos}
 \label{sec:siscol}
-\qqad A colaboração é um ponto central para qualquer comportamento inteligente.
-Atividades que envolvem colaboração permeiam praticamente todas as áreas da sociedade. Estas atividades variam desde operações coordenadas,
+\null \quad A colaboração é um ponto central para qualquer comportamento inteligente.
+Atividades que envolvem colaboração permeiam praticamente todas as áreas da sociedade; estas atividades variam desde operações coordenadas,
 bem planejadas, como em times de esportes e grupos musicais até colaborações espontâneas
 entre pessoas que percebem a necessidade de resolver problemas em conjunto.
 Tomando como exemplo a colaboração para a produção do conhecimento científico, esta ocorre em vários níveis: entre pessoas ou até mesmo entre diversas áreas da ciência \cite{cbarbara}.
 
 \subsection{Colaboração versus Interação}
-Segundo o dicionário Aurélio \cite{aurelio}, tem-se as seguintes definições:%referência do dicionário
+\null \quad Segundo o dicionário Aurélio \cite{aurelio}, tem-se as seguintes definições:%referência do dicionário
 \begin{itemize}
   \item \textbf{Colaboração:}
   \begin{enumerate}
@@ -79,8 +79,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
 		armazenamento de dados e/ou processamento de dados;
 		\item Coisas, no contexto de \acrshort{IoT}, são "objetos
 	no mundo físico (objetos físicos) ou no mundo das informações (objetos virtuais), os quais são capazes
-	de serem identificados e integrados a uma rede de comunicações"\ (tradução livre). Conforme mostra a Figura \ref{refiottec}, dispositivos comunicam-se entre si e objetos físicos, relacionados aos dispositivos, mapeam as informações coletadas em objetos virtuais. Objetos físicos podem sentir, atuar e conectar.
-	Objetos virtuais podem ser armazenados, processados e acessados.
+	de serem identificados e integrados a uma rede de comunicações"\ (tradução livre). Conforme mostra a Figura \ref{refiottec}, dispositivos comunicam-se entre si e objetos físicos, relacionados aos dispositivos, mapeam as informações coletadas em objetos virtuais. Objetos físicos podem sentir, atuar e conectar, ao passo que objetos virtuais podem ser armazenados, processados e acessados.
 	\end{itemize}
 	\figura[!h]{iottec}{Visão geral técnica de \acrshort{IoT} (adaptado de \cite{ITU})}{refiottec}{height=250,width=\textwidth}%
 % [1] ITU\\
@@ -186,7 +185,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
     desenvolvida para representar informações de sensores em formato XML, apesar de sua formatação obsoleta, os princípios utilizados para sua criação podem ser levados em consideração na utilização de outros padrões. Os propósitos da \acrshort{SensorML} incluem:
     \begin{itemize}
       \item Prover descrições de sensores e sistemas de sensores para gerenciamento de inventário;
-      \item Providenciar informação sobre o sensor e sobre processamento;
+      \item Providenciar informação sobre o sensor e sobre o processamento;
       \item Auxiliar o processamento e análise de dados coletados por sensores;
       \item Suportar informações de geolocalização de valores coletados;
       \item Fornecer informações de desempenho;
@@ -196,7 +195,7 @@ que humanos e máquinas aumentem sua capacidade de perceber, discriminar e avali
     \end{itemize}
 \section{Qualidade}
 \label{sec:qualidade}
-\quad Em ambientes \acrshort{IoT} as informações geradas são heterogêneas devido a sua origem em fontes heterogêneas (diferentes classes e tipos de sensores), as quais não necessariamente são conhecidas ou podem ser auditadas \cite{dataquality}. O aumento no volume de informações geradas por ambientes \acrshort{IoT} causa uma preocupação com a qualidade dos dados coletados para que decisões mais acertivas possam ser tomadas por sistemas autônomos.
+\quad Em ambientes \acrshort{IoT} as informações geradas são heterogêneas bem como suas fontes heterogêneas (diferentes classes e tipos de sensores), as quais não necessariamente são conhecidas ou podem ser auditadas \cite{dataquality}. O aumento no volume de informações geradas por ambientes \acrshort{IoT} causa uma preocupação com a qualidade dos dados coletados para que decisões mais acertivas possam ser tomadas por sistemas autônomos.
 \\\null\quad Dados de alta qualidade são caracterizados pela consistência; se as informações geradas por fontes novas podem ser consideradas consistentes com as informações coletadas por fontes já verificadas, então os novos dados podem ser considerados de alta qualidade \cite{dataquality}.
 \\\null\quad No contexto industrial, a qualidade de um equipamento é geralmente calculada por meio da ferramenta \textit{\acrlong{OEE}} (\acrshort{OEE}), criada em 1988 no Japão. Essa métrica utiliza os conceitos de Produtividade, Qualidade e Disponibilidade de um equipamento para definir sua qualidade geral. A qualidade geral, por sua vez, pode ser utilizada para se obter o nível de confiança de um dado equipamento, tomar decisões sobre substituição de equipamentos ou realizar mudanças no processo produtivo \cite{artigoOEE}.
 
