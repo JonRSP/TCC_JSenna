@@ -20,8 +20,13 @@
   \end{frame}
 
   \section{Contextualização}
-    \begin{frame}{Sobre o Trabalho}
-      Um sistema colaborativo para avaliação \cite{collaborative} da qualidade dos sensores em um ambiente Internet das Coisas.
+    \begin{frame}{Contextualização}
+      \quad IoT consiste na interconexão de dispositivos sensitivos e atuadores com a finalidade de atingir um objetivo em comum \cite{giusto}.
+      \\\null \quad Permite que humanos e máquinas compreendam melhor o ambiente em que se encontram, mudando a forma com que os usuários lidam com as atividades do cotidiano \cite{IOTS}.
+    \end{frame}
+    \begin{frame}{Contextualização}
+      \quad Para lidar com o problema da dinamicidade dos dados, alguns autores propuseram uma abordagem colaborativa, fornecendo metadados para o sistema \cite{collaborative}.
+      \\\null \quad Seguindo a ordenação lógica, estuda-se o dispositivo sensitivo anteriormente ao dado coletado.
     \end{frame}
 
   \section{Objetivos}
@@ -45,7 +50,7 @@
 
   \section{Sistema SenseHera}
   \begin{frame}{Visão Geral}
-    O SenseHera é um sistema web com as funcionalidades para:
+    \quad O SenseHera é um sistema web com as funcionalidades para:
     \begin{itemize}
       \item Gestão dos dados produzidos pelos sensores conectados ao ambiente IoT;
       \item Intermediar os usuários e os dados coletados;
@@ -55,6 +60,7 @@
   \end{frame}
 
   \begin{frame}{Requisitos}
+    \quad São os requisitos do sistema:
     \begin{itemize}
       \item Funcionar em ambientes de baixa capacidade computacional;
       \item Armazenar informações coletadas por sensores;
@@ -66,20 +72,20 @@
   \end{frame}
 
   \begin{frame}{Funcionamento}
-    Idealização das interações
+    \quad Idealização das interações
     \begin{center}
     \includegraphics[scale=0.7]{solucao1}
     \end{center}
   \end{frame}
   \begin{frame}{Funcionamento}
-    Idealização da colaboração
+    \quad Idealização da colaboração
     \begin{center}
     \includegraphics[scale=0.7]{solucao2}
     \end{center}
   \end{frame}
 
   \begin{frame}{Servidor}
-    Foi contratado um serviço online (Amazon Lightsail \cite{lightsail}) para hospedar o sistema, o qual possui as seguintes características:
+    \quad Foi contratado um serviço online (Amazon Lightsail \cite{lightsail}) para hospedar o sistema, o qual possui as seguintes características:
     \begin{itemize}
       \item Processador de um núcleo;
       \item 512 MB de memória RAM;
@@ -87,7 +93,7 @@
     \end{itemize}
   \end{frame}
   \begin{frame}{Servidor}
-    Neste servidor foram instaladas as seguintes ferramentas:
+    \quad Neste servidor foram instaladas as seguintes ferramentas:
     \begin{itemize}
       \item SO Ubuntu 18.04;
       \item Python 2.7;
@@ -99,36 +105,41 @@
   \end{frame}
 
   \begin{frame}{Banco de Dados}
-    Diagrama Entidade Relacionamento do sistema
+    \quad Diagrama Entidade Relacionamento do sistema
     \begin{center}
     \includegraphics[scale=0.3]{tccDER}
     \end{center}
   \end{frame}
 
   \begin{frame}{Sistema de Pontuação}
-
+    \quad O sistema de pontuação pode:
+    \begin{itemize}
+      \item Modificar a pontuação por meio do cálculo da regularidade do sensor;
+      \item Aumentar a pontuação devido à colaboração do usuário;
+      \item Diminuir a pontuação por falta de disponibilidade.
+    \end{itemize}
   \end{frame}
 
   \begin{frame}{Interface do Sistema - Página Inicial}
-    Página inicial do sistema
+    \quad Página inicial do sistema
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{inicial}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página Principal}
-    Página principal do sistema
+    \quad Página principal do sistema
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{principal}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página de Detalhes de um Sensor}
-    Página de detalhes de um sensor
+    \quad Página de detalhes de um sensor
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{pSensor}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página de administração}
-    Página de administração
+    \quad Página de administração
     \begin{center}
     \includegraphics[scale=0.3]{admin}
     \end{center}
@@ -141,7 +152,7 @@
     \end{frame}
 
     \begin{frame}{Montagem dos Dispositivos Sensitivos}
-      Foram utilizados os seguintes componentes:
+      \quad Foram utilizados os seguintes componentes:
       \begin{itemize}
         \item Raspberry Pi Zero W;
         \item Sensor DHT 11;
@@ -159,19 +170,20 @@
 
 
     \begin{frame}{Interação Sensor-Servidor}
-      A interação tem início com um envio, por parte do dispositivo sensitivo, de uma mensagem JSON para o sistema.
+      \quad A interação tem início com o envio, por parte do dispositivo sensitivo, de uma mensagem JSON para o sistema.
       \begin{center}
       \includegraphics[height=75pt, width=250pt]{mensagemJSON}
       \end{center}
     \end{frame}
     \begin{frame}{Interação Sensor-Servidor}
-      A partir do recebimento da mensagem:
+      \quad A partir do recebimento da mensagem pelo sistema:
       \begin{itemize}
         \item Verifica se o sensor já está cadastrado no sistema;
           \begin{itemize}
             \item Se estiver:
             \begin{itemize}
-              \item Armazena as leituras recebidas
+              \item Armazena as leituras recebidas;
+              \item Envia o identificador do sensor como meio de confirmação.
             \end{itemize}
             \item Se não estiver:
             \begin{itemize}
@@ -185,7 +197,7 @@
     \end{frame}
 
     \begin{frame}{Colaboração com o sistema}
-      A colaboração basea-se na intenção do usuário em responder as perguntas propostas.
+      \quad A colaboração basea-se na intenção do usuário em responder as perguntas propostas.
       \begin{center}
       \includegraphics[height=130pt, width=200pt]{sensormsg}
       \end{center}
@@ -194,19 +206,19 @@
   \section{Resultados}
 
     \begin{frame}{ Prova de Conceito - Adição de Dispositivos}
-      Supondo a construção e configuração de um novo dispositivo, deseja-se verficar se o sistema é capaz de incluí-lo de forma simples e eficaz.
+      \quad Supondo a construção e configuração de um novo dispositivo, deseja-se verficar se o sistema é capaz de incluí-lo de forma simples e eficaz.
       \begin{center}
       \includegraphics[height=130pt, width=\textwidth]{prova2}
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Inspeção dos Dados Coletados}
-      É realizada a verificação do armazenamento das leituras enviadas por um dos sensores.
+      \quad É realizada a verificação do armazenamento das leituras enviadas por um dos sensores.
       \begin{center}
       \includegraphics[height=150pt, width=200pt]{prova4}
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Simulação de Colaboração por um Usuário}
-      Supondo que um usuário se depara com um dos QR-codes localizado próximo a um dos sensores
+      \quad Supondo que um usuário se depara com um dos QR-codes localizado próximo a um dos sensores
       \begin{center}
       \includegraphics[height=150pt, width=200pt]{prova5}
       \end{center}
@@ -223,7 +235,7 @@
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Utilização do Sistema}
-      Supondo um usuário interessado em acessar as informações contidas no sistema
+      \quad Supondo um usuário interessado em acessar as informações contidas no sistema
       \begin{center}
       \includegraphics[height=130pt, width=\textwidth]{prova8}
       \end{center}
@@ -245,7 +257,7 @@
       \\\null \quad Para o cálculo da OEE, é preciso calcular três elementos: Disponibilidade, Produtividade e Qualidade.
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE - Disponibilidade}
-      A disponibilidade é a razão entre o tempo de funcionamento útil e o tempo de funcionamento total.
+      \quad A disponibilidade é a razão entre o tempo de funcionamento útil e o tempo de funcionamento total.
       Considera-se um dia útil o dia em que foram armazenadas mais do que a metade do total de leituras esperadas por dia
       \begin{center}
       % \captionof{table}{Tabela que representa a disponibilidade dos sensores.}\label{disponibilidade}
@@ -269,7 +281,7 @@
       \end{center}
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE - Produtividade}
-      A Produtividade de um equipamento é dada pela razão entre a quantidade produzida e a quantidade esperada
+      \quad A Produtividade de um equipamento é dada pela razão entre a quantidade produzida e a quantidade esperada
       \begin{center}
       \resizebox{\textwidth}{!}{%
       \begin{tabular}{lrrrr}
@@ -290,10 +302,10 @@
       \end{center}
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE - Qualidade}
-      Neste trabalho não foi verificada a qualidade do dado produzido. Entretanto para que fosse possível calcular a OEE, a Qualidade foi considerada 100\%.
+      \quad Neste trabalho não foi verificada a qualidade do dado produzido. Entretanto para que fosse possível calcular a OEE, a Qualidade foi considerada 100\%.
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE}
-        Multiplicando os três elementos, obtêm-se a OEE.
+        \quad Multiplicando os três elementos, obtêm-se a OEE.
         \begin{center}
 
         \resizebox{\textwidth}{!}{%
@@ -315,7 +327,7 @@
         \end{center}
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE vs SenseHera}
-      Comparação entre OEE e SenseHera:
+      \quad Comparação entre OEE e SenseHera:
       \begin{center}
       \resizebox{170}{!}{%
       \begin{tabular}{lrr}
@@ -338,7 +350,7 @@
     \end{frame}
   \section{Conclusão}
     \begin{frame}{ Conclusão }
-      Este trabalho apresentou:
+      \quad Este trabalho apresentou:
       \begin{itemize}
         \item O desenvolvimento de sistema SenseHera;
         \item A construção de um ambiente IoT em escala reduzida;
@@ -347,7 +359,7 @@
     \end{frame}
 
     \begin{frame}{Trabalhos Futuros}
-      Os temas a seguir tratam sobre trabalhos futuros:
+      \quad Os temas a seguir tratam sobre trabalhos futuros:
       \begin{itemize}
         \item Implementação do sistema utilizando bancos de dados NOSQL;
         \item Associar as informações fornecidas pelos usuários aos registros dos sensores por meio de metadados;
@@ -357,7 +369,7 @@
 
     \end{frame}
 
-  \begin{frame}{Referências}
+  \begin{frame}[allowframebreaks]{Referências}
     \setbeamertemplate{bibliography item}[text]
     \bibliography{bibliografia}
     \bibliographystyle{ieeetr}
