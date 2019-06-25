@@ -8,8 +8,8 @@
 
 \title{Uma Abordagem Colaborativa para a Avaliação de Sensores em Ambientes de Internet das Coisas}
 \date{\today}
-\author{Jônatas Ribeiro Senna Pires}
-\institute{Universidade de Brasília}
+\author[Jônatas Ribeiro Senna Pires]{Jônatas Ribeiro Senna Pires }
+\institute{Apresentação do Trabalho de Conclusão de Curso em Engenharia de Computação\\Orientadora: Prof.a Dr.a Maristela Terto de Holanda\\Departamento de Ciência da Computação\\Universidade de Brasília}
 \begin{document}
 
   \maketitle
@@ -21,12 +21,16 @@
 
   \section{Contextualização}
     \begin{frame}{Contextualização}
-      \quad IoT consiste na interconexão de dispositivos sensitivos e atuadores com a finalidade de atingir um objetivo em comum \cite{giusto}.
-      \\\null \quad Permite que humanos e máquinas compreendam melhor o ambiente em que se encontram, mudando a forma com que os usuários lidam com as atividades do cotidiano \cite{IOTS}.
+      \begin{itemize}
+        \item IoT consiste na interconexão de dispositivos sensitivos e atuadores com a finalidade de atingir um objetivo em comum \cite{giusto}.
+        \item Permite que humanos e máquinas compreendam melhor o ambiente em que se encontram, mudando a forma com que os usuários lidam com as atividades do cotidiano \cite{IOTS}.
+      \end{itemize}
     \end{frame}
     \begin{frame}{Contextualização}
-      \quad Para lidar com o problema da dinamicidade dos dados, alguns autores propuseram uma abordagem colaborativa, fornecendo metadados para o sistema \cite{collaborative}.
-      \\\null \quad Seguindo a ordenação lógica, estuda-se o dispositivo sensitivo anteriormente ao dado coletado.
+      \begin{itemize}
+        \item Para lidar com o problema da dinamicidade dos dados, alguns autores propuseram uma abordagem colaborativa, fornecendo metadados para o sistema \cite{collaborative}.
+        \item  Seguindo a ordenação lógica, estuda-se o dispositivo sensitivo anteriormente ao dado coletado.
+      \end{itemize}
     \end{frame}
 
   \section{Objetivos}
@@ -38,8 +42,8 @@
 
     \begin{frame}{Objetivos Específicos}
       \begin{itemize}
-          \item Desenvolver um ambiente IoT em escala reduzida para teste de conceito;
-          \item Desenvolver o SenseHera;
+          \item Desenvolver um ambiente IoT em escala reduzida para teste de conceito
+          \item Desenvolver o SenseHera
           \item Desenvolver um módulo que realize a avaliação da qualidade dos sensores utilizando:
             \begin{itemize}
               \item Os dados coletados pelos sensores
@@ -52,60 +56,72 @@
   \begin{frame}{Visão Geral}
     \quad O SenseHera é um sistema web com as funcionalidades para:
     \begin{itemize}
-      \item Gestão dos dados produzidos pelos sensores conectados ao ambiente IoT;
-      \item Intermediar os usuários e os dados coletados;
-      \item Permitir a colaboração por parte dos usuários;
-      \item Calcular uma pontuação de qualidade para cada sensor.
+      \item Gestão dos dados produzidos pelos sensores conectados ao ambiente IoT
+      \item Intermediar os usuários e os dados coletados
+      \item Permitir a colaboração por parte dos usuários
+      \item Calcular uma pontuação de qualidade para cada sensor
     \end{itemize}
   \end{frame}
 
   \begin{frame}{Requisitos}
     \quad São os requisitos do sistema:
     \begin{itemize}
-      \item Funcionar em ambientes de baixa capacidade computacional;
-      \item Armazenar informações coletadas por sensores;
-      \item Apresentar as informações dos sensores de forma simplificada ao usuário;
-      \item Escalabilidade e facilidade para adição de sensores;
-      \item Permitir o envio de informações sobre fatos e sensações do ambiente pelo usuário;
-      \item Baseado nos dados coletados pelos sensores e informações enviadas pelos usuários, calcular uma nota para os dispositivos sensitivos.
+      \item Funcionar em ambientes de baixa capacidade computacional
+      \item Armazenar informações coletadas por sensores
+      \item Apresentar as informações dos sensores de forma simplificada ao usuário
+      \item Escalabilidade e facilidade para adição de sensores
+      \item Permitir o envio de informações sobre fatos e sensações do ambiente pelo usuário
+      \item Baseado nos dados coletados pelos sensores e informações enviadas pelos usuários, calcular uma nota para os dispositivos sensitivos
     \end{itemize}
   \end{frame}
 
   \begin{frame}{Funcionamento}
-    \quad Idealização das interações
+    \quad Idealização das interações:
+    \begin{itemize}
+      \item I: Troca de mensagens entre sensores e sistema
+      \item II: Acesso às informações e colaboração por parte do usuário
+    \end{itemize}\vspace{-5mm}
     \begin{center}
-    \includegraphics[scale=0.7]{solucao1}
+    \includegraphics[scale=0.1]{solucao1}
     \end{center}
   \end{frame}
   \begin{frame}{Funcionamento}
-    \quad Idealização da colaboração
+    \quad Idealização da colaboração:
     \begin{center}
     \includegraphics[scale=0.7]{solucao2}
     \end{center}
   \end{frame}
 
+  \begin{frame}{Introdução}
+    \quad Neste trabalho foi desenvolvido:
+    \begin{itemize}
+      \item Hardware (dispositivos sensitivos)
+      \item Software (sistema SenseHera)
+    \end{itemize}
+  \end{frame}
+
   \begin{frame}{Servidor}
     \quad Foi contratado um serviço online (Amazon Lightsail \cite{lightsail}) para hospedar o sistema, o qual possui as seguintes características:
     \begin{itemize}
-      \item Processador de um núcleo;
-      \item 512 MB de memória RAM;
+      \item Processador de um núcleo
+      \item 512 MB de memória RAM
       \item 20 GB de SSD para armazenamento.
     \end{itemize}
   \end{frame}
   \begin{frame}{Servidor}
     \quad Neste servidor foram instaladas as seguintes ferramentas:
     \begin{itemize}
-      \item SO Ubuntu 18.04;
-      \item Python 2.7;
-      \item Framework Django;
-      \item SGBD PostgreSQL;
-      \item Servidor HTTP Apache;
+      \item SO Ubuntu 18.04
+      \item Python 2.7
+      \item Framework Django
+      \item SGBD PostgreSQL
+      \item Servidor HTTP Apache
       \item Git.
     \end{itemize}
   \end{frame}
 
   \begin{frame}{Banco de Dados}
-    \quad Diagrama Entidade Relacionamento do sistema
+    \quad Diagrama Entidade Relacionamento do sistema:
     \begin{center}
     \includegraphics[scale=0.3]{tccDER}
     \end{center}
@@ -114,32 +130,35 @@
   \begin{frame}{Sistema de Pontuação}
     \quad O sistema de pontuação pode:
     \begin{itemize}
-      \item Modificar a pontuação por meio do cálculo da regularidade do sensor;
-      \item Aumentar a pontuação devido à colaboração do usuário;
-      \item Diminuir a pontuação por falta de disponibilidade.
+      \item Modificar a pontuação por meio do cálculo da regularidade do sensor
+      \begin{itemize}
+        \item Compara a média das últimas n leituras com a média das leituras referentes ao mesmo período do dia dos últimos m dias
+      \end{itemize}
+      \item Aumentar a pontuação devido à colaboração do usuário
+      \item Diminuir a pontuação por falta de disponibilidade
     \end{itemize}
   \end{frame}
 
   \begin{frame}{Interface do Sistema - Página Inicial}
-    \quad Página inicial do sistema
+    \quad Página inicial do sistema:
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{inicial}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página Principal}
-    \quad Página principal do sistema
+    \quad Página principal do sistema:
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{principal}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página de Detalhes de um Sensor}
-    \quad Página de detalhes de um sensor
+    \quad Página de detalhes de um sensor:
     \begin{center}
     \includegraphics[height=160pt, width=\textwidth]{pSensor}
     \end{center}
   \end{frame}
   \begin{frame}{Interface do Sistema - Página de administração}
-    \quad Página de administração
+    \quad Página de administração:
     \begin{center}
     \includegraphics[scale=0.3]{admin}
     \end{center}
@@ -147,15 +166,17 @@
 
   \section{Construção do Ambiente IoT em Escala Reduzida}
     \begin{frame}{Visão Geral}
-      \quad Foram construídos cinco dispositivos sensitivos para a construção do ambiente IoT em escala reduzida.
-      \\\null \quad A construção foi necessária para possibilitar o teste de todas as funcionalidades do sistema.
+      \begin{itemize}
+          \item Foram construídos cinco dispositivos sensitivos para a construção do ambiente IoT em escala reduzida.
+          \item A construção foi necessária para possibilitar o teste de todas as funcionalidades do sistema.
+      \end{itemize}
     \end{frame}
 
     \begin{frame}{Montagem dos Dispositivos Sensitivos}
       \quad Foram utilizados os seguintes componentes:
       \begin{itemize}
-        \item Raspberry Pi Zero W;
-        \item Sensor DHT 11;
+        \item Raspberry Pi Zero W
+        \item Sensor DHT 11
       \end{itemize}
       \begin{center}
       \includegraphics[height=130pt, width=200pt]{sensor}
@@ -176,28 +197,28 @@
       \end{center}
     \end{frame}
     \begin{frame}{Interação Sensor-Servidor}
-      \quad A partir do recebimento da mensagem pelo sistema:
+      \quad A partir do recebimento da mensagem, as seguintes ações são realizadas pelo sistema:
       \begin{itemize}
-        \item Verifica se o sensor já está cadastrado no sistema;
+        \item Verifica se o sensor já está cadastrado no sistema
           \begin{itemize}
             \item Se estiver:
             \begin{itemize}
-              \item Armazena as leituras recebidas;
-              \item Envia o identificador do sensor como meio de confirmação.
+              \item Armazena as leituras recebidas
+              \item Envia o identificador do sensor como meio de confirmação
             \end{itemize}
             \item Se não estiver:
             \begin{itemize}
-              \item Cria um objeto Sensor;
-              \item Cria as novas categorias de sensor, caso não existam;
-              \item Armazena as leituras recebidas;
-              \item Envia o novo código identificador para o dispositivo.
+              \item Cria um objeto Sensor
+              \item Cria as novas categorias de sensor, caso não existam
+              \item Armazena as leituras recebidas
+              \item Envia o novo código identificador para o dispositivo
             \end{itemize}
           \end{itemize}
       \end{itemize}
     \end{frame}
 
     \begin{frame}{Colaboração com o sistema}
-      \quad A colaboração basea-se na intenção do usuário em responder as perguntas propostas.
+      \quad A colaboração basea-se na intenção do usuário em responder as perguntas propostas:
       \begin{center}
       \includegraphics[height=130pt, width=200pt]{sensormsg}
       \end{center}
@@ -206,19 +227,24 @@
   \section{Resultados}
 
     \begin{frame}{ Prova de Conceito - Adição de Dispositivos}
-      \quad Supondo a construção e configuração de um novo dispositivo, deseja-se verficar se o sistema é capaz de incluí-lo de forma simples e eficaz.
+      \quad Supondo a construção e configuração de um novo dispositivo, deseja-se verficar se o sistema é capaz de incluí-lo de forma simples e eficaz:
+      \begin{center}
+      \includegraphics[height=75pt, width=250pt]{mensagemJSONExemplo}
+      \end{center}
+    \end{frame}
+    \begin{frame}{ Prova de Conceito - Adição de Dispositivos}
       \begin{center}
       \includegraphics[height=130pt, width=\textwidth]{prova2}
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Inspeção dos Dados Coletados}
-      \quad É realizada a verificação do armazenamento das leituras enviadas por um dos sensores.
+      \quad É realizada a verificação do armazenamento das leituras enviadas por um dos sensores:
       \begin{center}
       \includegraphics[height=150pt, width=200pt]{prova4}
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Simulação de Colaboração por um Usuário}
-      \quad Supondo que um usuário se depara com um dos QR-codes localizado próximo a um dos sensores
+      \quad Supondo que um usuário se depara com um dos QR-codes localizado próximo a um dos sensores:
       \begin{center}
       \includegraphics[height=150pt, width=200pt]{prova5}
       \end{center}
@@ -235,7 +261,7 @@
       \end{center}
     \end{frame}
     \begin{frame}{Prova de Conceito - Utilização do Sistema}
-      \quad Supondo um usuário interessado em acessar as informações contidas no sistema
+      \quad Supondo um usuário interessado em acessar as informações contidas no sistema:
       \begin{center}
       \includegraphics[height=130pt, width=\textwidth]{prova8}
       \end{center}
@@ -252,13 +278,17 @@
       \end{center}
     \end{frame}
     \begin{frame}{Teste Comparativo - Visão Geral}
-      \null \quad O período considerado foi do dia 12/02/2019 ao dia 17/05/2019 (95 dias). Durante esse intervalo foram coletados 1.091.516 leituras.
-      \\\null \quad Para a comparação com a métrica implementada pelo sistema, foi utilizada a \textit{Overall Equipment Effectiveness} (OEE) \cite{artigoOEE}. %, uma métrica quantitativa utilizada na indústria para medir diferentes tipos de perda de eficiência de um equipamento e indicar áreas para aperfeiçoamento do processo de produção \cite{artigoOEE}.
-      \\\null \quad Para o cálculo da OEE, é preciso calcular três elementos: Disponibilidade, Produtividade e Qualidade.
+      \begin{itemize}
+        \item O período considerado foi do dia 12/02/2019 ao dia 17/05/2019 (95 dias). Durante esse intervalo foram coletados 1.091.516 leituras.
+        \item Para a comparação com a métrica implementada pelo sistema, foi utilizada a \textit{Overall Equipment Effectiveness} (OEE) \cite{artigoOEE}.
+        \item Para o cálculo da OEE, é preciso calcular três elementos: Disponibilidade, Produtividade e Qualidade.
+      \end{itemize}
+        %, uma métrica quantitativa utilizada na indústria para medir diferentes tipos de perda de eficiência de um equipamento e indicar áreas para aperfeiçoamento do processo de produção \cite{artigoOEE}.
+
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE - Disponibilidade}
       \quad A disponibilidade é a razão entre o tempo de funcionamento útil e o tempo de funcionamento total.
-      Considera-se um dia útil o dia em que foram armazenadas mais do que a metade do total de leituras esperadas por dia
+      Considera-se um dia útil o dia em que foram armazenadas mais do que a metade do total de leituras esperadas por dia:
       \begin{center}
       % \captionof{table}{Tabela que representa a disponibilidade dos sensores.}\label{disponibilidade}
       \resizebox{\textwidth}{!}{%
@@ -281,7 +311,7 @@
       \end{center}
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE - Produtividade}
-      \quad A Produtividade de um equipamento é dada pela razão entre a quantidade produzida e a quantidade esperada
+      \quad A Produtividade de um equipamento é dada pela razão entre a quantidade produzida e a quantidade esperada:
       \begin{center}
       \resizebox{\textwidth}{!}{%
       \begin{tabular}{lrrrr}
@@ -305,7 +335,7 @@
       \quad Neste trabalho não foi verificada a qualidade do dado produzido. Entretanto para que fosse possível calcular a OEE, a Qualidade foi considerada 100\%.
     \end{frame}
     \begin{frame}{Teste Comparativo - OEE}
-        \quad Multiplicando os três elementos, obtêm-se a OEE.
+        \quad Multiplicando os três elementos, obtêm-se a OEE:
         \begin{center}
 
         \resizebox{\textwidth}{!}{%
@@ -352,8 +382,8 @@
     \begin{frame}{ Conclusão }
       \quad Este trabalho apresentou:
       \begin{itemize}
-        \item O desenvolvimento de sistema SenseHera;
-        \item A construção de um ambiente IoT em escala reduzida;
+        \item O desenvolvimento de sistema SenseHera
+        \item A construção de um ambiente IoT em escala reduzida
         \item O teste comparativo entre o sistema implementado e uma métrica utilizada na indústria.
       \end{itemize}
     \end{frame}
@@ -361,9 +391,9 @@
     \begin{frame}{Trabalhos Futuros}
       \quad Os temas a seguir tratam sobre trabalhos futuros:
       \begin{itemize}
-        \item Implementação do sistema utilizando bancos de dados NOSQL;
-        \item Associar as informações fornecidas pelos usuários aos registros dos sensores por meio de metadados;
-        \item Implementação de uma ontologia para fornecer semântica aos dados;
+        \item Implementação do sistema utilizando bancos de dados NOSQL
+        \item Associar as informações fornecidas pelos usuários aos registros dos sensores por meio de metadados
+        \item Implementação de uma ontologia para fornecer semântica aos dados
         \item Permitir o envio de informações mais complexas aos sensores.
       \end{itemize}
 
