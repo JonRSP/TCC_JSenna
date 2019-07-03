@@ -13,13 +13,14 @@
 \\\null \quad Ao iniciar o código desenvolvido, o dispositivo cria um banco de dados local, realiza as leituras por meio do sensor DHT11, monta uma mensagem semelhante à mensagem mostrada na Figura \ref{mensagemJSONExemplo}, podendo ser diferente apenas no valor das leituras.
 \\\null \quad Quando o SenseHera recebe a mensagem, é criada uma instância da entidade Sensor, as leituras são armazenadas no banco de dados do servidor e o identificador da instância criada é enviada ao sensor. A partir deste momento, já é possível observar na página web que um novo sensor foi adicionado com o nome de "Descrição temporária sensor 2", conforme mostra a Figura \ref{prova2}. Novas leituras desse dispositivo são associadas à instância cuja descrição é "Descrição temporária sensor 2". Esta descrição pode ser alterada utilizando a ferramenta de adminstração disponibilizada pelo Django.
 \pagebreak
-\figura[!h]{prova2.png}{Novo dispositivo sensitivo adicionado ao sistema}{prova2}{width=\textwidth, height=200}
+\figura[!h]{prova2.png}{Novo dispositivo sensitivo adicionado ao sistema}{prova2}{width=\textwidth, height=!}
 
 \subsection{Inspeção dos Dados Coletados}
 \label{subsec:dados}
 \\\null \quad É realizado o acesso do servidor via \textit{\acrlong{SSH}} (\acrshort{SSH}) e o acesso direto ao banco de dados é feito a partir da ferramenta para linha de comando do PostgreSQL, conforme mostra a Figura \ref{prova3}.
 \figura[!h]{prova3.png}{Acesso ao banco de dados via SSH}{prova3}{width=\textwidth,height=125}
 \\\null \quad A Figura \ref{prova4} mostra as leituras coletadas durante um período de dez minutos pelo sensor cujo identificador é 4. Foram realizadas 22 leituras, 11 referentes à temperatura e 11 referentes à umidade. É possível observar a variação nos registros, o que mostra a variação real ocorrida no ambiente.
+\pagebreak
 \figura[!h]{prova4.png}{Registros de sensor em um período de dez minutos}{prova4}{scale=0.8}
 
 \subsection{Simulação de Colaboração Por Um Usuário}
@@ -103,7 +104,7 @@ Piano      & 95                                                                 
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrr}
   \hline
-Sensor     & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular}} & \multicolumn{1}{l}{Número de leituras (L)} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de leituras\\  esperado (E)\end{tabular}} & \multicolumn{1}{l}{Disponibilidade (D)} \\
+Sensor     & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de dias\\  em funcionamento (N)\end{tabular}} & \multicolumn{1}{l}{Número de leituras (L)} & \multicolumn{1}{l}{\begin{tabular}[c]{@{}l@{}}Número de leituras\\  esperado (E)\end{tabular}} & \multicolumn{1}{l}{Produtividade (P)} \\
 \hline
 Oficina    & 53                                                                                                 & 140754                                     & 152640                                                                                         & 92,21\%                                 \\
 \hline
@@ -155,7 +156,7 @@ Piano      & 93,68\%                                                            
 \end{center}
 
 \\\null \quad O sistema de pontuação utilizado está descrito na Seção \ref{subsec:pontuacao}, o que inclui, por exemplo, as considerações de regularidade das leituras, interrupções no envio de dados e as colaborações dos usuários.
-\\\null \quad A Tabela \ref{tabelaComparacao} mostra a média da pontuação dos sensores, calculada pelo sistema em comparação com a pontuação \acrshort{OEE}. A utilização da média da pontuação calculada foi necessária devido ao fato da \textit{\acrlong{OEE}} tratar de dados históricos.
+\\\null \quad A Tabela \ref{tabelaComparacao} mostra a média da pontuação dos sensores, calculada pelo sistema em comparação com a pontuação \acrshort{OEE}. A utilização da média da pontuação calculada pelo SenseHera foi necessária devido ao fato da \textit{\acrlong{OEE}} tratar de dados históricos.
 
 \begin{center}
 \captionof{table}{Tabela que representa a comparação entre \acrshort{OEE} dos sensores e a pontuação calculada pelo sistema.}\label{tabelaComparacao}

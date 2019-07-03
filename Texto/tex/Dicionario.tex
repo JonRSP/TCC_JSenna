@@ -1,0 +1,171 @@
+\section{Entidades Principais}
+Lista de entidades principais implementadas no modelo do sistema SenseHera.
+\subsection{Sensor}
+A entidade "Sensor" armazena as informações sobre um dispositivo sensitivo, como descrição e pontuação.
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Sensor.}\label{tabelaDSensor}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Descrição     & texto                            & Descrição atribuída ao sensor                              \\ \hline
+Pontuação     & numérico                         & Pontuação do sensor; valor de 0 a 5 calculado pelo sistema %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+
+
+\subsection{Leitura}
+A entidade "Leitura" armazena as leituras realizadas por um sensor, armazenando os valores coletados e associando-os com o sensor que os coletou e ao tipo de sensor referente a esta leitura.
+\pagebreak
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Leitura.}\label{tabelaDLeitura}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Momento       & data-hora                            & Instante em que a leitura foi realizada; gerada automaticamente                              \\ \hline
+Valor         & numérico                         & Valor de uma leitura realizada pelo sensor \\ \hline
+Sensor\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador do sensor que realizou a leitura\end{tabular} \\ \hline
+Tipo\_Sensor\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador do tipo de sensor relacionado à leitura\end{tabular} \\ %\hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{Tipo\_Sensor}
+A entidade "Tipo\_Sensor" foi criada para categorizar os sensores e armazenar informações sobre o tipo de sensor, como valores máximo e mínimo e unidade de leitura.
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Tipo\_Sensor.}\label{tabelaDTipoSensor}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Descrição     & texto                            & Descrição atribuída ao tipo de sensor                              \\ \hline
+Unidade     & texto                         & Unidade de leitura \\ \hline
+Minimo     & numérico                         & Valor mínimo esperado para um tipo de sensor \\ \hline
+Maximo     & numérico                         & Valor máximo esperado para um tipo de sensor \\ %\hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{Pergunta}
+A entidade "Pergunta" foi criada paraarmazenar as perguntas a serem respondidas pelos usuários colaboradores.
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Pergunta.}\label{tabelaDPergunta}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Descrição     & texto                            & Texto da pergunta                              \\ \hline
+Tipo\_Pergunta\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador do tipo de pergunta relacionado à pergunta\end{tabular} \\ %\hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{Tipo\_Pergunta}
+A entidade "Tipo\_Pergunta"\ implementa o que foi proposto na Figura \ref{funcionamento2}, dividindo as perguntas sobre as características do ambiente das perguntas sobre as sensações do usuário colaborador. As\ perguntas podem ser utilizadas para se obter o contexto espacial ou psicológico.
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Tipo\_Pergunta.}\label{tabelaDTipoPergunta}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Descrição     & texto                            & Descrição atribuída ao tipo de pergunta                              %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{Resposta\_Possível}
+A entidade "Resposta\_Possível"\ foi criada com o intuito de evitar problemas durante a fase de colaboração humana com o sistema. Ao fixar as possibilidades de respostas para cada pergunta, evitam-se problemas como, por exemplo, erros de ortografia e erros na compreensão da pergunta.
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Resposta\_Possível.}\label{tabelaDRespostaPossivel}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Descrição     & texto                            & Texto atribuído à resposta possível                              %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{Resposta}
+A entidade "Resposta" foi criada para agrupar a informação fornecidas pelo usuário, a pergunta que foi respondida, a qual sensor essa resposta é associada e o instante em que a pergunta foi respondida.
+\pagebreak
+\begin{center}
+\captionof{table}{Tabela de dados da entidade Resposta.}\label{tabelaDResposta}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+ID            & inteiro                          & Identificador do objeto; gerado automaticamente            \\ \hline
+Momento       & data-hora                            & Descrição atribuída ao sensor                              \\ \hline
+Sensor\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador do sensor relacionado à resposta\end{tabular} \\ \hline
+Pergunta\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador da pergunta relacionada à resposta\end{tabular} \\ \hline
+Resposta\_Possivel\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira;\\ identificador da resposta possivel relacionada à resposta\end{tabular} %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+
+\section{Tabelas Auxiliares}
+Tabelas auxiliares necessárias para o funcionamento do sistema SenseHera.
+\subsection{TB\_Sensor\_Tipo\_Sensor}
+Esta tabela é criada devido ao relacionamento n para n entre as entidades Sensor e Tipo\_Sensor, em que um sensor pode ter múltiplos tipos de sensor associados e um tipo de sensor pode ter múltiplos dispositivos associados.
+\begin{center}
+\captionof{table}{Tabela de dados da tabela TB\_Sensor\_Tipo\_Sensor.}\label{tabelaDTBSensorTipoSensor}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+Sensor\_ID     & inteiro           & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária;\\ identificador do sensor relacionado ao tipo de sensor\end{tabular}                              \\ \hline
+Tipo\_Sensor\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária;\\ identificador do tipo de sensor relacionado ao sensor\end{tabular} %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{TB\_Pergunta\_Tipo\_Sensor}
+Esta tabela é criada devido ao relacionamento n para n entre as entidades Pergunta e Tipo\_Sensor, em que uma pergunta pode ter múltiplos tipos de sensor associados e um tipo de sensor pode ter múltiplas questões associadas.
+\pagebreak
+\begin{center}
+\captionof{table}{Tabela de dados da tabela TB\_Pergunta\_Tipo\_Sensor.}\label{tabelaDTBPerguntaTipoSensor}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+Tipo\_Sensor\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária;\\ identificador do tipo de sensor relacionado à pergunta\end{tabular} \\ \hline
+Pergunta\_ID     & inteiro           & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária;\\ identificador da pergunta relacionada ao tipo de sensor\end{tabular}                              %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}
+\subsection{TB\_Pergunta\_Resposta\_Possivel}
+Esta tabela é criada devido ao relacionamento n para n entre as entidades Pergunta e Resposta\_Possivel, em que uma pergunta pode ter múltiplas respostas possíveis associadas e uma resposta possível pode ter múltiplas questões associadas.
+\begin{center}
+\captionof{table}{Tabela de dados da tabela TB\_Pergunta\_Resposta\_Possivel.}\label{tabelaDTBPerguntaRespostaPossivel}
+\begin{table}[h!]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrr}
+\hline
+Nome do Campo & \multicolumn{1}{l}{Tipo de dado} & \multicolumn{1}{l}{Descrição}                              \\ \hline
+Pergunta\_ID     & inteiro           & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária;\\ identificador da pergunta relacionada à resposta possível\end{tabular}                              \\ \hline
+Resposta\_Possivel\_ID     & inteiro                         & \begin{tabular}[c]{@{}r@{}}Chave estrangeira e primária; \\identificador da resposta possível relacionada à pergunta\end{tabular} %\\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{center}

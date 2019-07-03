@@ -5,7 +5,7 @@
 \\\null \quad O propósito do SenseHera é a gestão das informações produzidas pelos sensores conectados ao ambiente \acrshort{IoT} no qual o sistema está inserido, agir como intermediário entre os usuários e os dados, possibilitando a colaboração dos usuários com informações sobre fatos e sensações do ambiente. E, a partir dos dados coletados pelos sensores e fornecidos pelos usuários, produzir uma noção de qualidade dos sensores.
 
 \subsection{Requisitos}
-\null \quad Para elaboração dos requisitos foram utilizados os conhecimentos obtidos com a leitura de diversos artigos científicos sobre o tema de \acrlong{IoT}, levando-se em cosideração os desafios listados na Seção \ref{subsec:desafios} e os objetivos traçados na Seção \ref{sec:objetivo}. Os requisitos que guiaram a construção do sistema estão elencados na lista a seguir:
+\null \quad Para elaboração dos requisitos foram utilizados os conhecimentos obtidos com a leitura de diversos artigos científicos sobre o tema de \acrlong{IoT}, levando-se em consideração os desafios listados na Seção \ref{subsec:desafios} e os objetivos traçados na Seção \ref{sec:objetivo}. Os requisitos que guiaram a construção do sistema estão elencados na lista a seguir:
 \begin{itemize}
   \item Funcionar em ambientes de baixa capacidade computacional;
   \item Armazenar informações coletadas por sensores;
@@ -16,31 +16,31 @@
 \end{itemize}
 
 \subsection{Funcionamento}
-\null \quad As Figuras \ref{funcionamento1} e \ref{funcionamento2} mostram, de forma simplificada, o funcionamento do sistema. Na Figura \ref{funcionamento1}, a interação I consiste nas seguintes fases:
+\null \quad As Figuras \ref{funcionamento1} e \ref{funcionamento2} mostram, de forma simplificada, o funcionamento do sistema. Na Figura \ref{funcionamento1}, a interação I trata da comunicação realizada entre os dispositivos sensitivos e o servidor. Essa interação consiste nas seguintes fases:
 
 \begin{itemize}
   \item O sensor envia mensagens em formato JSON dos dados coletados para o servidor para que sejam armazenados;
   \item O servidor envia o código identificador referente ao sensor ao dispositivo sensitivo.
 \end{itemize}
 
-\null Já a interação II possui as seguintes componentes:
+\null Já a interação II trata da comunicação entre servidor e usuário, a qual possui as seguintes componentes:
 \begin{itemize}
   \item Acesso dos usuários às informações armazenadas e/ou processadas no sistema;
-  \item Disponibilização de perguntas a serem respondidas pelos usuários;
-  \item Envio das percepções e sensações do usuário sobre o ambiente para o servidor.
+  \item Envio das percepções e sensações do usuário sobre o ambiente para o servidor;
+  \item Disponibilização de perguntas a serem respondidas pelos usuários.
 \end{itemize}
-\pagebreak
-\figura[!h]{solucao1.jpg}{Esquema de funcionamento do sistema}{funcionamento1}{scale=0.9}
 
-\\\null \quad A Figura \ref{funcionamento2} indica a forma em que o usuário pode auxiliar com informações importantes sobre suas percepções e sobre o ambiente, fornecendo uma contextualização para o sistema. A contextualização pode ser espacial, quando trata-se de uma observação do ambiente por parte do usuário, ou psicológica, quando se trata de uma sensação do colaborador. Como por exemplo:
+\figura[!h]{solucao1.jpg}{Esquema de funcionamento do sistema}{funcionamento1}{width=\textwidth-100, height=!}
+
+\\\null \quad A Figura \ref{funcionamento2} indica a forma em que o usuário pode auxiliar com informações importantes sobre suas percepções e sobre o ambiente, fornecendo uma contextualização para o sistema; o colaborador, ao observar e perceber o ambiente, coleta as informações sobre o espaço, a partir desse momento, o usuário tem sensações. As informações sobre o espaço em que o usuário se encontra e suas sensações fornecem uma contextualização a qual pode ser espacial, quando trata-se de uma observação do ambiente por parte do usuário, ou psicológica, quando se trata de uma sensação do colaborador. Como por exemplo:
 \begin{itemize}
-  \item Quantidade de aberturas;
-  \item Fontes de calor;
+  \item Quantidade de aberturas (portas, janelas, etc.);
+  \item Presença de fontes de calor;
   \item Percepções de frio e calor;
   \item Noções sobre conforto.
 \end{itemize}
 \pagebreak
-\figura[!h]{solucao2.jpg}{Esquema de participação dos usuários no sistema}{funcionamento2}{scale=0.7}
+\figura[!h]{solucao2.jpg}{Esquema de participação dos usuários no sistema}{funcionamento2}{width=\textwidth-100, height=!}
 
 \subsection{Servidor}
 \nul \quad Foi contratado um serviço online de baixo custo (Amazon Lightsail \cite{lightsail}) para o funcionamento do sistema; a máquina virtual utilizada possui as seguintes características:
@@ -60,24 +60,23 @@
 \end{itemize}
 
 \subsection{Banco de Dados}
-\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volume de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido. A Figura \ref{MR} mostra o Modelo Relacional implementado.
+\null \quad O banco de dados relacional desenvolvido segue o \acrfull{DER} da Figura \ref{DER} e foi implementado no \acrfull{SGBD} PostgreSQL por ser um software livre e com capacidade para lidar com o volume de dados produzido pelo ambiente \acrshort{IoT} em que o sistema SenseHera está inserido. A Figura \ref{MR} mostra o Modelo Relacional implementado. Mais informações sobre as entidades e tabelas podem ser encontradas no dicionário de dados no anexo \ref{Dicionario} deste trabalho.
 
-\figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{scale=0.5}
+\figura[!h]{tccDER.jpg}{\acrlong{DER}}{DER}{width=\textwidth-120, height=!}
 \newpage
-\figura[!h]{tccMR.jpg}{Modelo Relacional implementado}{MR}{scale=0.5}
-A entidade "Respostas\_Possíveis"\ foi criada com o intuito de evitar problemas durante a fase de colaboração humana com o sistema. Ao fixar as possibilidades de respostas para cada pergunta, evitam-se problemas como, por exemplo, erros de ortografia e erros na compreensão da pergunta.
-\\\null \quad A entidade "Tipo\_Pergunta"\ implementa o que foi proposto na Figura \ref{funcionamento2}. As\ perguntas podem ser utilizadas para se obter o contexto espacial ou psicológico.
+\figura[!h]{tccMR.jpg}{Modelo Relacional implementado}{MR}{width=\textwidth-120, height=!}
+
 \subsection{O Sistema de Pontuação}
 \label{subsec:pontuacao}
-\null \quad Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação a fim de avaliar os sensores. Para atingir este objetivo, foi pensado nas seguintes formas de avaliação:
+\null \quad Para a implementação do trabalho era imperativo o desenvolvimento de um sistema de pontuação a fim de avaliar os sensores. Para atingir este objetivo, foi elaborada uma escala de 0 a 5, em que 0 representa um sensor com baixa acurácia e 5 representando um sensor perfeitamente acurado. Para cálculo da pontuação foram pensadas as seguintes formas de avaliação:
 \begin{itemize}
   \item Modificar a pontuação
     \begin{itemize}
-      \item A cada \textit{N} leituras verifica-se a proximidade da média dessas \textit{N} leituras com a média do mesmo período do dia nos \textit{M} dias anteriores. A proximidade desses valores indica uma provável corretude dos dados gerados, enquanto a diferença indica possíveis erros de leitura.
+      \item Sabendo que a frequência de envio de leituras é constante e a janela de tempo para cálculo é arbitraria. A cada \textit{N} leituras verifica-se a proximidade da média dessas \textit{N} leituras com a média do mesmo período do dia nos \textit{M} dias anteriores. A proximidade desses valores indica a acurácia dos dados gerados, enquanto a diferença indica possíveis erros de leitura ou transmissão.
     \end{itemize}
   \item Aumentar a pontuação
   \begin{itemize}
-    \item A colaboração dos usuários com informações sobre suas percepções: por hora, se houverem interações, é verificado se há uma concentração nas respostas escolhidas. Por se tratarem de informações sobre sensações, não é possível afirmar que diferenças indicam erros.
+    \item A colaboração dos usuários com informações sobre suas percepções: por hora, se houverem interações, é verificado se há uma concentração nas respostas escolhidas. Por se tratarem de informações sobre sensações, não é possível afirmar que diferenças indicam erros. A combinação da acurácia com a concentração das respostas aumenta a pontuação de um sensor.
   \end{itemize}
   \item Penalização
     \begin{itemize}
@@ -90,44 +89,49 @@ A entidade "Respostas\_Possíveis"\ foi criada com o intuito de evitar problemas
 \null \quad Nesta Seção, é exposta a interface desenvolvida e suas funcionalidades. Na Figura \ref{inicial},
 é mostrada a página inicial, na qual há uma pequena explicação sobre o propósito do site e os links para os repositórios do GitHub, onde se encontram disponíveis os arquivos da implementação do sistema. O sistema SenseHera encontra-se no endereço \textit{http://jsenna.xyz/} .
 
-\figura[!h]{inicial.png}{Página inicial do site}{inicial}{height=250,width=\textwidth}
+\figura[!h]{inicial.png}{Página inicial do site}{inicial}{width=\textwidth,height=!}
 \newpage
 \null \quad Ao clicar na aba "Dados"\ (botão localizado na barra de navegação), o usuário é redirecionado para a página principal do site, que contém informações sobre os sensores, bem como o número de leituras armazenadas e distribuição do número de leituras por sensor, como mostra a Figura \ref{principal}.
 
-\figura[!h]{principal.png}{Página principal do site}{principal}{height=250,width=\textwidth}
-\newpage
+\figura[!h]{principal.png}{Página principal do site}{principal}{width=\textwidth,height=!}
+
 \null \quad Ao clicar na descrição de um sensor, o sistema retorna a página de detalhes para aquele sensor. Essa página possui informações sobre a distribuição de leituras ao longo do tempo, as leituras mais recentes referentes ao sensor, gráficos a respeito das informações coletadas nas últimas 24 horas e gráficos sobre a média histórica das leituras desse sensor, como mostra a Figura \ref{pSensor}.
-\newpage
+
 \figura[!h]{pSensor.png}{Página de detalhes de um sensor}{pSensor}{height=250,width=\textwidth}
 
 
 \\\null \quad Para que os usuários possam fornecer informações sobre suas sensações e percepções, é necessário que o interessado em colaborar escaneie o QR-Code localizado próximo ao sensor, conforme a Figura \ref{sensormsg}, o que o redirecionará para uma página com uma pergunta aleatória referente ao dispositivo, como mostra a Figura \ref{pergunta}.
 
-\figura[!h]{pergunta.png}{Página com uma pergunta aleatória referente ao sensor}{pergunta}{height=200,width=\textwidth}
+\figura[h]{pergunta.png}{Página com uma pergunta aleatória referente ao sensor}{pergunta}{height=150,width=\textwidth}
 
-\\\null \quad Para que os usuários administradores possam cadastrar novos responsáveis, alterar informações sobre instâncias de sensores e suas categorias, adicionar novas perguntas e respostas possíveis, foi utilizada a ferramenta de administração fornecida pelo \textit{Framework} Django, como mostra a Figura \ref{admin}.
+\null \quad Para que os usuários administradores possam cadastrar novos responsáveis, alterar informações sobre instâncias de sensores e suas categorias, adicionar novas perguntas e respostas possíveis, foi utilizada a ferramenta de administração fornecida pelo \textit{Framework} Django, como mostra a Figura \ref{admin}.
 
-\figura[!h]{admin.png}{Ferramenta de administração fornecida pelo Framework Django}{admin}{scale=0.5}
+\figura[h]{admin.png}{Ferramenta de administração fornecida pelo Framework Django}{admin}{scale=0.4}
 
 
 \section{Construção do Ambiente IoT}
 \label{sec:ambiente}
 \\\null \quad O ambiente \acrshort{IoT} em escala reduzida utilizado neste trabalho de conclusão de curso é essencial para o teste de conceito
-do sistema proposto. A alimentação de dados pelos componentes da rede é necessária para que haja
+do sistema proposto. A alimentação de dados pelos componentes da rede é necessária para que hajam
 dados suficientes para o processamento do programa desenvolvido. As informações geradas por esses dispositivos, ao se comunicarem com o sistema, em colaboração
 com os usuários, permitem o pleno funcionamento da proposta.
 
 \subsection{Dispositivos Sensitivos}
-\quad Foram construídos 5 (cinco) dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor}. Esta placa
-foi escolhida por seu baixo custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão \textit{wireless} disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
+\quad Foram construídos 5 (cinco) dispositivos sensitivos utilizando a plataforma Raspberry Pi 0 W seguindo o esquema da Figura \ref{raspsensor} em que a placa Raspberry Pi 0 W é representado pelo item I e o sensor DHT11 é representado por II.
+\\\null \quad Esta placa foi escolhida por seu baixo custo, seu desempenho computacional proporcional ao custo, sua capacidade de conexão \textit{wireless} disponível diretamente na placa, sem necessidade de equipamentos extras e a possibilidade de executar um sistema operacional baseado em linux para simplificar tarefas como a conexão à rede WiFi, armazenamento de dados e atualizações remotas.
 \\\null \quad Os dispositivos, após a montagem final, são capazes de medir temperatura ($^\circ$C) e umidade do ar (\%) utilizando o sensor DHT11. Este sensor foi escolhido
 por sua praticidade de uso e baixo custo.
-\\\\\\
-\figura[!h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.8}
-\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foi desenvolvido um \textit{script} Python que segue o fluxograma da Figura \ref{fluxogramaSensor}. Nesse \textit{script}, foram utilizadas as bibliotecas Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT}.
 
-\figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um dispositivo sensitivo construído}{fluxogramaSensor}{scale=0.57}
-\newpage
+\figura[h]{sensor.png}{Esquema de montagem para os dispositivos sensitivos}{raspsensor}{scale=0.25}
+\\\null \quad Para o envio e coleta das informações geradas pelo sensor DHT11, foi desenvolvido um \textit{script} Python que segue o fluxograma da Figura \ref{fluxogramaSensor}. Nesse \textit{script}, foram utilizadas as bibliotecas Requests \cite{Requests} e Adafruit DHT \cite{AdafruitDHT}.
+\\\null \quad Ao iniciar o \textit{script} no dispositivo sensitivo, verifica-se a existência do banco de dados local, o qual contém as informações sobre o identificador do equipamento. Se não existir, cria-se o banco de dados e é inserido um registro de sensor com o identificar 0. Se existir são recuperadas as informações contidas no Banco de dados.
+\\\null \quad Após a recuperação das informações, o programa entra em um laço em que a condição de saída é a ocorrência de um erro. Dentro desse laço, são realizadas as leituras utilizando a biblioteca AdafruitDHT para acessar o sensor DHT11 conectado à placa Raspberry Pi 0 W.
+\\\null \quad Com os valores das leituras em memória, a mensagem JSON é montada seguindo o esquema da Figura \ref{mensagemJSON}. Após a mensagem ser montada, esta é enviada para o servidor utilizando a biblioteca Requests; a resposta do servidor com o identificador do equipamento é aguardada. Ao receber a resposta, é verificado se o valor identificador recebido é igual ao valor que está armazenado no banco de dados. Se for igual, o programa retoran para o início do laço; se forem distintos, o valor recebido é armazenado no banco de dados local e o programa retorna para o início do laço.
+\\\null \quad Se houverem erros durante a execução do laço, o programa é encerrado e é iniciado novamente pelo sistema operacional.
+\figura[!h]{fluxogramaSensor.jpg}{Fluxograma do funcionamento básico de um dispositivo sensitivo construído}{fluxogramaSensor}{width=\textwidth,height=460}
+
+
+
 \subsection{Interação Sensores-Servidor}
 
 \\\null \quad A mensagem enviada pelos sensores é uma \textit{string} no formato JSON formada por todas as informações estritamente necessárias para o registro no banco de dados do sistema de destino.
@@ -136,9 +140,10 @@ No escopo deste trabalho, são essenciais apenas as informações sobre o códig
 \\\null\quad A Figura \ref{mensagemJSONExemplo} mostra um exemplo de uma mensagem inicial enviada de um dispositivo sensitivo para o sistema SenseHera. A Figura \ref{mensagemJSONExemplo2} mostra um exemplo de mensagem subsequente à mensagem inicial. Neste contexto, ao receber a primeira mensagem, o SenseHera criou uma instância da entidade Sensor cujo identificador é igual a 5 e enviou esse código para o dispositivo.
 \\\\\\
 \figura[!h]{mensagemJSON.jpg}{Formato genérico para a mensagem JSON}{mensagemJSON}{scale=0.6}
-\pagebreak
-\figura[!h]{mensagemJSONExemplo.jpg}{Exemplo de uma mensagem inicial em formato JSON}{mensagemJSONExemplo}{scale=0.6}
-\figura[!h]{mensagemJSONExemplo2.jpg}{Exemplo de uma mensagem subsequente à mensagem inicial em formato JSON}{mensagemJSONExemplo2}{scale=0.6}
+
+\figura[!h]{mensagemJSONExemplo.jpg}{Exemplo de uma mensagem inicial em formato JSON}{mensagemJSONExemplo}{scale=0.7}
+\\\\\\
+\figura[!h]{mensagemJSONExemplo2.jpg}{Exemplo de uma mensagem subsequente à mensagem inicial em formato JSON}{mensagemJSONExemplo2}{scale=0.7}
 \subsection{Localização do Ambiente IoT em Escala Reduzida}
 \quad O ambiente escolhido para a aplicação em escala reduzida é um terreno de 2500 $m^2$ localizado em uma
 região rural do Distrito Federal. A disposição dos equipamentos foi feita conforme a Figura \ref{planta},
@@ -177,9 +182,9 @@ Para que os usuários possam contribuir com as informações sobre suas sensaç�
 \section{Dificuldades Encontradas}
 \label{sec:dificuldades}
 \quad Durante a execução do projeto, muitas dificuldades foram superadas para que os objetivos traçados fossem atingidos.
-\subsection{Localização dos Sensores}
-\quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília. Entretanto, alguns meses após o começo da coleta de dados, foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
-\\\null \quad Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
+% \subsection{Localização dos Sensores}
+% \quad A montagem inicial dos sensores foi realizada em uma região central da cidade de Brasília. Entretanto, alguns meses após o começo da coleta de dados, foi necessária uma mudança para a localização descrita nos procedimentos do trabalho.
+% \\\null \quad Devido ao processo de mudança, também houve um grande atraso no recomeço da aquisição de dados, reduzindo consideravelmente a quantidade de registros que seriam coletados até o final da realização do trabalho.
 
 \subsection{Servidor}
 \quad Inicialmente, o servidor seria localizado em uma rede local e implementado em uma placa de desenvolvimento Raspberry Pi modelo B+ que possui as seguintes características físicas:
